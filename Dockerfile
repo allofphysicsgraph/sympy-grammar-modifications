@@ -33,9 +33,9 @@ COPY sympy /opt/sympy/
 
 WORKDIR /opt/sympy
 RUN echo "alias python=python3" > /root/.bashrc
+RUN python3 setup.py install
 
-RUN python setup.py install
-
+WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime mpmath
 RUN pip3 install ipython
 # https://ctan.org/pkg/amsmath?lang=en

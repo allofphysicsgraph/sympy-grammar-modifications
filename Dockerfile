@@ -21,6 +21,9 @@ RUN apt-get update && \
 # file compression
                zip \
     && rm -rf /var/lib/apt/lists/*
+WORKDIR /usr/local/lib
+
+RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
 
 WORKDIR /opt/
 

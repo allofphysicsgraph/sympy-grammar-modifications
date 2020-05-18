@@ -31,10 +31,13 @@ RUN git clone https://github.com/sympy/sympy.git
 
 COPY sympy /opt/sympy/
 
+WORKDIR /opt/sympy
 RUN echo "alias python=python3" > /root/.bashrc
 
-RUN pip3 install antlr4-python3-runtime mpmath
+RUN python setup.py install
 
+RUN pip3 install antlr4-python3-runtime mpmath
+RUN pip3 install ipython
 # https://ctan.org/pkg/amsmath?lang=en
 RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
 #RUN mv amsmath.zip /opt/

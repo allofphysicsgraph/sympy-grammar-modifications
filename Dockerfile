@@ -28,6 +28,10 @@ RUN apt-get update && \
 #Java Runtime for Antlr4
                default-jre \
     && rm -rf /var/lib/apt/lists/*
+    
+RUN echo "alias python=python3" > /root/.bashrc
+#RUN python3 setup.py install
+    
 WORKDIR /usr/local/lib
 
 # msg says this is is needed to build the ANTLR grammar
@@ -38,23 +42,24 @@ WORKDIR /opt/
 # download the sympy source to /opt/
 RUN git clone https://github.com/sympy/sympy.git
 
-# layer the local ANTLR modifications on top of the sympy source in /opt/
-COPY sympy /opt/sympy/
-
-
-
-RUN echo "alias python=python3" > /root/.bashrc
-#RUN python3 setup.py install
-
+# BHP -- this probably isn't necessary since ANTLR is built from source?
 WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime mpmath
 
+# layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
-COPY sympy/parsing/latex/_antlr/antlr_build.sh /opt/sympy/sympy/parsing/latex
+#COPY sympy/parsing/latex/_antlr/antlr_build.sh /opt/sympy/sympy/parsing/latex
 
 WORKDIR /opt/sympy/sympy/parsing/latex
-RUN /bin/bash antlr_build.sh
+#RUN /bin/bash antlr_build.sh
+ENV CLASSPATH=".:/usr/local/lib/antlr-4.8-complete.jar:$CLASSPATH"
+RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
+
+RUN python3 rename.py
+
+WORKDIR /opt/sympy
+python3 setup.py install
 
 WORKDIR /opt/
 # msg uses ipython for the REPL inside the container

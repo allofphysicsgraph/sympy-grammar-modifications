@@ -1,7 +1,10 @@
 # docker build . -t 'sympy'
 # docker run -it --rm sympy:latest /bin/bash
+# docker run -it --rm -v `pwd`:/scratch sympy:latest /bin/bash
+# docker run -it --rm -v `pwd`:/scratch sympy:latest python3 generate_latex_files.py
 
 # https://github.com/phusion/baseimage-docker
+# https://hub.docker.com/r/phusion/baseimage/tags
 FROM phusion/baseimage:0.11
 
 RUN apt-get update && \
@@ -44,5 +47,4 @@ RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
 RUN unzip /opt/amsmath.zip
 
 COPY generate_latex_files.py /opt/
-
 

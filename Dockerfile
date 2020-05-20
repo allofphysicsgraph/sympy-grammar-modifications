@@ -44,9 +44,10 @@ RUN python3 setup.py install
 WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime mpmath
 
-# bhp does not understand the relevance of ipython
+# msg uses ipython for the REPL inside the container
 RUN pip3 install ipython
 
+# the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
 # https://ctan.org/pkg/amsmath?lang=en
 RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
 #RUN mv amsmath.zip /opt/

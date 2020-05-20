@@ -23,6 +23,8 @@ RUN apt-get update && \
                texlive \
 # file compression
                zip \
+#Java Runtime for Antlr4
+               default-jre \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /usr/local/lib
 
@@ -37,13 +39,22 @@ RUN git clone https://github.com/sympy/sympy.git
 # layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy /opt/sympy/
 
-WORKDIR /opt/sympy
+
+
 RUN echo "alias python=python3" > /root/.bashrc
-RUN python3 setup.py install
+#RUN python3 setup.py install
 
 WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime mpmath
 
+COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
+COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
+COPY sympy/parsing/latex/_antlr/antlr_build.sh /opt/sympy/sympy/parsing/latex
+
+WORKDIR /opt/sympy/sympy/parsing/latex
+RUN /bin/bash antlr_build.sh
+
+WORKDIR /opt/
 # msg uses ipython for the REPL inside the container
 RUN pip3 install ipython
 

@@ -3,6 +3,8 @@
 # docker run -it --rm -v `pwd`:/scratch sympy_antlr:latest /bin/bash
 # docker run -it --rm -v `pwd`:/scratch sympy_antlr:latest python3 generate_latex_files.py
 
+# as of 20200520, the build process takes 20 minutes on BHP's mac
+
 # https://github.com/phusion/baseimage-docker
 # https://hub.docker.com/r/phusion/baseimage/tags
 FROM phusion/baseimage:0.11

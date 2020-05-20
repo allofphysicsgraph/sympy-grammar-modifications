@@ -59,11 +59,13 @@ RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-lis
 RUN python3 rename.py
 
 WORKDIR /opt/sympy
-python3 setup.py install
+RUN python3 setup.py install
 
 WORKDIR /opt/
 # msg uses ipython for the REPL inside the container
 RUN pip3 install ipython
+
+RUN wget https://raw.githubusercontent.com/allofphysicsgraph/proofofconcept/gh-pages/v7_pickle_web_interface/flask/data.json
 
 # the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
 # https://ctan.org/pkg/amsmath?lang=en

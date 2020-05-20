@@ -26,7 +26,7 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /usr/local/lib
 
-# bhp does not understand the relevance of this
+# msg says this is is needed to build the ANTLR grammar
 RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
 
 WORKDIR /opt/

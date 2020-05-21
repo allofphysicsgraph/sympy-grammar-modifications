@@ -79,8 +79,15 @@ CARET: '^';
 COLON: ':';
 AMPERSAND: '&';
 
-BEGIN: '\\begin' ;
-ARRAY: '{array}' ;
+
+ARRAY: L_BRACE 'array' R_BRACE ;
+SUBEQUATIONS: L_BRACE 'subequations' R_BRACE;
+SPLIT: L_BRACE 'split' R_BRACE;
+EQUATION: L_BRACE 'equation' R_BRACE ;
+EQNARRAY: L_BRACE 'eqnarray' R_BRACE;
+
+BEGIN: '\\begin' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY) ;
+
 
 LEFT_BRACKET: '\\left[' ;
 LEFT: '\\left';

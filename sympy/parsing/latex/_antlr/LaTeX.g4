@@ -49,6 +49,8 @@ FUNC_CSC:  '\\csc';
 FUNC_SEC:  '\\sec';
 FUNC_COT:  '\\cot';
 
+
+
 FUNC_ARCSIN: '\\arcsin';
 FUNC_ARCCOS: '\\arccos';
 FUNC_ARCTAN: '\\arctan';
@@ -75,6 +77,15 @@ CMD_MATHIT: '\\mathit';
 UNDERSCORE: '_';
 CARET: '^';
 COLON: ':';
+AMPERSAND: '&';
+
+BEGIN: '\\begin' ;
+ARRAY: '{array}' ;
+
+LEFT_BRACKET: '\\left[' ;
+
+
+
 
 fragment WS_CHAR: [ \t\r\n];
 DIFFERENTIAL: 'd' WS_CHAR*? ([a-zA-Z] | '\\' [a-zA-Z]+);

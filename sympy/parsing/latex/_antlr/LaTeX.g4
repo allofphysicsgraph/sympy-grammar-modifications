@@ -83,7 +83,10 @@ BEGIN: '\\begin' ;
 ARRAY: '{array}' ;
 
 LEFT_BRACKET: '\\left[' ;
-
+LEFT: '\\left';
+RIGHT: '\\right';
+DOT: '.';
+RM: '\\rm';
 
 
 
@@ -104,8 +107,10 @@ GTE: '\\geq';
 
 BANG: '!';
 
-SYMBOL: '\\' ([a-zA-Z]+ | [ :;])|  [a-zA-Z]+'\\'[,:;];
-
+SYMBOL: '\\' ([a-zA-Z]+ | [ :;])
+	|  [a-zA-Z]+'\\'[,:;]
+	|  RM [ ]* [a-z]+ ;
+ 
 math: relation;
 
 relation:

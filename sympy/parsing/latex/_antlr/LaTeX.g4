@@ -20,6 +20,31 @@ options {
 
 WS: [ \t\r\n]+ -> skip;
 
+GREEK: '\\nu' 
+ 	|   '\\xi' 
+    |   '\\Xi'
+ 	|   '\\pi'
+    |   '\\Pi'
+ 	|   '\\rho'
+    |   '\\varrho'
+ 	|   '\\sigma'
+    |   '\\Sigma'
+    |   '\\theta'
+    |   '\\Theta'
+ 	|   '\\tau'
+ 	|   '\\upsilon'
+    |   '\\Upsilon'
+ 	|   '\\phi' 
+    |   '\\varphi' 
+    |   '\\Phi'
+ 	|   '\\chi'
+ 	|   '\\psi' 
+    |   '\\Psi'
+ 	|   '\\omega'
+    |   '\\Omega' ;
+
+
+
 ADD: '+';
 SUB: '-';
 MUL: '*';
@@ -31,6 +56,10 @@ L_BRACE: '{';
 R_BRACE: '}';
 L_BRACKET: '[';
 R_BRACKET: ']';
+
+
+
+
 
 BAR: '|';
 

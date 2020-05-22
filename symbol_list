@@ -1,6 +1,3 @@
-\!
-\"
-\(
 \*
 \,
 \-
@@ -9,9 +6,6 @@
 \:
 \;
 \=
-\[
-\]
-\|
 \above
 \abovedisplayskip
 \abovewithdelims
@@ -31,10 +25,6 @@
 \AmSfont
 \And
 \angle
-\arabic
-\arccos
-\arcsin
-\arctan
 \arg
 \array
 \arraycolsep
@@ -96,9 +86,6 @@
 \columnwidth
 \coprod
 \copy
-\cos
-\cosh
-\cot
 \coth
 \cr
 \crcr
@@ -296,7 +283,6 @@
 \leftmargini
 \leftmarginiminus
 \leftroot
-\leq
 \leqno
 \leqslant
 \let
@@ -309,7 +295,6 @@
 \lineskip
 \lineskiplimit
 \linewidth
-%%% list of external commands used by amsmath (not totally correct)
 \ll
 \llap
 \ln
@@ -463,9 +448,6 @@
 \overrightarrow
 \overset
 \overwithdelims
-\PackageError
-\PackageWarning
-\PackageWarningNoLine
 \par
 \parallel
 \parshape
@@ -473,10 +455,7 @@
 \PassOptionsToPackage
 \penalty
 \perp
-\phi
 \Phi
-\pi
-\Pi
 \pm
 \pmatrix
 \pmod
@@ -493,8 +472,6 @@
 \propto
 \protect
 \providecommand
-\psi
-\Psi
 \qopname
 \quad
 \raise
@@ -513,11 +490,9 @@
 \renewcommand
 \renewenvironment
 \repeat
-\RequirePackage
 \rfloor
 \rgroup
 \rhd
-\rho
 \rhook
 \right
 \rightarrow
@@ -593,8 +568,6 @@
 \the
 \theequation
 \theparentequation
-\theta
-\Theta
 \thetag
 \thickmuskip
 \thickmuskip0mu
@@ -681,9 +654,6 @@
 \wr
 \xdef
 \XeTeXcharclass
-\xi
-\Xi
 \xleaders
 \xleftarrow
 \xrightarrow
-\zeta

@@ -3,9 +3,7 @@
 \-
 \.
 \/
-\:
 \;
-\=
 \above
 \abovedisplayskip
 \abovewithdelims
@@ -181,7 +179,6 @@
 \fontencoding
 \fontfamily
 \forall
-\frac
 \fracwithdelims
 \futurelet
 \gamma
@@ -559,7 +556,6 @@
 \thinspace
 \tilde
 \Tilde
-\times
 \tmspace
 \toks
 \top

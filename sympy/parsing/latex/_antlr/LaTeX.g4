@@ -152,7 +152,8 @@ math: relation;
 relation:
     relation (EQUAL | LT | LTE | GT | GTE) relation
     | expr
-    | BEGIN relation END;
+    | BEGIN relation END
+    | LEFT relation RIGHT;
 
 equality:
     expr EQUAL expr;

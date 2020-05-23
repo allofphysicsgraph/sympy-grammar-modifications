@@ -107,6 +107,7 @@ UNDERSCORE: '_';
 CARET: '^';
 COLON: ':';
 AMPERSAND: '&';
+COMMA: ',';
 
 
 ARRAY: L_BRACE 'array' R_BRACE ;
@@ -115,8 +116,8 @@ SPLIT: L_BRACE 'split' R_BRACE;
 EQUATION: L_BRACE 'equation' R_BRACE ;
 EQNARRAY: L_BRACE 'eqnarray' R_BRACE;
 
-BEGIN: '\\begin' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY) ;
-
+BEGIN: '\\begin' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY);
+END: '\\end' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY);
 
 LEFT_BRACKET: '\\left[' ;
 LEFT: '\\left';
@@ -151,7 +152,8 @@ math: relation;
 
 relation:
     relation (EQUAL | LT | LTE | GT | GTE) relation
-    | expr;
+    | expr
+    | BEGIN relation END;
 
 equality:
     expr EQUAL expr;
@@ -219,7 +221,7 @@ comp_nofunc:
 
 group:
     L_PAREN expr R_PAREN
-    | L_BRACKET expr R_BRACKET
+    | L_BRACKET expr (COMMA expr)? R_BRACKET
     | L_BRACE expr R_BRACE;
 
 abs_group: BAR expr BAR;
@@ -271,6 +273,7 @@ args: (expr ',' args) | expr;
 limit_sub:
     UNDERSCORE L_BRACE
     (LETTER | SYMBOL)
+
     LIM_APPROACH_SYM
     expr (CARET L_BRACE (ADD | SUB) R_BRACE)?
     R_BRACE;
@@ -281,5 +284,5 @@ func_arg_noparens: mp_nofunc;
 subexpr: UNDERSCORE (atom | L_BRACE expr R_BRACE);
 supexpr: CARET (atom | L_BRACE expr R_BRACE);
 
-subeq: UNDERSCORE L_BRACE equality R_BRACE;
-supeq: UNDERSCORE L_BRACE equality R_BRACE;
+subeq: UNDERSCORE L_BRACE (expr|equality) R_BRACE;
+supeq: UNDERSCORE L_BRACE (expr|equality) R_BRACE;

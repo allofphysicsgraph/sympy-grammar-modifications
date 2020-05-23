@@ -8,7 +8,7 @@ import sys
 def serializedATN():
     with StringIO() as buf:
         buf.write(u"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3")
-        buf.write(u"I\u01b4\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t")
+        buf.write(u"H\u01b4\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t")
         buf.write(u"\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r")
         buf.write(u"\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4")
         buf.write(u"\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30")
@@ -53,8 +53,8 @@ def serializedATN():
         buf.write(u"\"\3\"\3\"\3\"\3\"\5\"\u01a2\n\"\3#\3#\3#\3#\5#\u01a8")
         buf.write(u"\n#\3#\3#\3$\3$\3$\3$\5$\u01b0\n$\3$\3$\3$\2\b\4\n\f")
         buf.write(u"\16 \"%\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(")
-        buf.write(u"*,.\60\62\64\668:<>@BDF\2\b\3\2CG\3\2\5\6\5\2\7\b*,\61")
-        buf.write(u"\61\4\2AAII\3\2\25(\3\2\23\24\2\u01d0\2H\3\2\2\2\4P\3")
+        buf.write(u"*,.\60\62\64\668:<>@BDF\2\b\3\2BF\3\2\5\6\5\2\7\b*,\61")
+        buf.write(u"\61\4\2@@HH\3\2\25(\3\2\23\24\2\u01d0\2H\3\2\2\2\4P\3")
         buf.write(u"\2\2\2\6Z\3\2\2\2\b^\3\2\2\2\n`\3\2\2\2\fk\3\2\2\2\16")
         buf.write(u"v\3\2\2\2\20\u0088\3\2\2\2\22\u0093\3\2\2\2\24\u0095")
         buf.write(u"\3\2\2\2\26\u009c\3\2\2\2\30\u00a5\3\2\2\2\32\u00a7\3")
@@ -68,7 +68,7 @@ def serializedATN():
         buf.write(u"\b\3\1\2KQ\5\b\5\2LM\79\2\2MN\5\4\3\2NO\7:\2\2OQ\3\2")
         buf.write(u"\2\2PJ\3\2\2\2PL\3\2\2\2QW\3\2\2\2RS\f\5\2\2ST\t\2\2")
         buf.write(u"\2TV\5\4\3\6UR\3\2\2\2VY\3\2\2\2WU\3\2\2\2WX\3\2\2\2")
-        buf.write(u"X\5\3\2\2\2YW\3\2\2\2Z[\5\b\5\2[\\\7C\2\2\\]\5\b\5\2")
+        buf.write(u"X\5\3\2\2\2YW\3\2\2\2Z[\5\b\5\2[\\\7B\2\2\\]\5\b\5\2")
         buf.write(u"]\7\3\2\2\2^_\5\n\6\2_\t\3\2\2\2`a\b\6\1\2ab\5\f\7\2")
         buf.write(u"bh\3\2\2\2cd\f\4\2\2de\t\3\2\2eg\5\n\6\5fc\3\2\2\2gj")
         buf.write(u"\3\2\2\2hf\3\2\2\2hi\3\2\2\2i\13\3\2\2\2jh\3\2\2\2kl")
@@ -92,7 +92,7 @@ def serializedATN():
         buf.write(u"\"\22\2\u009d\u009f\5\30\r\2\u009e\u009d\3\2\2\2\u009f")
         buf.write(u"\u00a2\3\2\2\2\u00a0\u009e\3\2\2\2\u00a0\u00a1\3\2\2")
         buf.write(u"\2\u00a1\27\3\2\2\2\u00a2\u00a0\3\2\2\2\u00a3\u00a6\7")
-        buf.write(u"H\2\2\u00a4\u00a6\5\32\16\2\u00a5\u00a3\3\2\2\2\u00a5")
+        buf.write(u"G\2\2\u00a4\u00a6\5\32\16\2\u00a5\u00a3\3\2\2\2\u00a5")
         buf.write(u"\u00a4\3\2\2\2\u00a6\31\3\2\2\2\u00a7\u00ad\7\17\2\2")
         buf.write(u"\u00a8\u00ae\5\36\20\2\u00a9\u00ae\5\34\17\2\u00aa\u00ab")
         buf.write(u"\5\36\20\2\u00ab\u00ac\5\34\17\2\u00ac\u00ae\3\2\2\2")
@@ -139,12 +139,12 @@ def serializedATN():
         buf.write(u")\3\2\2\2\u0106\u0107\7\17\2\2\u0107\u0108\5\b\5\2\u0108")
         buf.write(u"\u0109\7\17\2\2\u0109+\3\2\2\2\u010a\u010c\t\5\2\2\u010b")
         buf.write(u"\u010d\5@!\2\u010c\u010b\3\2\2\2\u010c\u010d\3\2\2\2")
-        buf.write(u"\u010d\u0112\3\2\2\2\u010e\u0112\7B\2\2\u010f\u0112\7")
-        buf.write(u"@\2\2\u0110\u0112\5.\30\2\u0111\u010a\3\2\2\2\u0111\u010e")
+        buf.write(u"\u010d\u0112\3\2\2\2\u010e\u0112\7A\2\2\u010f\u0112\7")
+        buf.write(u"?\2\2\u0110\u0112\5.\30\2\u0111\u010a\3\2\2\2\u0111\u010e")
         buf.write(u"\3\2\2\2\u0111\u010f\3\2\2\2\u0111\u0110\3\2\2\2\u0112")
         buf.write(u"-\3\2\2\2\u0113\u0114\7.\2\2\u0114\u0115\7\13\2\2\u0115")
         buf.write(u"\u0116\5\60\31\2\u0116\u0117\7\f\2\2\u0117/\3\2\2\2\u0118")
-        buf.write(u"\u011a\7A\2\2\u0119\u0118\3\2\2\2\u011a\u011d\3\2\2\2")
+        buf.write(u"\u011a\7@\2\2\u0119\u0118\3\2\2\2\u011a\u011d\3\2\2\2")
         buf.write(u"\u011b\u0119\3\2\2\2\u011b\u011c\3\2\2\2\u011c\61\3\2")
         buf.write(u"\2\2\u011d\u011b\3\2\2\2\u011e\u011f\7-\2\2\u011f\u0120")
         buf.write(u"\7\13\2\2\u0120\u0121\5\b\5\2\u0121\u0122\7\f\2\2\u0122")
@@ -171,7 +171,7 @@ def serializedATN():
         buf.write(u"\3\2\2\2\u0150\u014d\3\2\2\2\u0150\u0151\3\2\2\2\u0151")
         buf.write(u"\u0158\3\2\2\2\u0152\u0154\5\n\6\2\u0153\u0152\3\2\2")
         buf.write(u"\2\u0153\u0154\3\2\2\2\u0154\u0155\3\2\2\2\u0155\u0159")
-        buf.write(u"\7@\2\2\u0156\u0159\5\62\32\2\u0157\u0159\5\n\6\2\u0158")
+        buf.write(u"\7?\2\2\u0156\u0159\5\62\32\2\u0157\u0159\5\n\6\2\u0158")
         buf.write(u"\u0153\3\2\2\2\u0158\u0156\3\2\2\2\u0158\u0157\3\2\2")
         buf.write(u"\2\u0159\u0175\3\2\2\2\u015a\u015f\7)\2\2\u015b\u015c")
         buf.write(u"\7\r\2\2\u015c\u015d\5\b\5\2\u015d\u015e\7\16\2\2\u015e")
@@ -241,9 +241,9 @@ class LaTeXParser ( Parser ):
                      u"'\\frac'", u"'\\mathit'", u"'_'", u"'^'", u"':'", 
                      u"'&'", u"','", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                     u"'\\left['", u"'\\left'", u"'\\right'", u"'.'", u"'\\rm'", 
-                     u"<INVALID>", u"<INVALID>", u"<INVALID>", u"'='", u"'<'", 
-                     u"'\\leq'", u"'>'", u"'\\geq'", u"'!'" ]
+                     u"<INVALID>", u"<INVALID>", u"'.'", u"'\\rm'", u"<INVALID>", 
+                     u"<INVALID>", u"<INVALID>", u"'='", u"'<'", u"'\\leq'", 
+                     u"'>'", u"'\\geq'", u"'!'" ]
 
     symbolicNames = [ u"<INVALID>", u"WS", u"GREEK", u"ADD", u"SUB", u"MUL", 
                       u"DIV", u"L_PAREN", u"R_PAREN", u"L_BRACE", u"R_BRACE", 
@@ -258,9 +258,9 @@ class LaTeXParser ( Parser ):
                       u"CMD_MATHIT", u"UNDERSCORE", u"CARET", u"COLON", 
                       u"AMPERSAND", u"COMMA", u"ARRAY", u"SUBEQUATIONS", 
                       u"SPLIT", u"EQUATION", u"EQNARRAY", u"BEGIN", u"END", 
-                      u"LEFT_BRACKET", u"LEFT", u"RIGHT", u"DOT", u"RM", 
-                      u"DIFFERENTIAL", u"LETTER", u"NUMBER", u"EQUAL", u"LT", 
-                      u"LTE", u"GT", u"GTE", u"BANG", u"SYMBOL" ]
+                      u"LEFT", u"RIGHT", u"DOT", u"RM", u"DIFFERENTIAL", 
+                      u"LETTER", u"NUMBER", u"EQUAL", u"LT", u"LTE", u"GT", 
+                      u"GTE", u"BANG", u"SYMBOL" ]
 
     RULE_math = 0
     RULE_relation = 1
@@ -364,21 +364,20 @@ class LaTeXParser ( Parser ):
     EQNARRAY=54
     BEGIN=55
     END=56
-    LEFT_BRACKET=57
-    LEFT=58
-    RIGHT=59
-    DOT=60
-    RM=61
-    DIFFERENTIAL=62
-    LETTER=63
-    NUMBER=64
-    EQUAL=65
-    LT=66
-    LTE=67
-    GT=68
-    GTE=69
-    BANG=70
-    SYMBOL=71
+    LEFT=57
+    RIGHT=58
+    DOT=59
+    RM=60
+    DIFFERENTIAL=61
+    LETTER=62
+    NUMBER=63
+    EQUAL=64
+    LT=65
+    LTE=66
+    GT=67
+    GTE=68
+    BANG=69
+    SYMBOL=70
 
     def __init__(self, input, output=sys.stdout):
         super(LaTeXParser, self).__init__(input, output=output)
@@ -508,7 +507,7 @@ class LaTeXParser ( Parser ):
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
                     self.state = 81
                     _la = self._input.LA(1)
-                    if not(((((_la - 65)) & ~0x3f) == 0 and ((1 << (_la - 65)) & ((1 << (LaTeXParser.EQUAL - 65)) | (1 << (LaTeXParser.LT - 65)) | (1 << (LaTeXParser.LTE - 65)) | (1 << (LaTeXParser.GT - 65)) | (1 << (LaTeXParser.GTE - 65)))) != 0)):
+                    if not(((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (LaTeXParser.EQUAL - 64)) | (1 << (LaTeXParser.LT - 64)) | (1 << (LaTeXParser.LTE - 64)) | (1 << (LaTeXParser.GT - 64)) | (1 << (LaTeXParser.GTE - 64)))) != 0)):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)

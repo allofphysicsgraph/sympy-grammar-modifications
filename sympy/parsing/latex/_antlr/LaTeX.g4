@@ -119,9 +119,8 @@ EQNARRAY: L_BRACE 'eqnarray' R_BRACE;
 BEGIN: '\\begin' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY);
 END: '\\end' (ARRAY|SUBEQUATIONS|SPLIT|EQUATION|EQNARRAY);
 
-LEFT_BRACKET: '\\left[' ;
-LEFT: '\\left';
-RIGHT: '\\right';
+LEFT: '\\left' (L_BRACE|L_BRACKET)?;
+RIGHT: '\\right' (R_BRACE|R_BRACKET)?;
 DOT: '.';
 RM: '\\rm';
 

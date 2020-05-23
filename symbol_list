@@ -39,7 +39,6 @@
 \barwedge
 \baselineskip
 \baselineskip6
-\begin
 \begingroup
 \belowdisplayskip
 \beta
@@ -72,7 +71,6 @@
 \cap
 \Cap
 \cases
-\cdot
 \cdotp
 \cdots
 \cfrac
@@ -80,7 +78,6 @@
 \chardef
 \check
 \Check
-\chi
 \cleaders
 \colon
 \columnwidth
@@ -89,7 +86,6 @@
 \coth
 \cr
 \crcr
-\csc
 \csname
 \csnamen
 \csnamethe
@@ -289,7 +285,6 @@
 \lg
 \lhd
 \lhook
-\lim
 \liminf
 \limits
 \lineskip
@@ -301,7 +296,6 @@
 \lneq
 \lneqq
 \lnsim
-\log
 \long
 \longleftarrow
 \Longleftarrow
@@ -432,8 +426,6 @@
 \of
 \oint
 \ointop
-\omega
-\Omega
 \omit
 \openup
 \operatorfont
@@ -455,7 +447,6 @@
 \PassOptionsToPackage
 \penalty
 \perp
-\Phi
 \pm
 \pmatrix
 \pmod
@@ -510,18 +501,13 @@
 \scriptscriptfont
 \scriptscriptstyle
 \scriptstyle
-\sec
 \selectfont
 \setbox
 \setcounter
 \shoveleft
 \shoveright
 \sideset
-\sigma
-\Sigma
 \sim
-\sin
-\sinh
 \skewchar
 \smallsetminus
 \smash
@@ -555,9 +541,6 @@
 \tabskip
 \tag
 \taghere
-\tan
-\tanh
-\tau
 \tbinom
 \text
 \textellipsis
@@ -606,8 +589,6 @@
 \uplus
 \uppercase
 \uproot
-\upsilon
-\Upsilon
 \usefont
 \value
 \varDelta
@@ -619,13 +600,11 @@
 \varlimsup
 \varnothing
 \varOmega
-\varphi
 \varPhi
 \varpi
 \varPi
 \varprojlim
 \varPsi
-\varrho
 \varsigma
 \varSigma
 \vartheta

@@ -21,9 +21,7 @@ options {
 WS: [ \t\r\n]+ -> skip;
 
 
-TOBEADDED:
-    '\\aleph'
-    |   '\\angle'
+TOBEADDED:  '\\angle'
     |   '\\approx'
     |   '\\arg'
     |   '\\ast'
@@ -32,8 +30,6 @@ TOBEADDED:
     |   '\\ddots'
     |   '\\deg'
     |   '\\det'
-    |   '\\digamma'
-    |   '\\Digamma'
     |   '\\dim'
     |   '\\div'
     |   '\\doteq'
@@ -49,10 +45,6 @@ TOBEADDED:
     |   '\\in'
     |   '\\inf'
     |   '\\infty'
-    |   '\\iota'
-    |   '\\kappa'
-    |   '\\lambda'
-    |   '\\Lambda'
     |   '\\langle'
     |   '\\lceil'
     |   '\\ldots'
@@ -101,7 +93,8 @@ TOBEADDED:
     |   '\\vdots';
 
 
-GREEK: '\\alpha'
+GREEK: '\\aleph'
+    |   '\\alpha'
     |   '\\beta'
     |   '\\gamma'
     |   '\\Gamma'
@@ -129,7 +122,13 @@ GREEK: '\\alpha'
     |   '\\Psi'
  	|   '\\omega'
     |   '\\Omega' 
-    |   '\\zeta';
+    |   '\\zeta'
+    |   '\\lambda'
+    |   '\\Lambda'
+    |   '\\iota'
+    |   '\\kappa'
+    |   '\\digamma'
+    |   '\\Digamma';
 
 
 

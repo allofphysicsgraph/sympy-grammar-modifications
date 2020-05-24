@@ -22,7 +22,6 @@ WS: [ \t\r\n]+ -> skip;
 
 
 TOBEADDED:  '\\angle'
-    |   '\\approx'
     |   '\\arg'
     |   '\\ast'
     |   '\\asymp'
@@ -31,7 +30,6 @@ TOBEADDED:  '\\angle'
     |   '\\deg'
     |   '\\det'
     |   '\\dim'
-    |   '\\doteq'
     |   '\\downarrow'
     |   '\\Downarrow'
     |   '\\epsilon'
@@ -62,8 +60,6 @@ TOBEADDED:  '\\angle'
     |   '\\rangle'
     |   '\\rceil'
     |   '\\rfloor'
-    |   '\\sim'
-    |   '\\simeq'
     |   '\\sqcap'
     |   '\\sqcup'
     |   '\\sqsubset'
@@ -71,12 +67,9 @@ TOBEADDED:  '\\angle'
     |   '\\sqsupset'
     |   '\\sqsupseteq'
     |   '\\star'
-    |   '\\subset'
-    |   '\\subseteq'
     |   '\\succ'
     |   '\\succeq'
     |   '\\sup'
-    |   '\\supset'
     |   '\\therefore'
     |   '\\vdash'
     |   '\\vdots';
@@ -217,10 +210,50 @@ NUMBER:
     | DIGIT* (',' DIGIT DIGIT DIGIT)* '.' DIGIT+;
 
 EQUAL: '=';
+DOTEQ: '\\doteq';
+EQUIV: '\\equiv';
+APPROX: '\\approx';
+CONG: '\\cong';
+SIMEQ: '\\simeq';
+SIM: '\\sim';
+PROPTO: '\\propto';
+NEQ: '\\neq'|'\\ne';
 LT: '<';
-LTE: '\\leq';
+NLESS: '\\nless';
+LTE: '\\leq'|'\\leqslant';
+PROPERSUBSET: '\\subset'|'\\supset' ;
+NOTPROPERSUBSET: '\\not\\subset'|'\\not\\supset';
+SUBSET: '\\subseteq'|'\\supseteq';
+NOTSUBSET: '\\nsubseteq'|'\\nsupseteq';
 GT: '>';
-GTE: '\\geq';
+NGTR: '\\ngtr';
+GTE: '\\geq'|'\\geqslant';
+NGEQ: '\\ngeq'|'\\ngeqslant';
+
+RELATION_OPERATORS:
+    EQUAL 
+    |   DOTEQ
+    |   EQUIV
+    |   APPROX
+    |   CONG
+    |   SIMEQ
+    |   SIM
+    |   PROPTO
+    |   NEQ
+    |   LT
+    |   NLESS
+    |   LTE
+    |   PROPERSUBSET
+    |   NOTPROPERSUBSET
+    |   SUBSET
+    |   NOTSUBSET
+    |   GT
+    |   NGTR
+    |   GTE
+    |   NGEQ;
+
+
+
 
 BANG: '!';
 
@@ -232,7 +265,7 @@ SYMBOL: '\\' ([a-zA-Z]+ | [ :;])
 math: relation;
 
 relation:
-    relation (EQUAL | LT | LTE | GT | GTE) relation
+    relation RELATION_OPERATORS relation
     | expr
     | BEGIN relation END
     | LEFT (DOT|relation) RIGHT;

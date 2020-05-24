@@ -335,7 +335,7 @@ func:
     (subexpr? supexpr? | supexpr? subexpr?)
     (L_PAREN func_arg R_PAREN | func_arg_noparens)
 
-    | (LETTER | SYMBOL) subexpr? // e.g. f(x)
+    | (LETTER | SYMBOL| GREEK) subexpr? // e.g. f(x)
     L_PAREN args R_PAREN
 
     | FUNC_INT UNDERSCORE?

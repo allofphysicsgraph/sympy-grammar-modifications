@@ -85,7 +85,7 @@ TOBEADDED:  '\\angle'
     |   '\\vdots';
 
 
-GREEK: '\\aleph'
+GREEK:  '\\aleph'
     |   '\\alpha'
     |   '\\beta'
     |   '\\gamma'

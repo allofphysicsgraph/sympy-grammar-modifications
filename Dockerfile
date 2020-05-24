@@ -49,7 +49,8 @@ RUN pip3 install antlr4-python3-runtime mpmath
 # layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
-#COPY sympy/parsing/latex/_antlr/antlr_build.sh /opt/sympy/sympy/parsing/latex
+COPY /sympy/parsing/latex/_antlr/tests /opt/sympy/sympy/parsing/
+
 
 WORKDIR /opt/sympy/sympy/parsing/latex
 #RUN /bin/bash antlr_build.sh

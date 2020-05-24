@@ -32,14 +32,12 @@ TOBEADDED:  '\\angle'
     |   '\\dim'
     |   '\\downarrow'
     |   '\\Downarrow'
-    |   '\\epsilon'
     |   '\\exists'
     |   '\\forall'
     |   '\\gcd'
     |   '\\iff'
     |   '\\Im'
     |   '\\implies'
-    |   '\\in'
     |   '\\inf'
     |   '\\infty'
     |   '\\langle'
@@ -53,7 +51,6 @@ TOBEADDED:  '\\angle'
     |   '\\lnot'
     |   '\\nabla'
     |   '\\partial'
-    |   '\\pm'
     |   '\\prec'
     |   '\\preceq'
     |   '\\prime'
@@ -75,47 +72,65 @@ TOBEADDED:  '\\angle'
     |   '\\vdots';
 
 
-GREEK:  '\\aleph'
-    |   '\\alpha'
-    |   '\\beta'
-    |   '\\gamma'
-    |   '\\Gamma'
-    |   '\\delta'
-    |   '\\Delta'
-    |   '\\nu' 
- 	|   '\\xi' 
-    |   '\\Xi'
- 	|   '\\pi'
-    |   '\\Pi'
- 	|   '\\rho'
-    |   '\\varrho'
- 	|   '\\sigma'
-    |   '\\Sigma'
-    |   '\\theta'
-    |   '\\Theta'
- 	|   '\\tau'
- 	|   '\\upsilon'
-    |   '\\Upsilon'
- 	|   '\\phi' 
-    |   '\\varphi' 
-    |   '\\Phi'
- 	|   '\\chi'
- 	|   '\\psi' 
-    |   '\\Psi'
- 	|   '\\omega'
-    |   '\\Omega' 
-    |   '\\zeta'
-    |   '\\lambda'
-    |   '\\Lambda'
-    |   '\\iota'
-    |   '\\kappa'
-    |   '\\digamma'
-    |   '\\Digamma'
-    |   '\\varepsilon'
-    |   '\\vargamma'
-    |   '\\varpi'
-    |   '\\varsigma'
-    |   '\\vartheta';
+
+GREEK:  '\\Alpha'
+    |	 '\\Beta'
+    |	 '\\Chi'
+    |	 '\\Delta'
+    |	 '\\Digamma'
+    |	 '\\Epsilon'
+    |	 '\\Eta'
+    |	 '\\Gamma'
+    |	 '\\Iota'
+    |	 '\\Kappa'
+    |	 '\\Lambda'
+    |	 '\\Mu'
+    |	 '\\Nu'
+    |	 '\\Omega'
+    |	 '\\Omicron'
+    |	 '\\Phi'
+    |	 '\\Pi'
+    |	 '\\Psi'
+    |	 '\\Rho'
+    |	 '\\Sigma'
+    |	 '\\Tau'
+    |	 '\\Theta'
+    |	 '\\Upsilon'
+    |	 '\\Xi'
+    |	 '\\Zeta'
+    |	 '\\alpha'
+    |	 '\\beta'
+    |	 '\\chi'
+    |	 '\\delta'
+    |	 '\\digamma'
+    |	 '\\epsilon'
+    |	 '\\eta'
+    |	 '\\gamma'
+    |	 '\\iota'
+    |	 '\\kappa'
+    |	 '\\lambda'
+    |	 '\\mu'
+    |	 '\\nu'
+    |	 '\\omega'
+    |	 '\\omicron'
+    |	 '\\phi'
+    |	 '\\pi'
+    |	 '\\psi'
+    |	 '\\rho'
+    |	 '\\sigma'
+    |	 '\\tau'
+    |	 '\\theta'
+    |	 '\\upsilon'
+    |	 '\\varepsilon'
+    |	 '\\vargamma'
+    |	 '\\varkappa'
+    |	 '\\varphi'
+    |	 '\\varpi'
+    |	 '\\varrho'
+    |	 '\\varsigma'
+    |	 '\\vartheta'
+    |	 '\\xi'
+    |	 '\\zeta';
 
 
 
@@ -131,9 +146,6 @@ L_BRACE: '{';
 R_BRACE: '}';
 L_BRACKET: '[';
 R_BRACKET: ']';
-
-
-
 
 
 BAR: '|';
@@ -253,6 +265,25 @@ RELATION_OPERATORS:
     |   NGEQ;
 
 
+
+
+
+PLUS_OR_MINUS: '\\pm';
+MULTISET_ADDITION: '\\uplus';
+
+
+EMPTY_SET:	'\\varnothing';
+SET_OF_NATURAL_NUMBERS:	'\\N';
+SET_OF_INTEGERS:	'\\Z';
+SET_OF_RATIONAL_NUMBERS:	'\\Q';
+SET_OF_ALGEBRAIC_NUMBERS:	'\\mathbb';
+SET_OF_REAL_NUMBERS:	'\\R';
+SET_OF_COMPLEX_NUMBERS:	'\\C';
+IS_MEMBER_OF:	'\\in';
+IS_NOT_MEMBER_OF:	'\\notin';
+SET_UNION:	'\\cup';
+SET_INTERSECTION:	'\\cap';
+SET_DIFFERENCE:	'\\setminus';
 
 
 BANG: '!';

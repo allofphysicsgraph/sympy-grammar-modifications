@@ -207,7 +207,6 @@ DOT: '.';
 RM: '\\rm';
 
 
-
 fragment WS_CHAR: [ \t\r\n];
 DIFFERENTIAL: 'd' WS_CHAR*? ([a-zA-Z] | '\\' [a-zA-Z]+);
 
@@ -236,7 +235,7 @@ relation:
     relation (EQUAL | LT | LTE | GT | GTE) relation
     | expr
     | BEGIN relation END
-    | LEFT relation RIGHT;
+    | LEFT (DOT|relation) RIGHT;
 
 equality:
     expr EQUAL expr;
@@ -278,7 +277,7 @@ eval_at_sub:
 
 eval_at_sup:
     CARET L_BRACE
-    (expr | equality)
+    (expr | equality) 
     R_BRACE;
 
 exp:

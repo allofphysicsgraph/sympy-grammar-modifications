@@ -12,6 +12,15 @@
   `sympy/parsing/latex/_antlr/*.py`.
 */
 
+
+/*
+References:
+    https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+
+ */
+
+
+
 grammar LaTeX;
 
 options {
@@ -38,19 +47,13 @@ TOBEADDED:  '\\angle'
     |   '\\implies'
     |   '\\inf'
     |   '\\infty'
-    |   '\\langle'
-    |   '\\lceil'
     |   '\\ldots'
-    |   '\\lfloor'
     |   '\\lnot'
     |   '\\nabla'
     |   '\\partial'
     |   '\\prec'
     |   '\\preceq'
     |   '\\prime'
-    |   '\\rangle'
-    |   '\\rceil'
-    |   '\\rfloor'
     |   '\\sqcap'
     |   '\\sqcup'
     |   '\\sqsubset'
@@ -139,7 +142,6 @@ UPDOWNARROW:	 '\\updownarrow'|'\\Updownarrow';
 
 
 
-
 ADD: '+';
 SUB: '-';
 MUL: '*';
@@ -151,6 +153,38 @@ L_BRACE: '{';
 R_BRACE: '}';
 L_BRACKET: '[';
 R_BRACKET: ']';
+COLON: ':';
+BACKSLASH:	 '\\backslash';
+L_ANGLE:	 '\\langle';
+R_ANGLE:	 '\\rangle';
+L_CEIL:	 '\\lceil';
+R_CEIL:	 '\\rceil';
+L_FLOOR:	 '\\lfloor';
+R_FLOOR:	 '\\rfloor';
+UL_CORNER:	 '\\ulcorner';
+UR_CORNER:	 '\\urcorner';
+LL_CORNER:	 '\\llcorner';
+LR_CORNER:	 '\\lrcorner';
+
+
+DELIMITERS: L_PAREN
+    |   R_PAREN
+    |   L_BRACE
+    |   R_BRACE
+    |   L_BRACKET
+    |   R_BRACKET
+    |   COLON
+    |   BACKSLASH
+    |   L_ANGLE
+    |   R_ANGLE
+    |   L_CEIL
+    |   R_CEIL
+    |   L_FLOOR
+    |   R_FLOOR
+    |   UL_CORNER
+    |   UR_CORNER
+    |   LL_CORNER
+    |   LR_CORNER;
 
 
 BAR: '|';
@@ -170,7 +204,6 @@ FUNC_TAN:  '\\tan';
 FUNC_CSC:  '\\csc';
 FUNC_SEC:  '\\sec';
 FUNC_COT:  '\\cot';
-
 
 
 FUNC_ARCSIN: '\\arcsin';
@@ -198,7 +231,7 @@ CMD_MATHIT: '\\mathit';
 
 UNDERSCORE: '_';
 CARET: '^';
-COLON: ':';
+
 AMPERSAND: '&';
 COMMA: ',';
 
@@ -269,8 +302,6 @@ RELATION_OPERATORS:
     |   NGTR
     |   GTE
     |   NGEQ;
-
-
 
 
 

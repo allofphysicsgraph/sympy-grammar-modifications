@@ -81,14 +81,6 @@ TOBEADDED:  '\\angle'
     |   '\\supset'
     |   '\\therefore'
     |   '\\times'
-    |   '\\varepsilon'
-    |   '\\vargamma'
-    |   '\\varnothing'
-    |   '\\varphi'
-    |   '\\varpi'
-    |   '\\varrho'
-    |   '\\varsigma'
-    |   '\\vartheta'
     |   '\\vdash'
     |   '\\vdots';
 
@@ -128,7 +120,15 @@ GREEK: '\\aleph'
     |   '\\iota'
     |   '\\kappa'
     |   '\\digamma'
-    |   '\\Digamma';
+    |   '\\Digamma'
+    |   '\\varepsilon'
+    |   '\\vargamma'
+    |   '\\varphi'
+    |   '\\varpi'
+    |   '\\varrho'
+    |   '\\varsigma'
+    |   '\\vartheta';
+
 
 
 

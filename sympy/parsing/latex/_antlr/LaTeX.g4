@@ -123,9 +123,7 @@ GREEK:  '\\aleph'
     |   '\\Digamma'
     |   '\\varepsilon'
     |   '\\vargamma'
-    |   '\\varphi'
     |   '\\varpi'
-    |   '\\varrho'
     |   '\\varsigma'
     |   '\\vartheta';
 

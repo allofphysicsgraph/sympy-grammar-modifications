@@ -227,7 +227,8 @@ BANG: '!';
 
 SYMBOL: '\\' ([a-zA-Z]+ | [ :;])
 	|  [a-zA-Z]+'\\'[,:;]
-	|  RM [ ]* [a-z]+ ;
+	|  RM [ ]* [a-z]+
+    | GREEK;
  
 math: relation;
 

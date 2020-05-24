@@ -24,7 +24,7 @@ References:
 grammar LaTeX;
 
 options {
-    language=Python2;
+    language=Python3;
 }
 
 WS: [ \t\r\n]+ -> skip;
@@ -428,17 +428,19 @@ comp:
     | abs_group
     | func
     | atom
-    | frac;
+    | frac
+    | binom;
 
 comp_nofunc:
     group
     | abs_group
     | atom
-    | frac;
+    | frac
+    | binom;
 
 group:
     L_PAREN expr R_PAREN
-    | L_BRACKET expr (COMMA expr)? R_BRACKET
+    | L_BRACKET expr R_BRACKET
     | L_BRACE expr R_BRACE;
 
 abs_group: BAR expr BAR;
@@ -453,6 +455,13 @@ frac:
     upper=expr
     R_BRACE L_BRACE
     lower=expr
+    R_BRACE;
+
+binom:
+    (CMD_BINOM | CMD_DBINOM | CMD_TBINOM) L_BRACE
+    n=expr
+    R_BRACE L_BRACE
+    k=expr
     R_BRACE;
 
 func_normal:

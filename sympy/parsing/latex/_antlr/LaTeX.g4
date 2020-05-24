@@ -30,8 +30,6 @@ TOBEADDED:  '\\angle'
     |   '\\deg'
     |   '\\det'
     |   '\\dim'
-    |   '\\downarrow'
-    |   '\\Downarrow'
     |   '\\exists'
     |   '\\forall'
     |   '\\gcd'
@@ -43,10 +41,6 @@ TOBEADDED:  '\\angle'
     |   '\\langle'
     |   '\\lceil'
     |   '\\ldots'
-    |   '\\leftarrow'
-    |   '\\Leftarrow'
-    |   '\\leftrightarrow'
-    |   '\\Leftrightarrow'
     |   '\\lfloor'
     |   '\\lnot'
     |   '\\nabla'
@@ -133,6 +127,17 @@ GREEK:  '\\Alpha'
     |	 '\\zeta';
 
 
+RIGHTARROW:	 '\\rightarrow'|'\\to'|'\\Rightarrow';
+LONGRIGHTARROW:	 '\\longrightarrow' |'\\Longrightarrow';
+MAPSTO:	 '\\mapsto';
+LONGMAPSTO:	 '\\longmapsto';
+LEFTARROW:	 '\\leftarrow'|'\\gets'|'\\Leftarrow';
+LONGLEFTARROW:	 '\\longleftarrow'|'\\Longleftarrow';
+UPARROW:	 '\\uparrow'|'\\Uparrow';
+DOWNARROW:	 '\\downarrow'|'\\Downarrow';
+UPDOWNARROW:	 '\\updownarrow'|'\\Updownarrow';
+
+
 
 
 ADD: '+';
@@ -151,7 +156,8 @@ R_BRACKET: ']';
 BAR: '|';
 
 FUNC_LIM:  '\\lim';
-LIM_APPROACH_SYM: '\\to' | '\\rightarrow' | '\\Rightarrow' | '\\longrightarrow' | '\\Longrightarrow';
+//LIM_APPROACH_SYM: '\\to' | '\\rightarrow' | '\\Rightarrow' | '\\longrightarrow' | '\\Longrightarrow';
+LIM_APPROACH_SYM:   RIGHTARROW    |   LONGRIGHTARROW;
 FUNC_INT:  '\\int';
 FUNC_SUM:  '\\sum';
 FUNC_PROD: '\\prod';

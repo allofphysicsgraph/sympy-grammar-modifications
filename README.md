@@ -7,3 +7,7 @@ All of the Latex is valid, as demonstrated that each .tex file compiles to .dvi 
 
 The goal is to modify the Sympy ANTLR grammar such that no errors occur.
 
+
+
+Resources for Latex symbols:
+ * https://www.bu.edu/math/files/2013/08/LongTeX1.pdf

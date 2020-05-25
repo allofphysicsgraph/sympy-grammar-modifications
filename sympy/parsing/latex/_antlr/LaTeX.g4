@@ -227,7 +227,7 @@ func:
     | (LETTER | SYMBOL ) subexpr? // e.g. f(x)
     L_PAREN args R_PAREN
 
-    | FUNC_INT UNDERSCORE?
+    | FUNC_INT 
     (subexpr supexpr | supexpr subexpr)?
     (additive? DIFFERENTIAL | frac | additive)
 

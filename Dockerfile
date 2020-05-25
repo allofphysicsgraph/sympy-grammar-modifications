@@ -31,6 +31,8 @@ RUN apt-get update && \
     
 RUN echo "alias python=python3" > /root/.bashrc
 #RUN python3 setup.py install
+
+RUN ln -s /usr/bin/python3.6 /usr/bin/python
     
 WORKDIR /usr/local/lib
 

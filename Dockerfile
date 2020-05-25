@@ -57,9 +57,11 @@ COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
 WORKDIR /opt/sympy/sympy/parsing/latex
 #RUN /bin/bash antlr_build.sh
-ENV CLASSPATH=".:/usr/local/lib/antlr-4.8-complete.jar:$CLASSPATH"
-RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
+#ENV CLASSPATH=".:/usr/local/lib/antlr-4.8-complete.jar:$CLASSPATH"
+#RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
 
+ENV CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
+RUN java -jar /usr/local/lib/antlr-4.7.1-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
 RUN python3 rename.py
 
 WORKDIR /opt/sympy

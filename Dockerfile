@@ -45,7 +45,8 @@ RUN git clone https://github.com/sympy/sympy.git
 # BHP -- this probably isn't necessary since ANTLR is built from source?
 WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime mpmath
-
+#debugger
+RUN pip3 install pudb
 # layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex

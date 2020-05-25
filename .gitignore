@@ -1,1 +1,15 @@
 *.swp
+sympy/parsing/latex/_antlr/LaTeX.interp
+sympy/parsing/latex/_antlr/LaTeXBaseListener.class
+sympy/parsing/latex/_antlr/LaTeX.tokens
+sympy/parsing/latex/_antlr/LaTeXBaseListener.java
+sympy/parsing/latex/_antlr/LaTeXLexer.class
+sympy/parsing/latex/_antlr/LaTeXLexer.interp
+sympy/parsing/latex/_antlr/LaTeXLexer.java
+sympy/parsing/latex/_antlr/LaTeXLexer.tokens
+sympy/parsing/latex/_antlr/LaTeXListener.class
+sympy/parsing/latex/_antlr/LaTeXListener.java
+sympy/parsing/latex/_antlr/LaTeXParser$ExprContext.class
+sympy/parsing/latex/_antlr/LaTeXParser$ProgContext.class
+sympy/parsing/latex/_antlr/LaTeXParser.class
+sympy/parsing/latex/_antlr/LaTeXParser.java

@@ -8,7 +8,6 @@ from sympy.printing.str import StrPrinter
 
 from .errors import LaTeXParsingError
 from pudb import set_trace
-set_trace()
 
 LaTeXParser = LaTeXLexer = MathErrorListener = None
 

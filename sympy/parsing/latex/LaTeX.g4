@@ -260,6 +260,9 @@ CMD_TIMES: '\\times';
 CMD_CDOT:  '\\cdot';
 CMD_DIV:   '\\div';
 CMD_FRAC:  '\\frac';
+CMD_BINOM: '\\binom';
+CMD_DBINOM: '\\dbinom';
+CMD_TBINOM: '\\tbinom';
 
 CMD_MATHIT: '\\mathit';
 
@@ -359,7 +362,8 @@ SET_DIFFERENCE:	'\\setminus';
 
 BANG: '!';
 
-SYMBOL: '\\' ([a-zA-Z]+ | [ :;])
+SYMBOL: '\\' [a-zA-Z]+
+	|'\\' ([a-zA-Z]+ | [ :;])
 	|  [a-zA-Z]+'\\'[,:;]
 	|  RM [ ]* [a-z]+
     | GREEK;

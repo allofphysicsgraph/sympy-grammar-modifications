@@ -35,7 +35,8 @@ RUN echo "alias python=python3" > /root/.bashrc
 WORKDIR /usr/local/lib
 
 # msg says this is is needed to build the ANTLR grammar
-RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
+#RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
+RUN curl -O https://www.antlr.org/download/antlr-4.7.1-complete.jar
 
 WORKDIR /opt/
 
@@ -44,7 +45,7 @@ RUN git clone https://github.com/sympy/sympy.git
 
 # BHP -- this probably isn't necessary since ANTLR is built from source?
 WORKDIR /opt/
-RUN pip3 install antlr4-python3-runtime mpmath
+RUN pip3 install antlr4-python3-runtime==4.7.1 mpmath
 #debugger
 RUN pip3 install pudb
 # layer the local ANTLR modifications on top of the sympy source in /opt/

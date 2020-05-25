@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 
 import sympy
 from sympy.parsing.latex import parse_latex    
@@ -93,10 +94,20 @@ def create_latex_file(file_name, math_latex):
         lat_file.write("\\end{document}\n")
     return
 
-if __name__ == "__main__":
+def get_latex_from_json(json_filename='data.json'):
+    with open(json_filename) as json_file:
+        dat = json.load(json_file)
+    failed_latex = {}
+    for expr_id, expr_dict in dat['expressions'].items():
+        try:
+            out_no_print = parse_latex(expr_dict['latex']);
+        except Exception as er:
+            failed_latex[expr_id] = expr_dict['latex']
+            #print('expr ID =', expr_id)
+            #print(er)
+    return failed_latex
 
-    print('sympy', sympy.__version__)
-
+def check_list_of_latex(list_of_latex):
     file_indx = 9
     for this_latex in list_of_latex:
         file_indx += 1
@@ -109,4 +120,22 @@ if __name__ == "__main__":
         try:
             out = parse_latex(this_latex)
         except Exception as er:
-            print(er)
+            list_of_failed_latex.append(this_latex)
+            #print(er)
+
+    return list_of_failed_latex
+
+if __name__ == "__main__":
+
+    print('sympy', sympy.__version__)
+
+    #check_list_of_latex(list_of_latex)
+
+    failed_latex_dict = get_latex_from_json('data.json')
+    for expr_id, expr_latex in failed_latex_dict.items():
+        print('\n' + expr_latex)
+        try:
+            out = parse_latex(expr_latex)
+        except Exception as er:
+            print(er) 
+

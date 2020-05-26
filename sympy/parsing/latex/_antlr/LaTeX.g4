@@ -1,8 +1,9 @@
 grammar LaTeX;		
-prog:	(expr NEWLINE)* ;
+prog:	(expr NEWLINE?)* ;
 expr:	expr (MUL|DIV) expr
     |	expr (ADD|SUBTRACT) expr
     |	number
+    |   symbols
     |	L_PAREN expr R_PAREN
     |   L_BRACE expr R_BRACE
     |   L_BRACKET expr R_BRACKET
@@ -11,7 +12,12 @@ expr:	expr (MUL|DIV) expr
     |   BEGIN_SPLIT expr END_SPLIT
     |   BEGIN_EQUATION expr END_EQUATION
     |   BEGIN_EQNARRAY expr END_EQNARRAY
+    |   expr CARET expr
+    |   expr UNDERSCORE expr
+    |   expr relation_operators expr
     ;
+
+WS: [ \t\r]+ -> skip;
 
 ADD: '+';
 SUBTRACT: '-';
@@ -19,6 +25,8 @@ CARET: '^';
 MUL: '*';
 DIV: '/';
 AMPERSAND: '&';
+UNDERSCORE: '_';
+COMMA: ',';
 
 NEWLINE : [\r\n]+ ;
 INT     : [0-9]+ ;
@@ -32,13 +40,67 @@ number:
     INT
     | FLOAT;
 
+prime: CARET'\\prime'
+    |'\'';
+
+EQUAL: '=';
+DOTEQ: '\\doteq';
+EQUIV: '\\equiv';
+APPROX: '\\approx';
+CONG: '\\cong';
+SIMEQ: '\\simeq';
+SIM: '\\sim';
+PROPTO: '\\propto';
+NEQ: '\\neq'|'\\ne';
+LT: '<';
+NLESS: '\\nless';
+LTE: '\\leq'|'\\leqslant';
+PROPERSUBSET: '\\subset'|'\\supset' ;
+NOTPROPERSUBSET: '\\not\\subset'|'\\not\\supset';
+SUBSET: '\\subseteq'|'\\supseteq';
+NOTSUBSET: '\\nsubseteq'|'\\nsupseteq';
+GT: '>';
+NGTR: '\\ngtr';
+GTE: '\\geq'|'\\geqslant';
+NGEQ: '\\ngeq'|'\\ngeqslant';
+
+relation_operators:
+    EQUAL 
+    |   DOTEQ
+    |   EQUIV
+    |   APPROX
+    |   CONG
+    |   SIMEQ
+    |   SIM
+    |   PROPTO
+    |   NEQ
+    |   LT
+    |   NLESS
+    |   LTE
+    |   PROPERSUBSET
+    |   NOTPROPERSUBSET
+    |   SUBSET
+    |   NOTSUBSET
+    |   GT
+    |   NGTR
+    |   GTE
+    |   NGEQ;
+
+symbols:
+    'x'
+    |   'y'
+    |   'z'
+    |   'v'
+    |   't'
+    |   GREEK
+    |   symbols prime;
+
 L_PAREN: '(';
 R_PAREN:  ')';
 L_BRACE:  '{';
 R_BRACE: '}';
 L_BRACKET: '[';
 R_BRACKET: ']';
-
 
 
 //Handle simple begin end expressions
@@ -123,4 +185,3 @@ GREEK:  '\\Alpha'
     |	 '\\zeta';
 
 
-    

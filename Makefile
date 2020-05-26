@@ -15,3 +15,6 @@ docmac:
 	docker build -t sympy_antlr .
 	docker run -it --rm sympy_antlr /bin/bash
 
+local:
+	virtualenv /home/user/venv -p python3
+	wget https://raw.githubusercontent.com/allofphysicsgraph/proofofconcept/gh-pages/v7_pickle_web_interface/flask/data.json

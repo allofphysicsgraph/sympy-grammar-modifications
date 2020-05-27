@@ -103,6 +103,19 @@ L_BRACKET: '[';
 R_BRACKET: ']';
 
 
+
+//Arrows
+RIGHTARROW:      '\\rightarrow'|'\\to'|'\\Rightarrow';
+LONGRIGHTARROW:  '\\longrightarrow' |'\\Longrightarrow';
+MAPSTO:  '\\mapsto';
+LONGMAPSTO:      '\\longmapsto';
+LEFTARROW:       '\\leftarrow'|'\\gets'|'\\Leftarrow';
+LONGLEFTARROW:   '\\longleftarrow'|'\\Longleftarrow';
+UPARROW:         '\\uparrow'|'\\Uparrow';
+DOWNARROW:       '\\downarrow'|'\\Downarrow';
+UPDOWNARROW:     '\\updownarrow'|'\\Updownarrow';
+
+
 //Handle simple begin end expressions
 ARRAY: L_BRACE 'array' R_BRACE ;
 SUBEQUATIONS: L_BRACE 'subequations' R_BRACE;

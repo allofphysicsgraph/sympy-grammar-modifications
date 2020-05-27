@@ -103,6 +103,25 @@ L_BRACKET: '[';
 R_BRACKET: ']';
 
 
+PLUS_OR_MINUS: '\\pm';
+
+
+
+//Set Notation
+MULTISET_ADDITION: '\\uplus';
+EMPTY_SET:      '\\varnothing';
+SET_OF_NATURAL_NUMBERS: '\\N';
+SET_OF_INTEGERS:        '\\Z';
+SET_OF_RATIONAL_NUMBERS:        '\\Q';
+SET_OF_ALGEBRAIC_NUMBERS:       '\\mathbb';
+SET_OF_REAL_NUMBERS:    '\\R';
+SET_OF_COMPLEX_NUMBERS: '\\C';
+IS_MEMBER_OF:   '\\in';
+IS_NOT_MEMBER_OF:       '\\notin';
+SET_UNION:      '\\cup';
+SET_INTERSECTION:       '\\cap';
+SET_DIFFERENCE: '\\setminus';
+
 
 //Arrows
 RIGHTARROW:      '\\rightarrow'|'\\to'|'\\Rightarrow';

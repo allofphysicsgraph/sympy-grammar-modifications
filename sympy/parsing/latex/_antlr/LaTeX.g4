@@ -4,6 +4,12 @@ expr:	expr (MUL|DIV) expr
     |	expr (ADD|SUBTRACT) expr
     |	number
     |   symbols
+    |   frac
+    |   common_functions
+    |   expr CARET expr
+    |   expr UNDERSCORE expr
+    |   expr relation_operators expr
+    |   TRIG_FUNCTIONS
     |	L_PAREN expr R_PAREN
     |   L_BRACE expr R_BRACE
     |   L_BRACKET expr R_BRACKET
@@ -12,21 +18,19 @@ expr:	expr (MUL|DIV) expr
     |   BEGIN_SPLIT expr END_SPLIT
     |   BEGIN_EQUATION expr END_EQUATION
     |   BEGIN_EQNARRAY expr END_EQNARRAY
-    |   expr CARET expr
-    |   expr UNDERSCORE expr
-    |   expr relation_operators expr
+
     ;
 
 WS: [ \t\r]+ -> skip;
 
 common_functions:
-    |   '\\sqrt';
+       '\\sqrt'
+    |   '\\log'
+    |   '\\ln';
 
 
 
-frac: '\\frac' L_BRACE expr R_BRACE L_BRACE expr R_BRACE
-    |   expr '\\over' expr
-    |   expr '/' expr ;
+frac: '\\frac' L_BRACE expr R_BRACE L_BRACE expr R_BRACE ;
 
 ADD: '+';
 SUBTRACT: '-';
@@ -44,6 +48,7 @@ FLOAT:   ([0-9]*[.][0-9]+)
         |([0-9]*[.]*[0-9]+[eEdD][+-]?[0-9]+)
         |([0-9]*[.])
         ;
+BAR: '|';
 
 number:
     INT
@@ -95,14 +100,35 @@ relation_operators:
     |   GTE
     |   NGEQ;
 
-TILDE: '~';
-
+TILDE: '~'
+    |   '\\tilde';
+    
+maybe_remove:
+    '\\textrm';
+    
 symbols:
-    'x'
+
+    '\\la'
+    |   '\\ell'
+    |   'T'
+    |   'CKG'
+    |   '\\perp'
+    |   'dp'
+    |   'det'
+    |   'ik'
+    |   '\\tV'
+    |   '\\tX'
+    |   'dE'
+    |   'M'
+    |   'p'
+    |   '\\tj'
+    |   'x'
     |   'y'
     |   'z'
     |   'v'
+    |   'y'
     |   't'
+    |   'T'
     |   'r'
     |   'b'
     |   'm'
@@ -125,17 +151,56 @@ symbols:
     |   'z'
     |   'r'
     |   'C'
+    |   'c'
+    |   'V'
     |   'L'
+    |   'S'
+    |   'J'
+    |   'i'
+    |   'n'
+    |   'N'
+    |   'k'
+    |   'K'
+    |   '\\partial'
+    |   '\\a'
+    |   '\\r'
     |   'A'
+    |   'dp'
+    |   '\\cal'
+    |   '\\exp'
+    |   '\\rm'
+    |   '\\Bar'
+    |   '\\p'
+    |   '\\del'
+    |   '\\wt'
+    |   'G'
+    |   'dx'
+    |   'dr'
+    |   'dt'
+    |   'dy'
+    |   '\\cdot'
+    |   '\\dot'
+    |   '\\langle'
+    |   '\\rangle'
+    |   '\\adot'
+    |   '\\xdot'
     |   TILDE
     |   ADD
     |   SUBTRACT
     |   GREEK
+    |   BANG
     |   symbols prime;
     
 
 BANG: '!';
 
+TRIG_FUNCTIONS:
+    '\\sin'
+    |   '\\cos'
+    |   '\\tan'
+    |   '\\tanh'
+    |   '\\coth'
+    |   '\\sinh';
 
 
 

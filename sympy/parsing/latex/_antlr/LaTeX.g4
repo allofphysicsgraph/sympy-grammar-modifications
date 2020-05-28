@@ -19,6 +19,15 @@ expr:	expr (MUL|DIV) expr
 
 WS: [ \t\r]+ -> skip;
 
+common_functions:
+    |   '\\sqrt';
+
+
+
+frac: '\\frac' L_BRACE expr R_BRACE L_BRACE expr R_BRACE
+    |   expr '\\over' expr
+    |   expr '/' expr ;
+
 ADD: '+';
 SUBTRACT: '-';
 CARET: '^';
@@ -86,14 +95,45 @@ relation_operators:
     |   GTE
     |   NGEQ;
 
+
 symbols:
     'x'
     |   'y'
     |   'z'
     |   'v'
     |   't'
+    |   'r'
+    |   'b'
+    |   'm'
+    |   's'
+    |   'n'
+    |   'g'
+    |   'p'
+    |   'q'
+    |   'e'
+    |   'p'
+    |   'q'
+    |   'g'
+    |   'a'
+    |   'R'
+    |   'vn'
+    |   'W'
+    |   'd'
+    |   'k'
+    |   'R'
+    |   'z'
+    |   'r'
+    |   'C'
+    |   'L'
+    |   'A'
     |   GREEK
     |   symbols prime;
+    
+
+BANG: '!';
+
+
+
 
 L_PAREN: '(';
 R_PAREN:  ')';

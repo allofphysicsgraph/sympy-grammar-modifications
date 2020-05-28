@@ -18,16 +18,83 @@ expr:	expr (MUL|DIV) expr
     |   BEGIN_SPLIT expr END_SPLIT
     |   BEGIN_EQUATION expr END_EQUATION
     |   BEGIN_EQNARRAY expr END_EQNARRAY
-
     ;
 
 WS: [ \t\r]+ -> skip;
+
+maybe_common:
+     '\\tau(\\phi)'
+    |	'\\alpha(2)'
+    |	'\\alpha(z)'
+    |	'\\Delta(k)'
+    |	'\\ep(q_0)'
+    |	'\\mu(k)'
+    |	'\\rho(0)'
+    |	'\\sigma(y)'
+    |	'\\epsilon(p_0)'
+    |	'\\rho(\\lambda)'
+    |	'\\rho(r)'
+    |	'\\gamma(1)'
+    |	'\\mu(\\tau)'
+    |	'\\phi(t)'
+    |	'\\prime(\\tau)'
+    |	'\\psi(r)'
+    |	'\\Lambda(x)'
+    |	'\\L(H)'
+    |	'\\varphi(r)'
+    |	'\\lambda(x)'
+    |	'\\omega(z)'
+    |	'\\chi(x)'
+    |	'\\kappa(n)'
+    |	'\\dagger(x)'
+    |	'\\phi(y)'
+    |	'\\rho(\\sigma)'
+    |	'\\U(1)'
+    |	'\\eta(q)'
+    |	'\\Psi(x)'
+    |	'\\Phi(0)'
+    |	'\\omega(x)'
+    |	'\\Spin(7)'
+    |	'\\phi(z)'
+    |	'\\SU(3)'
+    |	'\\delta(x)'
+    |	'\\gamma(k)'
+    |	'\\alpha(m)'
+    |	'\\psi(p)'
+    |	'\\iota(\\lie{h})'
+    |	'\\phi(f)'
+    |	'\\vector(0,1)'
+    |	'\\U(N)'
+    |	'\\rho(x)'
+    |	'\\sigma(x)'
+    |	'\\Phi(x)'
+    |	'\\psi(z)'
+    |  	'\\dagger(x)'
+    |  	'\\om(z)'
+    |  	'\\chi(z)'
+    |  	'\\delta(x-y)'
+    |  	'\\varphi(x)'
+    |  	'\\alpha(x)'
+    |  	'\\eta(\\tau)'
+    |  	'\\Phi(\\theta)'
+    |  	'\\psi(x)'
+    |	'\\delta(y)'
+    |	'\\lambda(s)'
+    |	'\\Phi(z)'
+    |	'\\Gamma(s)'
+    |	'\\SU(2)'
+    |	'\\alpha(1)'
+    |	'\\psi(x)'
+    |	'\\mu(x)'
+    |	'\\phi(x)'
+    |	'\\Gamma(\\theta)';
+
+
 
 common_functions:
        '\\sqrt'
     |   '\\log'
     |   '\\ln';
-
 
 
 frac: '\\frac' L_BRACE expr R_BRACE L_BRACE expr R_BRACE ;
@@ -105,7 +172,8 @@ TILDE: '~'
     
 maybe_remove:
     '\\textrm';
-    
+
+ 
 symbols:
 
     '\\la'

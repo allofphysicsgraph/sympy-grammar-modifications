@@ -95,6 +95,7 @@ relation_operators:
     |   GTE
     |   NGEQ;
 
+TILDE: '~';
 
 symbols:
     'x'
@@ -126,6 +127,9 @@ symbols:
     |   'C'
     |   'L'
     |   'A'
+    |   TILDE
+    |   ADD
+    |   SUBTRACT
     |   GREEK
     |   symbols prime;
     

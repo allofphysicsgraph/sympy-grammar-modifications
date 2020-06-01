@@ -1,23 +1,25 @@
 grammar LaTeX;		
 prog:	(expr NEWLINE?)* ;
-expr:	expr (MUL|DIV) expr
-    |	expr (ADD|SUBTRACT) expr
-    |	number
-    |   symbols
-    |   frac
-    |   common_functions
-    |   expr CARET expr
-    |   expr UNDERSCORE expr
-    |   expr relation_operators expr
-    |   TRIG_FUNCTIONS
-    |	L_PAREN expr R_PAREN
-    |   L_BRACE expr R_BRACE
-    |   L_BRACKET expr R_BRACKET
-    |   BEGIN_ARRAY expr END_ARRAY
-    |   BEGIN_SUBEQUATIONS  expr END_SUBEQUATIONS
-    |   BEGIN_SPLIT expr END_SPLIT
-    |   BEGIN_EQUATION expr END_EQUATION
-    |   BEGIN_EQNARRAY expr END_EQNARRAY
+
+expr:	
+    <assoc=right> expr EXPO expr # exponent
+    |   expr op=(MUL|DIV) expr     # mul_div
+    |	expr op=(ADD|SUBTRACT) expr    # add_sub
+    |	number  #   number_
+    |   symbols #   symbols_
+    |   frac    #   frac_
+    |   common_functions    # common_functions_  
+    |   expr UNDERSCORE expr    # underscore_
+    |   expr relation_operators expr    #   relation_operators_   
+    |   TRIG_FUNCTIONS  # trig_functions_
+    |	L_PAREN expr R_PAREN    # l_paren_
+    |   L_BRACE expr R_BRACE    # sss   
+    |   L_BRACKET expr R_BRACKET    # sssss 
+    |   BEGIN_ARRAY expr END_ARRAY  # array
+    |   BEGIN_SUBEQUATIONS  expr END_SUBEQUATIONS # aaaa    
+    |   BEGIN_SPLIT expr END_SPLIT  # begin_split_
+    |   BEGIN_EQUATION expr END_EQUATION    # begin_eq_
+    |   BEGIN_EQNARRAY expr END_EQNARRAY    # being_eqnarray
     ;
 
 WS: [ \t\r]+ -> skip;
@@ -101,7 +103,7 @@ frac: '\\frac' L_BRACE expr R_BRACE L_BRACE expr R_BRACE ;
 
 ADD: '+';
 SUBTRACT: '-';
-CARET: '^';
+EXPO: '^';
 MUL: '*';
 DIV: '/';
 AMPERSAND: '&';
@@ -118,10 +120,11 @@ FLOAT:   ([0-9]*[.][0-9]+)
 BAR: '|';
 
 number:
-    INT
-    | FLOAT;
+    INT     #   integer
+    | FLOAT #   float
+    ;
 
-prime: CARET'\\prime'
+prime: EXPO'\\prime'
     |'\'';
 
 EQUAL: '=';

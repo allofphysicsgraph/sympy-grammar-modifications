@@ -1,25 +1,69 @@
 from antlr4 import *
 from LaTeXLexer import LaTeXLexer
-from LaTeXListener import LaTeXListener
 from LaTeXParser import LaTeXParser
-import sys
-from pudb import set_trace
-from antlr4.tree.Trees import Trees
-class LaTeXPrintListener(LaTeXListener):
-    def enterProg(self, ctx):
-        pass
-        #print("LaTeX: %s" % ctx)
+from LaTeXVisitor import LaTeXVisitor
+from sys import argv
 
-def main():
-    inp = StdinStream()
-    lexer = LaTeXLexer(inp)
-    stream = CommonTokenStream(lexer)
-    parser = LaTeXParser(stream)
-    tree = parser.prog()
-    printer = LaTeXPrintListener()
-    walker = ParseTreeWalker()
-    walker.walk(printer, tree)
-    tree_out = Trees.toStringTree(tree, None, parser)
-    print(tree_out)
-if __name__ == '__main__':
-    main()
+#https://github.com/AkiraHakuta/antlr4_tex2sym.git
+# from https://github.com/antlr/antlr4/blob/master/runtime/Python3/bin/pygrun
+# this is a python version of TestRig
+def beautify_lisp_string(in_string):
+    indent_size = 3
+    add_indent = ' '*indent_size
+    out_string = in_string[0]  # no indent for 1st (
+    indent = ''
+    for i in range(1, len(in_string)):
+        if in_string[i] == '(' and in_string[i+1] != ' ':
+            indent += add_indent
+            out_string += "\n" + indent + '('
+        elif in_string[i] == ')':
+            out_string += ')'
+            if len(indent) > 0:
+                indent = indent.replace(add_indent, '', 1)
+        else:
+            out_string += in_string[i]
+    return out_string
+    
+class Calc(LaTeXVisitor):
+    def __init__(self):
+        super().__init__()    
+        self.result = ''
+        self.id_memory = {}
+
+    def visitInteger(self, ctx):
+        return int(ctx.INT().getText()) 
+    
+    def visitMul_div(self, ctx):        
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        if ctx.op.text == '*':
+            print(left * right)
+
+  
+file_name = 'test1.expr'
+input_stream = FileStream(file_name)
+print('input_stream:')
+print(input_stream)
+print()
+lexer = LaTeXLexer(input_stream)
+token_stream = CommonTokenStream(lexer)
+token_stream.fill()
+print('tokens:')
+for tk in token_stream.tokens:
+    print(tk)
+print()
+parser = LaTeXParser(token_stream)
+tree = parser.prog()
+
+print('tree:')
+lisp_tree_str = tree.toStringTree(recog=parser)
+print(beautify_lisp_string(lisp_tree_str))
+print()
+
+print('calc:')
+calc = Calc()
+result = calc.visit(tree)
+
+print()
+print('result:')
+print(result)

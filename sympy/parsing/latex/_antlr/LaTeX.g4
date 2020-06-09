@@ -89,7 +89,10 @@ maybe_common:
     |	'\\psi(x)'
     |	'\\mu(x)'
     |	'\\phi(x)'
-    |	'\\Gamma(\\theta)';
+    |	'\\Gamma(\\theta)'
+    |   '\\int'
+	|   '|\\k|'
+	|   '\\A_0';
 
 
 

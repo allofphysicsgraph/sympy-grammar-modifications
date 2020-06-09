@@ -1,4 +1,5 @@
-*.swp
+*.sw*
+sympy/parsing/latex/_antlr/__pycache__/
 sympy/parsing/latex/_antlr/LaTeX.interp
 sympy/parsing/latex/_antlr/*.class
 sympy/parsing/latex/_antlr/LaTeX.tokens

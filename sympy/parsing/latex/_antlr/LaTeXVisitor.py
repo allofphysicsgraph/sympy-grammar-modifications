@@ -89,6 +89,11 @@ class LaTeXVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LaTeXParser#vector.
+    def visitVector(self, ctx:LaTeXParser.VectorContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LaTeXParser#mul_div.
     def visitMul_div(self, ctx:LaTeXParser.Mul_divContext):
         return self.visitChildren(ctx)
@@ -101,6 +106,11 @@ class LaTeXVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LaTeXParser#exponent.
     def visitExponent(self, ctx:LaTeXParser.ExponentContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#array_1_d.
+    def visitArray_1_d(self, ctx:LaTeXParser.Array_1_dContext):
         return self.visitChildren(ctx)
 
 

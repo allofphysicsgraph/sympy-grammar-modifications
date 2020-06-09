@@ -32,10 +32,20 @@ class Calc(LaTeXVisitor):
 
     def visitInteger(self, ctx):
         return int(ctx.INT().getText()) 
-    
+ 
+    def visitVector(self,ctx):
+        import numpy as np
+        lst = []
+        for ix in ctx.array_1_d().children:
+            lst.append(self.visit(ix))
+        resp = [ x for x in lst if x]
+        print(resp)
+        return np.array(resp)
+
     def visitMul_div(self, ctx):        
         left = self.visit(ctx.expr(0))
         right = self.visit(ctx.expr(1))
+        print(type(left))
         if ctx.op.text == '*':
             print(left * right)
 

@@ -5,6 +5,7 @@ expr:
     <assoc=right> expr EXPO expr # exponent
     |   expr op=(MUL|DIV) expr     # mul_div
     |	expr op=(ADD|SUBTRACT) expr    # add_sub
+    |   array_1_d # vector
     |	number  #   number_
     |   symbols #   symbols_
     |   frac    #   frac_
@@ -21,6 +22,13 @@ expr:
     |   BEGIN_EQUATION expr END_EQUATION    # begin_eq_
     |   BEGIN_EQNARRAY expr END_EQNARRAY    # being_eqnarray
     ;
+
+
+array_1_d:
+    '[' number (',' number)* ']'
+    ;
+
+
 
 WS: [ \t\r]+ -> skip;
 
@@ -91,8 +99,19 @@ maybe_common:
     |	'\\phi(x)'
     |	'\\Gamma(\\theta)'
     |   '\\int'
-	|   '|\\k|'
-	|   '\\A_0';
+    |   '\\varGamma'
+    |   '\\varind'
+    |   '\\varLambda'
+    |   '\\varOmega'
+    |   '\\varphi'
+    |   '\\varPhi'
+    |   '\\varpi'
+    |   '\\varPi'
+    |   '\\varpir'
+    |   '\\varPsi'
+    |   '\\varrho'
+    |   '\\varsigma'
+    ;
 
 
 
@@ -288,8 +307,6 @@ R_BRACKET: ']';
 
 PLUS_OR_MINUS: '\\pm';
 
-
-
 //Set Notation
 MULTISET_ADDITION: '\\uplus';
 EMPTY_SET:      '\\varnothing';
@@ -400,3 +417,5 @@ GREEK:  '\\Alpha'
     |	 '\\zeta';
 
 
+IGNORE:
+    ('\\vrule'|'\\quad'|'\\hfil'|'\\quad'|'\\vcenter'|'\\vbox'|'\\vskip'|'\\vspace') -> skip;

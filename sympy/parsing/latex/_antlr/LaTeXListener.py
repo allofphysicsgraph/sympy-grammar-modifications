@@ -152,6 +152,15 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LaTeXParser#vector.
+    def enterVector(self, ctx:LaTeXParser.VectorContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#vector.
+    def exitVector(self, ctx:LaTeXParser.VectorContext):
+        pass
+
+
     # Enter a parse tree produced by LaTeXParser#mul_div.
     def enterMul_div(self, ctx:LaTeXParser.Mul_divContext):
         pass
@@ -176,6 +185,15 @@ class LaTeXListener(ParseTreeListener):
 
     # Exit a parse tree produced by LaTeXParser#exponent.
     def exitExponent(self, ctx:LaTeXParser.ExponentContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#array_1_d.
+    def enterArray_1_d(self, ctx:LaTeXParser.Array_1_dContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#array_1_d.
+    def exitArray_1_d(self, ctx:LaTeXParser.Array_1_dContext):
         pass
 
 

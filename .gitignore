@@ -1,4 +1,5 @@
 *.sw*
+sympy/parsing/latex/.antlr
 sympy/parsing/latex/_antlr/__pycache__/
 sympy/parsing/latex/_antlr/LaTeX.interp
 sympy/parsing/latex/_antlr/*.class

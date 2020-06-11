@@ -28,12 +28,12 @@ array_1_d:
     '[' number (',' number)* ']'
     ;
 
-
-
 WS: [ \t\r]+ -> skip;
 
 maybe_common:
      '\\tau(\\phi)'
+    |  '\\prod'
+    |   '\\vec'  
     |	'\\alpha(2)'
     |	'\\alpha(z)'
     |	'\\Delta(k)'
@@ -192,13 +192,23 @@ relation_operators:
     |   GTE
     |   NGEQ;
 
+PROPTO:
+    '\\propto';
+
 TILDE: '~'
     |   '\\tilde';
     
 maybe_remove:
     '\\textrm';
 
- 
+DOTS:
+    '\\dots'
+    |'\\ldots'
+    |'\\cdots';
+
+BAR:
+    '\\Bar'
+    |'\\bar';
 symbols:
 
     '\\la'
@@ -249,6 +259,7 @@ symbols:
     |   'L'
     |   'S'
     |   'J'
+    |   'j'
     |   'i'
     |   'n'
     |   'N'
@@ -262,7 +273,6 @@ symbols:
     |   '\\cal'
     |   '\\exp'
     |   '\\rm'
-    |   '\\Bar'
     |   '\\p'
     |   '\\del'
     |   '\\wt'

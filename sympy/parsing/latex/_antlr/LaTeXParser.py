@@ -173,7 +173,7 @@ class LaTeXParser ( Parser ):
                      "'\\dot'", "'\\langle'", "'\\rangle'", "'\\adot'", 
                      "'\\xdot'", "<INVALID>", "'+'", "'-'", "'^'", "'*'", 
                      "'/'", "'&'", "'_'", "','", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "'|'", "'='", "'\\doteq'", "'\\equiv'", 
+                     "<INVALID>", "'|    '", "'='", "'\\doteq'", "'\\equiv'", 
                      "'\\approx'", "'\\cong'", "'\\simeq'", "'\\sim'", "'\\propto'", 
                      "<INVALID>", "'<'", "'\\nless'", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "'>'", "'\\ngtr'", 

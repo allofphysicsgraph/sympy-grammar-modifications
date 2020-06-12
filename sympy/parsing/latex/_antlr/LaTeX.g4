@@ -139,7 +139,7 @@ FLOAT:   ([0-9]*[.][0-9]+)
         |([0-9]*[.]*[0-9]+[eEdD][+-]?[0-9]+)
         |([0-9]*[.])
         ;
-BAR: '|';
+BAR: '|    ';
 
 number:
     INT     #   integer
@@ -147,7 +147,7 @@ number:
     ;
 
 prime: EXPO'\\prime'
-    |'\'';
+    |    '\'';
 
 EQUAL: '=';
 DOTEQ: '\\doteq';
@@ -157,18 +157,18 @@ CONG: '\\cong';
 SIMEQ: '\\simeq';
 SIM: '\\sim';
 PROPTO: '\\propto';
-NEQ: '\\neq'|'\\ne';
+NEQ: '\\neq'|    '\\ne';
 LT: '<';
 NLESS: '\\nless';
-LTE: '\\leq'|'\\leqslant';
-PROPERSUBSET: '\\subset'|'\\supset' ;
-NOTPROPERSUBSET: '\\not\\subset'|'\\not\\supset';
-SUBSET: '\\subseteq'|'\\supseteq';
-NOTSUBSET: '\\nsubseteq'|'\\nsupseteq';
+LTE: '\\leq'|    '\\leqslant';
+PROPERSUBSET: '\\subset'|    '\\supset' ;
+NOTPROPERSUBSET: '\\not\\subset'|    '\\not\\supset';
+SUBSET: '\\subseteq'|    '\\supseteq';
+NOTSUBSET: '\\nsubseteq'|    '\\nsupseteq';
 GT: '>';
 NGTR: '\\ngtr';
-GTE: '\\geq'|'\\geqslant';
-NGEQ: '\\ngeq'|'\\ngeqslant';
+GTE: '\\geq'|    '\\geqslant';
+NGEQ: '\\ngeq'|    '\\ngeqslant';
 
 relation_operators:
     EQUAL 
@@ -203,12 +203,12 @@ maybe_remove:
 
 DOTS:
     '\\dots'
-    |'\\ldots'
-    |'\\cdots';
+    |    '\\ldots'
+    |    '\\cdots';
 
 BAR:
     '\\Bar'
-    |'\\bar';
+    |    '\\bar';
 symbols:
 
     '\\la'
@@ -334,15 +334,15 @@ SET_DIFFERENCE: '\\setminus';
 
 
 //Arrows
-RIGHTARROW:      '\\rightarrow'|'\\to'|'\\Rightarrow';
-LONGRIGHTARROW:  '\\longrightarrow' |'\\Longrightarrow';
+RIGHTARROW:      '\\rightarrow'|    '\\to'|    '\\Rightarrow';
+LONGRIGHTARROW:  '\\longrightarrow' |    '\\Longrightarrow';
 MAPSTO:  '\\mapsto';
 LONGMAPSTO:      '\\longmapsto';
-LEFTARROW:       '\\leftarrow'|'\\gets'|'\\Leftarrow';
-LONGLEFTARROW:   '\\longleftarrow'|'\\Longleftarrow';
-UPARROW:         '\\uparrow'|'\\Uparrow';
-DOWNARROW:       '\\downarrow'|'\\Downarrow';
-UPDOWNARROW:     '\\updownarrow'|'\\Updownarrow';
+LEFTARROW:       '\\leftarrow'|    '\\gets'|    '\\Leftarrow';
+LONGLEFTARROW:   '\\longleftarrow'|    '\\Longleftarrow';
+UPARROW:         '\\uparrow'|    '\\Uparrow';
+DOWNARROW:       '\\downarrow'|    '\\Downarrow';
+UPDOWNARROW:     '\\updownarrow'|    '\\Updownarrow';
 
 
 //Handle simple begin end expressions
@@ -367,65 +367,82 @@ END_EQUATION: '\\end' EQUATION;
 BEGIN_EQNARRAY: '\\begin' EQNARRAY;
 END_EQNARRAY: '\\end' EQNARRAY;
 
-GREEK:  '\\Alpha'
-    |	 '\\Beta'
-    |	 '\\Chi'
-    |	 '\\Delta'
-    |	 '\\Digamma'
-    |	 '\\Epsilon'
-    |	 '\\Eta'
-    |	 '\\Gamma'
-    |	 '\\Iota'
-    |	 '\\Kappa'
-    |	 '\\Lambda'
-    |	 '\\Mu'
-    |	 '\\Nu'
-    |	 '\\Omega'
-    |	 '\\Omicron'
-    |	 '\\Phi'
-    |	 '\\Pi'
-    |	 '\\Psi'
-    |	 '\\Rho'
-    |	 '\\Sigma'
-    |	 '\\Tau'
-    |	 '\\Theta'
-    |	 '\\Upsilon'
-    |	 '\\Xi'
-    |	 '\\Zeta'
-    |	 '\\alpha'
-    |	 '\\beta'
-    |	 '\\chi'
-    |	 '\\delta'
-    |	 '\\digamma'
-    |	 '\\epsilon'
-    |	 '\\eta'
-    |	 '\\gamma'
-    |	 '\\iota'
-    |	 '\\kappa'
-    |	 '\\lambda'
-    |	 '\\mu'
-    |	 '\\nu'
-    |	 '\\omega'
-    |	 '\\omicron'
-    |	 '\\phi'
-    |	 '\\pi'
-    |	 '\\psi'
-    |	 '\\rho'
-    |	 '\\sigma'
-    |	 '\\tau'
-    |	 '\\theta'
-    |	 '\\upsilon'
-    |	 '\\varepsilon'
-    |	 '\\vargamma'
-    |	 '\\varkappa'
-    |	 '\\varphi'
-    |	 '\\varpi'
-    |	 '\\varrho'
-    |	 '\\varsigma'
-    |	 '\\vartheta'
-    |	 '\\xi'
-    |	 '\\zeta';
+GREEK:  |    '\\alpha'
+    |    '\\Alpha'
+    |    '\\beta'
+    |    '\\Beta'
+    |    '\\chi'
+    |    '\\Chi'
+    |    '\\delta'
+    |    '\\Delta'
+    |    '\\digamma'
+    |    '\\Digamma'
+    |    '\\epsilon'
+    |    '\\Epsilon'
+    |    '\\eta'
+    |    '\\Eta'
+    |    '\\gamma'
+    |    '\\Gamma'
+    |    '\\iota'
+    |    '\\Iota'
+    |    '\\kappa'
+    |    '\\Kappa'
+    |    '\\lambda'
+    |    '\\Lambda'
+    |    '\\mu'
+    |    '\\Mu'
+    |    '\\nu'
+    |    '\\Nu'
+    |    '\\omega'
+    |    '\\Omega'
+    |    '\\omicron'
+    |    '\\Omicron'
+    |    '\\phi'
+    |    '\\Phi'
+    |    '\\pi'
+    |    '\\Pi'
+    |    '\\psi'
+    |    '\\Psi'
+    |    '\\rho'
+    |    '\\Rho'
+    |    '\\sigma'
+    |    '\\Sigma'
+    |    '\\tau'
+    |    '\\Tau'
+    |    '\\theta'
+    |    '\\Theta'
+    |    '\\upsilon'
+    |    '\\Upsilon'
+    |    '\\varDelta'
+    |    '\\varepsilon'
+    |    '\\vargamma'
+    |    '\\varGamma'
+    |    '\\varinjlim'
+    |    '\\varkappa'
+    |    '\\varLambda'
+    |    '\\varliminf'
+    |    '\\varlimsup'
+    |    '\\varnothing'
+    |    '\\varOmega'
+    |    '\\varphi'
+    |    '\\varPhi'
+    |    '\\varpi'
+    |    '\\varPi'
+    |    '\\varprojlim'
+    |    '\\varPsi'
+    |    '\\varrho'
+    |    '\\varsigma'
+    |    '\\varSigma'
+    |    '\\vartheta'
+    |    '\\varTheta'
+    |    '\\vartriangle'
+    |    '\\varUpsilon'
+    |    '\\varXi'
+    |    '\\xi'
+    |    '\\Xi'
+    |    '\\zeta'
+    |    '\\Zeta';
 
 
 IGNORE:
-    ('\\vrule'|'\\quad'|'\\hfil'|'\\quad'|'\\vcenter'|'\\vbox'|'\\vskip'|'\\vspace') -> skip;
+    ('\\vrule'|    '\\quad'|    '\\hfil'|    '\\quad'|    '\\vcenter'|    '\\vbox'|    '\\vskip'|    '\\vspace') -> skip;

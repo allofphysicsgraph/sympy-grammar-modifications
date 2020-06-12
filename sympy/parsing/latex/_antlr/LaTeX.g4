@@ -453,4 +453,10 @@ GREEK:  |    '\\alpha'
 
 
 IGNORE:
-    ('\\vrule'|    '\\quad'|    '\\hfil'|    '\\quad'|    '\\vcenter'|    '\\vbox'|    '\\vskip'|    '\\vspace') -> skip;
+    ('\\vrule'|    '\\quad'|    '\\hfil'|    '\\quad'|    '\\vcenter'|    '\\vbox'|    '\\vskip'|    '\\vspace'
+    |   '\\*'
+    |   '\\,'
+    |   '\\-'
+    |   '\\.'
+    |   '\\/'
+    |   '\\;') -> skip;

@@ -209,9 +209,13 @@ DOTS:
 BAR:
     '\\Bar'
     |    '\\bar';
-symbols:
 
-    '\\la'
+  
+symbols:
+  '\\bigodot'
+    |   '\\bigoplus'
+    |   '\\bigotimes'
+    |   '\\la'
     |   '\\ell'
     |   'T'
     |   'CKG'
@@ -285,6 +289,7 @@ symbols:
     |   '\\dot'
     |   '\\langle'
     |   '\\rangle'
+    |   '\\angle'
     |   '\\adot'
     |   '\\xdot'
     |   TILDE
@@ -344,6 +349,9 @@ UPARROW:         '\\uparrow'|    '\\Uparrow';
 DOWNARROW:       '\\downarrow'|    '\\Downarrow';
 UPDOWNARROW:     '\\updownarrow'|    '\\Updownarrow';
 
+HOOKLEFTARROW: '\\hookleftarrow';
+HOOKRIGHTARROW: '\\hookrightarrow';
+LONGLRARROW:    '\\longleftrightarrow';
 
 //Handle simple begin end expressions
 ARRAY: L_BRACE 'array' R_BRACE ;

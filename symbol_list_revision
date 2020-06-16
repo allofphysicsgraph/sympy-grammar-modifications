@@ -1,3 +1,285 @@
+binary_operators
+     '\\Cap'
+|    '\\Cup'
+|    '\\barwedge'
+|    '\\boxdot'
+|    '\\boxminus'
+|    '\\boxplus'
+|    '\\boxtimes'
+|    '\\centerdot'
+|    '\\circledast'
+|    '\\circledcirc'
+|    '\\circleddash'
+|    '\\curlyvee'
+|    '\\curlywedge'
+|    '\\divideontimes'
+|    '\\dotplus'
+|    '\\doublebarwedge'
+|    '\\intercal*'
+|    '\\leftthreetimes'
+|    '\\ltimes'
+|    '\\rightthreetimes'
+|    '\\rtimes'
+|    '\\smallsetminus'
+|    '\\veebar'
+;
+
+
+variable_sized_math_operators
+	'\\iint'          
+|	'\\iiint'
+|	'\\iiiint'
+|	'\\idotsint'
+;
+
+binary_relations
+| '\\approxeq'
+| '\\backepsilon'
+| '\\backsim'
+| '\\backsimeq'
+| '\\because'
+| '\\between'
+| '\\bumpeq'
+| '\\Bumpeq'
+| '\\circeq'
+| '\\curlyeqprec'
+| '\\curlyeqsucc'
+| '\\doteqdot'
+| '\\eqcirc'
+| '\\fallingdotseq'
+| '\\multimap'
+| '\\pitchfork'
+| '\\precapprox'
+| '\\preccurlyeq'
+| '\\precsim'
+| '\\risingdotseq'
+| '\\shortmid'
+| '\\shortparallel'
+| '\\smallfrown'
+| '\\smallsmile'
+| '\\succapprox'
+| '\\succcurlyeq'
+| '\\succsim'
+| '\\therefore'
+| '\\thickapprox'
+| '\\thicksim'
+| '\\varpropto'
+| '\\vDash'
+| '\\Vdash'
+| '\\Vvdash'
+;
+
+negated_binary_relations
+'\\ncong'
+| '\\nmid'
+| '\\nparallel'
+| '\\nprec'
+| '\\npreceq'
+| '\\nshortmid'
+| '\\nshortparallel'
+| '\\nsim'
+| '\\nsucc'
+| '\\nsucceq'
+| '\\nvdash'
+| '\\nvDash'
+| '\\nVDash'
+| '\\precnapprox'
+| '\\precnsim'
+| '\\succnapprox'
+| '\\succnsim'
+;
+
+subset_superset
+     '\\Subset'
+|    '\\Supset'
+|    '\\nsubseteq'
+|    '\\nsupseteq'
+|    '\\nsupseteqq'
+|    '\\sqsubset'
+|    '\\sqsupset'
+|    '\\subseteqq'
+|    '\\subsetneq'
+|    '\\subsetneqq'
+|    '\\supseteqq'
+|    '\\supsetneq'
+|    '\\supsetneqq'
+|    '\\varsubsetneq'
+|    '\\varsubsetneqq'
+|    '\\varsupsetneq'
+|    '\\varsupsetneqq'
+;
+
+
+triangle_relations
+     '\\blacktriangleleft'
+|    '\\blacktriangleright'
+|    '\\ntriangleleft'
+|    '\\ntrianglelefteq'
+|    '\\ntriangleright'
+|    '\\ntrianglerighteq'
+|    '\\trianglelefteq'
+|    '\\triangleq'
+|    '\\trianglerighteq'
+|    '\\vartriangleleft'
+|    '\\vartriangleright'
+;
+
+
+arrows
+     '\\Lleftarrow'
+|    '\\Lsh'
+|    '\\Rsh'
+|    '\\circlearrowleft'
+|    '\\circlearrowright'
+|    '\\curvearrowleft'
+|    '\\curvearrowright'
+|    '\\dashleftarrow'
+|    '\\dashrightarrow'
+|    '\\downdownarrows'
+|    '\\leftarrowtail'
+|    '\\leftleftarrows'
+|    '\\leftrightarrows'
+|    '\\leftrightsquigarrow'
+|    '\\looparrowleft'
+|    '\\looparrowright'
+|    '\\rightarrowtail'
+|    '\\rightleftarrows'
+|    '\\rightrightarrows'
+|    '\\rightsquigarrow'
+|    '\\twoheadleftarrow'
+|    '\\twoheadrightarrow'
+|    '\\upuparrows'
+;
+
+
+negated_arrows
+     '\\nLeftarrow'
+|    '\\nLeftrightarrow'
+|    '\\nRightarrow'
+|    '\\nleftarrow'
+|    '\\nleftrightarrow'
+|    '\\nrightarrow'
+;
+
+
+harpoons
+     '\\downharpoonleft'
+|    '\\downharpoonright'
+|    '\\leftrightharpoons'
+|    '\\rightleftharpoons'
+|    '\\upharpoonleft'
+|    '\\upharpoonright'
+;
+
+
+
+greek_letters
+     '\\digamma'
+|    '\\varkappa'
+|    '\z'
+;
+
+
+hebrew_letters
+     '\\beth'
+|    '\\daleth'
+|    '\\gimel'
+|    '\i'
+|    '\k'
+;
+
+
+letter_like_symbols
+     '\\Bbbk'
+|    '\\Finv'
+|    '\\Game'
+|    '\\circledR'
+|    '\\circledS'
+|    '\\complement'
+|    '\\hbar'
+|    '\\hslash'
+|    '\\nexists'
+|    '\a'
+|    '\k'
+|    '\r'
+|    '\s'
+;
+
+
+
+delimiters
+     '\\llcorner'
+|    '\\lrcorner'
+|    '\\ulcorner'
+|    '\\urcorner'
+;
+
+
+variable-sized_delimiters
+     '\\lVert'
+|    '\\lvert'
+|    '\\rVert'
+|    '\\rvert'
+;                                  
+                                                                             
+math-mode Accents
+     '\\ddddot{a}'
+|    '\\dddot{a}'
+;
+
+extensible_accents
+     '\\overleftrightarrow{abc}'
+|    '\\underleftarrow{abc}'
+|    '\\underleftrightarrow{abc}'
+|    '\\underrightarrow{abc}'
+;
+
+
+extensible_arrows
+     '\\xleftarrow{abc}'
+|    '\\xrightarrow{abc}'
+;
+
+
+dots
+     '\\because*'
+|    '\\dotsb'
+|    '\\dotsc'
+|    '\\dotsi'
+|    '\\dotsm'
+|    '\\dotso'
+|    '\\therefore*'
+;
+
+
+angles
+     '\\angle'
+|    '\\measuredangle'
+|    '\\sphericalangle'
+;
+
+
+
+
+math_symbols
+     '\\backprime'
+|    '\\bigstar'
+|    '\\blacklozenge'
+|    '\\blacksquare'
+|    '\\blacktriangle'
+|    '\\blacktriangledown'
+|    '\\diagdown'
+|    '\\diagup'
+|    '\\eth'
+|    '\\lozenge'
+|    '\\mho'
+|    '\\square'
+|    '\\triangledown'
+|    '\\varnothing'
+|    '\\vartriangle'
+;
+
+
 \cup
 ∪
 
@@ -106,7 +388,6 @@
 
 
 \hbar
-
 ℏ
 
 \hbox
@@ -412,7 +693,6 @@ Z
 
 
 \operatorname
-
 \displaystyle \operatorname
 
 
@@ -456,391 +736,147 @@ Z
 \prime
 ′
 
-\primfrac
-
-\primfrac
-
-\ProcessOptions
-
-\ProcessOptions
 
 \prod
-
 ∏
 
-\projlim
-
-proj lim
 
 \propto
-
 ∝
 
 
 \raise
-
 \displaystyle \raise
 
-\raisetag
-
-\raisetag
 
 \rangle
-
 ⟩
 
 \rbrace
-
 }
 
 \rbrack
-
 ]
 
 \rceil
-
 ⌉
 
 \Re
-
 ℜ
 
 \ref
-
 \displaystyle \ref
 
-\refstepcounter
-
-\refstepcounter
-
-\relax
-
-\relax
-
-\relaxo
-
-\relaxo
-
-\relbar
-
-\relbar
-
-\Relbar
-
-\Relbar
 
 \renewcommand
-
 \displaystyle \renewcommand
 
 \renewenvironment
-
 \displaystyle \renewenvironment
 
-\repeat
-
-\repeat
 
 \rfloor
-
 ⌋
 
 \rgroup
-
 ⟯
 
 \rhd
-
 ⊳
 
-\rhook
-
-\rhook
-
 \right
-
 \displaystyle \right
 
 \rlap
-
 \displaystyle \rlap
 
-\rmoustache
-
-
-
-\romannumeral
-
-\romannumeral
 
 \root
-
 \displaystyle \root
 
-\rootbox
-
-\rootbox
-
-\rq
-
-\rq
 
 \rvert
-
 |
 
 \rVert
-
 ‖
 
 \S
-
 §
 
-\scriptfont
-
-\scriptfont
-
-\scriptscriptfont
-
-\scriptscriptfont
-
-\scriptscriptstyle
-
-\scriptstyle
-
-\selectfont
-
-\selectfont
-
-\setbox
-
-\setbox
-
-\setcounter
-
-\setcounter
 
 \shoveleft
-
 \displaystyle \shoveleft
 
 \shoveright
-
 \displaystyle \shoveright
 
 \sideset
-
 \displaystyle \sideset
 
 \sim
-
 ∼
 
-\skewchar
-
-\skewchar
-
-\smallsetminus
-
-∖
 
 \smash
-
 \displaystyle \smash
 
-\space
-
- 
-
-\spaceor
-
-\spaceor
-
-\span
-
-\span
-
-\spbreve
-
-\spbreve
-
-\sptilde
-
-\sptilde
 
 \sqcap
-
 ⊓
 
-\sqrtsign
-
-\sqrtsign
 
 \sqsubset
-
 ⊏
 
 \sqsupset
-
 ⊐
 
 \square
-
 ◻
 
-\stepcounter
-
-\stepcounter
-
-\string
-
-\string
-
-\strut
-
-\strutbox
-
-\strutbox
-
-\subarray
-
-\subarray
 
 \subset
-
 ⊂
 
 \substack
-
 \displaystyle \substack
 
 \sum
-
 ∑
 
 \sup
-
 sup
 
 \surd
-
 √
 
-\symoperators
-
-\symoperators
-
-\tabskip
-
-\tabskip
 
 \tag
-
 \displaystyle \tag
 
-\taghere
-
-\taghere
 
 \tbinom
-
 \displaystyle \tbinom
 
 \text
-
 \displaystyle \text
 
-\textellipsis
-
-\textellipsis
-
-\textfont
-
-\textfont
-
-\textstyle
-
-\textup
-
-\textup
 
 \tfrac
-
 \displaystyle \tfrac
 
-\the
 
-\the
-
-\theequation
-
-\theequation
-
-
-\tilde
-
-\displaystyle \tilde
-
-\Tilde
-
-\Tilde
-
-\tmspace
-
-\tmspace
-
-\toks
-
-\toks
 
 \top
-
 ⊤
 
 \triangle
-
 △
 
 \triangledown
-
 ▿
 
-\typeout
-
-\typeout
-
-\u
-
-\u
-
-\Umathaccent
-
-\Umathaccent
-
-\Umathcar
-
-\Umathcar
-
-\Umathchar
-
-\Umathchar
-
-\Umathcharnumdef
-
-\Umathcharnumdef
-
-\Umathcode
-
-\Umathcode
-
-\Umathcodenum
-
-\Umathcodenum
-
-\Umathfractiondelsize
-
-\Umathfractiondelsize
 
 \underset
 \displaystyle \underset
@@ -859,8 +895,6 @@ sup
 \vcenter
 \displaystyle \vcenter
 
-\vdash
-⊢
 
 \vdots
 ⋮
@@ -898,4 +932,3 @@ sup
 
 \wr
 ≀
-

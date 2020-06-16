@@ -305,10 +305,16 @@ BANG: '!';
 TRIG_FUNCTIONS:
     '\\sin'
     |   '\\cos'
+    |   '\\cosh'
     |   '\\tan'
     |   '\\tanh'
+    |   '\\cot'
     |   '\\coth'
-    |   '\\sinh';
+    |   '\\sinh'
+    |   '\\arccos'
+    |   '\\arcsin'
+    |   '\\arctan'
+    ;
 
 
 
@@ -459,4 +465,297 @@ IGNORE:
     |   '\\-'
     |   '\\.'
     |   '\\/'
-    |   '\\;') -> skip;
+    |   '\\;'
+    |   '\\!'
+    |   '\\"
+    |   '\\(
+    |   '\\,'
+    |   '\\-'
+    |   '\\.'
+    |   '\\:'
+    |   '\\='
+    ) -> skip;
+
+
+
+    binary_operators
+     '\\Cap'
+|    '\\Cup'
+|    '\\barwedge'
+|    '\\boxdot'
+|    '\\boxminus'
+|    '\\boxplus'
+|    '\\boxtimes'
+|    '\\centerdot'
+|    '\\circledast'
+|    '\\circledcirc'
+|    '\\circleddash'
+|    '\\curlyvee'
+|    '\\curlywedge'
+|    '\\divideontimes'
+|    '\\dotplus'
+|    '\\doublebarwedge'
+|    '\\intercal*'
+|    '\\leftthreetimes'
+|    '\\ltimes'
+|    '\\rightthreetimes'
+|    '\\rtimes'
+|    '\\smallsetminus'
+|    '\\veebar'
+;
+
+
+variable_sized_math_operators
+	'\\iint'          
+|	'\\iiint'
+|	'\\iiiint'
+|	'\\idotsint'
+;
+
+binary_relations
+| '\\approxeq'
+| '\\backepsilon'
+| '\\backsim'
+| '\\backsimeq'
+| '\\because'
+| '\\between'
+| '\\bumpeq'
+| '\\Bumpeq'
+| '\\circeq'
+| '\\curlyeqprec'
+| '\\curlyeqsucc'
+| '\\doteqdot'
+| '\\eqcirc'
+| '\\fallingdotseq'
+| '\\multimap'
+| '\\pitchfork'
+| '\\precapprox'
+| '\\preccurlyeq'
+| '\\precsim'
+| '\\risingdotseq'
+| '\\shortmid'
+| '\\shortparallel'
+| '\\smallfrown'
+| '\\smallsmile'
+| '\\succapprox'
+| '\\succcurlyeq'
+| '\\succsim'
+| '\\therefore'
+| '\\thickapprox'
+| '\\thicksim'
+| '\\varpropto'
+| '\\vDash'
+| '\\Vdash'
+| '\\Vvdash'
+;
+
+negated_binary_relations
+'\\ncong'
+| '\\nmid'
+| '\\nparallel'
+| '\\nprec'
+| '\\npreceq'
+| '\\nshortmid'
+| '\\nshortparallel'
+| '\\nsim'
+| '\\nsucc'
+| '\\nsucceq'
+| '\\nvdash'
+| '\\nvDash'
+| '\\nVDash'
+| '\\precnapprox'
+| '\\precnsim'
+| '\\succnapprox'
+| '\\succnsim'
+;
+
+subset_superset
+     '\\Subset'
+|    '\\Supset'
+|    '\\nsubseteq'
+|    '\\nsupseteq'
+|    '\\nsupseteqq'
+|    '\\sqsubset'
+|    '\\sqsupset'
+|    '\\subseteqq'
+|    '\\subsetneq'
+|    '\\subsetneqq'
+|    '\\supseteqq'
+|    '\\supsetneq'
+|    '\\supsetneqq'
+|    '\\varsubsetneq'
+|    '\\varsubsetneqq'
+|    '\\varsupsetneq'
+|    '\\varsupsetneqq'
+;
+
+
+triangle_relations
+     '\\blacktriangleleft'
+|    '\\blacktriangleright'
+|    '\\ntriangleleft'
+|    '\\ntrianglelefteq'
+|    '\\ntriangleright'
+|    '\\ntrianglerighteq'
+|    '\\trianglelefteq'
+|    '\\triangleq'
+|    '\\trianglerighteq'
+|    '\\vartriangleleft'
+|    '\\vartriangleright'
+;
+
+
+arrows
+     '\\Lleftarrow'
+|    '\\Lsh'
+|    '\\Rsh'
+|    '\\circlearrowleft'
+|    '\\circlearrowright'
+|    '\\curvearrowleft'
+|    '\\curvearrowright'
+|    '\\dashleftarrow'
+|    '\\dashrightarrow'
+|    '\\downdownarrows'
+|    '\\leftarrowtail'
+|    '\\leftleftarrows'
+|    '\\leftrightarrows'
+|    '\\leftrightsquigarrow'
+|    '\\looparrowleft'
+|    '\\looparrowright'
+|    '\\rightarrowtail'
+|    '\\rightleftarrows'
+|    '\\rightrightarrows'
+|    '\\rightsquigarrow'
+|    '\\twoheadleftarrow'
+|    '\\twoheadrightarrow'
+|    '\\upuparrows'
+;
+
+
+negated_arrows
+     '\\nLeftarrow'
+|    '\\nLeftrightarrow'
+|    '\\nRightarrow'
+|    '\\nleftarrow'
+|    '\\nleftrightarrow'
+|    '\\nrightarrow'
+;
+
+
+harpoons
+     '\\downharpoonleft'
+|    '\\downharpoonright'
+|    '\\leftrightharpoons'
+|    '\\rightleftharpoons'
+|    '\\upharpoonleft'
+|    '\\upharpoonright'
+;
+
+
+
+greek_letters
+     '\\digamma'
+|    '\\varkappa'
+|    '\z'
+;
+
+
+hebrew_letters
+     '\\beth'
+|    '\\daleth'
+|    '\\gimel'
+|    '\i'
+|    '\k'
+;
+
+
+letter_like_symbols
+     '\\Bbbk'
+|    '\\Finv'
+|    '\\Game'
+|    '\\circledR'
+|    '\\circledS'
+|    '\\complement'
+|    '\\hbar'
+|    '\\hslash'
+|    '\\nexists'
+|    '\a'
+|    '\k'
+|    '\r'
+|    '\s'
+;
+
+
+
+delimiters
+     '\\llcorner'
+|    '\\lrcorner'
+|    '\\ulcorner'
+|    '\\urcorner'
+;
+
+
+variable-sized_delimiters
+     '\\lVert'
+|    '\\lvert'
+|    '\\rVert'
+|    '\\rvert'
+;                                  
+                                                                             
+math-mode Accents
+     '\\ddddot{a}'
+|    '\\dddot{a}'
+;
+
+extensible_accents
+     '\\overleftrightarrow{abc}'
+|    '\\underleftarrow{abc}'
+|    '\\underleftrightarrow{abc}'
+|    '\\underrightarrow{abc}'
+;
+
+
+extensible_arrows
+     '\\xleftarrow{abc}'
+|    '\\xrightarrow{abc}'
+;
+
+
+dots
+     '\\because*'
+|    '\\dotsb'
+|    '\\dotsc'
+|    '\\dotsi'
+|    '\\dotsm'
+|    '\\dotso'
+|    '\\therefore*'
+;
+
+
+angles
+     '\\angle'
+|    '\\measuredangle'
+|    '\\sphericalangle'
+;
+
+
+
+
+math_symbols
+     '\\backprime'
+|    '\\bigstar'
+|    '\\blacklozenge'
+|    '\\blacksquare'
+|    '\\blacktriangle'
+|    '\\blacktriangledown'
+|    '\\diagdown'
+|    '\\diagup'
+|    '\\eth'
+|    '\\lozenge'
+|    '\\mho'
+|    '\\square'
+|    '\\triangledown'
+|    '\\varnothing'
+|    '\\vartriangle'
+;
+

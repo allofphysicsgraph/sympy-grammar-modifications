@@ -1,287 +1,3 @@
-binary_operators
-     '\\Cap'
-|    '\\Cup'
-|    '\\barwedge'
-|    '\\boxdot'
-|    '\\boxminus'
-|    '\\boxplus'
-|    '\\boxtimes'
-|    '\\centerdot'
-|    '\\circledast'
-|    '\\circledcirc'
-|    '\\circleddash'
-|    '\\curlyvee'
-|    '\\curlywedge'
-|    '\\divideontimes'
-|    '\\dotplus'
-|    '\\doublebarwedge'
-|    '\\intercal*'
-|    '\\leftthreetimes'
-|    '\\ltimes'
-|    '\\rightthreetimes'
-|    '\\rtimes'
-|    '\\smallsetminus'
-|    '\\veebar'
-;
-
-
-variable_sized_math_operators
-	'\\iint'          
-|	'\\iiint'
-|	'\\iiiint'
-|	'\\idotsint'
-;
-
-binary_relations
-| '\\approxeq'
-| '\\backepsilon'
-| '\\backsim'
-| '\\backsimeq'
-| '\\because'
-| '\\between'
-| '\\bumpeq'
-| '\\Bumpeq'
-| '\\circeq'
-| '\\curlyeqprec'
-| '\\curlyeqsucc'
-| '\\doteqdot'
-| '\\eqcirc'
-| '\\fallingdotseq'
-| '\\multimap'
-| '\\pitchfork'
-| '\\precapprox'
-| '\\preccurlyeq'
-| '\\precsim'
-| '\\risingdotseq'
-| '\\shortmid'
-| '\\shortparallel'
-| '\\smallfrown'
-| '\\smallsmile'
-| '\\succapprox'
-| '\\succcurlyeq'
-| '\\succsim'
-| '\\therefore'
-| '\\thickapprox'
-| '\\thicksim'
-| '\\varpropto'
-| '\\vDash'
-| '\\Vdash'
-| '\\Vvdash'
-;
-
-negated_binary_relations
-'\\ncong'
-| '\\nmid'
-| '\\nparallel'
-| '\\nprec'
-| '\\npreceq'
-| '\\nshortmid'
-| '\\nshortparallel'
-| '\\nsim'
-| '\\nsucc'
-| '\\nsucceq'
-| '\\nvdash'
-| '\\nvDash'
-| '\\nVDash'
-| '\\precnapprox'
-| '\\precnsim'
-| '\\succnapprox'
-| '\\succnsim'
-;
-
-subset_superset
-     '\\Subset'
-|    '\\Supset'
-|    '\\nsubseteq'
-|    '\\nsupseteq'
-|    '\\nsupseteqq'
-|    '\\sqsubset'
-|    '\\sqsupset'
-|    '\\subseteqq'
-|    '\\subsetneq'
-|    '\\subsetneqq'
-|    '\\supseteqq'
-|    '\\supsetneq'
-|    '\\supsetneqq'
-|    '\\varsubsetneq'
-|    '\\varsubsetneqq'
-|    '\\varsupsetneq'
-|    '\\varsupsetneqq'
-;
-
-
-triangle_relations
-     '\\blacktriangleleft'
-|    '\\blacktriangleright'
-|    '\\ntriangleleft'
-|    '\\ntrianglelefteq'
-|    '\\ntriangleright'
-|    '\\ntrianglerighteq'
-|    '\\trianglelefteq'
-|    '\\triangleq'
-|    '\\trianglerighteq'
-|    '\\vartriangleleft'
-|    '\\vartriangleright'
-;
-
-
-arrows
-     '\\Lleftarrow'
-|    '\\Lsh'
-|    '\\Rsh'
-|    '\\circlearrowleft'
-|    '\\circlearrowright'
-|    '\\curvearrowleft'
-|    '\\curvearrowright'
-|    '\\dashleftarrow'
-|    '\\dashrightarrow'
-|    '\\downdownarrows'
-|    '\\leftarrowtail'
-|    '\\leftleftarrows'
-|    '\\leftrightarrows'
-|    '\\leftrightsquigarrow'
-|    '\\looparrowleft'
-|    '\\looparrowright'
-|    '\\rightarrowtail'
-|    '\\rightleftarrows'
-|    '\\rightrightarrows'
-|    '\\rightsquigarrow'
-|    '\\twoheadleftarrow'
-|    '\\twoheadrightarrow'
-|    '\\upuparrows'
-;
-
-
-negated_arrows
-     '\\nLeftarrow'
-|    '\\nLeftrightarrow'
-|    '\\nRightarrow'
-|    '\\nleftarrow'
-|    '\\nleftrightarrow'
-|    '\\nrightarrow'
-;
-
-
-harpoons
-     '\\downharpoonleft'
-|    '\\downharpoonright'
-|    '\\leftrightharpoons'
-|    '\\rightleftharpoons'
-|    '\\upharpoonleft'
-|    '\\upharpoonright'
-;
-
-
-
-greek_letters
-     '\\digamma'
-|    '\\varkappa'
-|    '\z'
-;
-
-
-hebrew_letters
-     '\\beth'
-|    '\\daleth'
-|    '\\gimel'
-|    '\i'
-|    '\k'
-;
-
-
-letter_like_symbols
-     '\\Bbbk'
-|    '\\Finv'
-|    '\\Game'
-|    '\\circledR'
-|    '\\circledS'
-|    '\\complement'
-|    '\\hbar'
-|    '\\hslash'
-|    '\\nexists'
-|    '\a'
-|    '\k'
-|    '\r'
-|    '\s'
-;
-
-
-
-delimiters
-     '\\llcorner'
-|    '\\lrcorner'
-|    '\\ulcorner'
-|    '\\urcorner'
-;
-
-
-variable-sized_delimiters
-     '\\lVert'
-|    '\\lvert'
-|    '\\rVert'
-|    '\\rvert'
-;                                  
-                                                                             
-math-mode Accents
-     '\\ddddot{a}'
-|    '\\dddot{a}'
-;
-
-extensible_accents
-     '\\overleftrightarrow{abc}'
-|    '\\underleftarrow{abc}'
-|    '\\underleftrightarrow{abc}'
-|    '\\underrightarrow{abc}'
-;
-
-
-extensible_arrows
-     '\\xleftarrow{abc}'
-|    '\\xrightarrow{abc}'
-;
-
-
-dots
-     '\\because*'
-|    '\\dotsb'
-|    '\\dotsc'
-|    '\\dotsi'
-|    '\\dotsm'
-|    '\\dotso'
-|    '\\therefore*'
-;
-
-
-angles
-     '\\angle'
-|    '\\measuredangle'
-|    '\\sphericalangle'
-;
-
-
-
-
-math_symbols
-     '\\backprime'
-|    '\\bigstar'
-|    '\\blacklozenge'
-|    '\\blacksquare'
-|    '\\blacktriangle'
-|    '\\blacktriangledown'
-|    '\\diagdown'
-|    '\\diagup'
-|    '\\eth'
-|    '\\lozenge'
-|    '\\mho'
-|    '\\square'
-|    '\\triangledown'
-|    '\\varnothing'
-|    '\\vartriangle'
-;
-
-
-\cup
-∪
 
 \Cup
 ⋓
@@ -295,11 +11,6 @@ math_symbols
 \ddagger
 ‡
 
-\delta
-𝛿
-
-\Delta
-Δ
 
 \dfrac
 \displaystyle \dfrac
@@ -410,14 +121,6 @@ math_symbols
 ⟺
 
 
-\iiiint
-⨌
-
-\iiint
-∭
-
-\iint
-∬
 
 \Im
 ℑ
@@ -439,9 +142,6 @@ math_symbols
 ∞
 
 
-\int
-∫
-
 
 \intop
 ∫
@@ -455,9 +155,6 @@ math_symbols
 \Join
 ⋈
 
-
-\kappa
-𝜅
 
 
 \kern
@@ -515,19 +212,13 @@ math_symbols
 ⋦
 
 
-\longmapsto
-⟼
 
 
 \lozenge
 ◊
 
 
-\lvert
-|
 
-\lVert
-‖
 
 \lvertneqq
 ≨
@@ -536,37 +227,6 @@ math_symbols
 ↦
 
 
-\mathbin
-\displaystyle \mathbin
-
-
-\mathchoice
-\displaystyle \mathchoice
-
-\mathclose
-\displaystyle \mathclose
-
-
-\mathinner
-\displaystyle \mathinner
-
-\mathop
-\displaystyle \mathop
-
-\mathopen
-\displaystyle \mathopen
-
-\mathord
-\displaystyle \mathord
-
-\mathpunct
-\displaystyle \mathpunct
-
-\mathrel
-\displaystyle \mathrel
-
-\mathring
-\displaystyle \mathring
 
 \mathrm{A}
 A
@@ -608,11 +268,6 @@ X
 Z
 
 
-\matrix
-\displaystyle \matrix
-
-\mbox
-\displaystyle \mbox
 
 
 \measuredangle
@@ -699,14 +354,8 @@ Z
 \oplus
 ⊕
 
-\overline
-\displaystyle \overline
 
-\overset
-\displaystyle \overset
 
-\overwithdelims
-\displaystyle \overwithdelims
 
 
 \parallel
@@ -723,16 +372,6 @@ Z
 \pm
 ±
 
-\pmatrix
-\displaystyle \pmatrix
-
-\pmod
-\displaystyle \pmod
-
-\pod
-\displaystyle \pod
-
-
 \prime
 ′
 
@@ -743,10 +382,6 @@ Z
 
 \propto
 ∝
-
-
-\raise
-\displaystyle \raise
 
 
 \rangle
@@ -764,15 +399,7 @@ Z
 \Re
 ℜ
 
-\ref
-\displaystyle \ref
 
-
-\renewcommand
-\displaystyle \renewcommand
-
-\renewenvironment
-\displaystyle \renewenvironment
 
 
 \rfloor
@@ -784,15 +411,6 @@ Z
 \rhd
 ⊳
 
-\right
-\displaystyle \right
-
-\rlap
-\displaystyle \rlap
-
-
-\root
-\displaystyle \root
 
 
 \rvert
@@ -805,21 +423,8 @@ Z
 §
 
 
-\shoveleft
-\displaystyle \shoveleft
-
-\shoveright
-\displaystyle \shoveright
-
-\sideset
-\displaystyle \sideset
-
 \sim
 ∼
-
-
-\smash
-\displaystyle \smash
 
 
 \sqcap
@@ -839,8 +444,6 @@ Z
 \subset
 ⊂
 
-\substack
-\displaystyle \substack
 
 \sum
 ∑
@@ -850,22 +453,6 @@ sup
 
 \surd
 √
-
-
-\tag
-\displaystyle \tag
-
-
-\tbinom
-\displaystyle \tbinom
-
-\text
-\displaystyle \text
-
-
-\tfrac
-\displaystyle \tfrac
-
 
 
 \top
@@ -878,9 +465,6 @@ sup
 ▿
 
 
-\underset
-\displaystyle \underset
-
 
 \unlhd
 ⊴
@@ -890,22 +474,10 @@ sup
 ⊵
 
 
-\displaystyle \uproot
-
-\vcenter
-\displaystyle \vcenter
-
 
 \vdots
 ⋮
 
-\vec
-
-\displaystyle \vec
-
-\Vec
-
-\Vec
 
 \vee
 ∨
@@ -921,30 +493,15 @@ sup
 ‖
 
 
-\widehat
-\displaystyle \widehat
 
-\widetilde
-\displaystyle \widetilde
 
 \wp
 ℘
 
 \wr
 ≀
-%%% list of external commands used by amsmath (not totally correct)
 
-\!
-\"
-\(
-\*
-\,
-\-
-\.
-\/
-\:
-\;
-\=
+
 \Acute
 \AmS
 \AmSfont
@@ -1006,20 +563,7 @@ sup
 \[
 \]
 \above
-\abovedisplayskip
-\abovewithdelims
-\accentedsymbol
-\acute
-\addtocounter
-\advance
-\aftergroup
-\allowbreak
-\allowdisplaybreaks
-\alph
-\arabic
-\arccos
-\arcsin
-\arctan
+
 \arg
 \array
 \arraycolsep
@@ -1065,10 +609,6 @@ sup
 \columnwidth
 \coprod
 \copy
-\cos
-\cosh
-\cot
-\coth
 \cr
 \crcr
 \csc
@@ -1223,7 +763,6 @@ sup
 \long
 \longleftarrow
 \longleftrightarrow
-\longmapsto
 \longrightarrow
 \loop
 \lq
@@ -1447,21 +986,6 @@ sup
 \uproot
 \usefont
 \value
-\varDelta
-\varGamma
-\varLambda
-\varOmega
-\varPhi
-\varPi
-\varPsi
-\varSigma
-\varTheta
-\varUpsilon
-\varXi
-\varinjlim
-\varliminf
-\varlimsup
-\varprojlim
 \vbox
 \vcenter
 \vec
@@ -1479,3 +1003,4 @@ sup
 \xleaders
 \xleftarrow
 \xrightarrow
+

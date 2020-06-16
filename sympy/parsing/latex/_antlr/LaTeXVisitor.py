@@ -159,5 +159,105 @@ class LaTeXVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LaTeXParser#binary_operators.
+    def visitBinary_operators(self, ctx:LaTeXParser.Binary_operatorsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#variable_sized_math_operators.
+    def visitVariable_sized_math_operators(self, ctx:LaTeXParser.Variable_sized_math_operatorsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#binary_relations.
+    def visitBinary_relations(self, ctx:LaTeXParser.Binary_relationsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#negated_binary_relations.
+    def visitNegated_binary_relations(self, ctx:LaTeXParser.Negated_binary_relationsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#subset_superset.
+    def visitSubset_superset(self, ctx:LaTeXParser.Subset_supersetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#triangle_relations.
+    def visitTriangle_relations(self, ctx:LaTeXParser.Triangle_relationsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#arrows.
+    def visitArrows(self, ctx:LaTeXParser.ArrowsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#negated_arrows.
+    def visitNegated_arrows(self, ctx:LaTeXParser.Negated_arrowsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#harpoons.
+    def visitHarpoons(self, ctx:LaTeXParser.HarpoonsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#greek_letters.
+    def visitGreek_letters(self, ctx:LaTeXParser.Greek_lettersContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#hebrew_letters.
+    def visitHebrew_letters(self, ctx:LaTeXParser.Hebrew_lettersContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#letter_like_symbols.
+    def visitLetter_like_symbols(self, ctx:LaTeXParser.Letter_like_symbolsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#delimiters.
+    def visitDelimiters(self, ctx:LaTeXParser.DelimitersContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#variable_sized_delimiters.
+    def visitVariable_sized_delimiters(self, ctx:LaTeXParser.Variable_sized_delimitersContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#math_mode_accents.
+    def visitMath_mode_accents(self, ctx:LaTeXParser.Math_mode_accentsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#extensible_accents.
+    def visitExtensible_accents(self, ctx:LaTeXParser.Extensible_accentsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#extensible_arrows.
+    def visitExtensible_arrows(self, ctx:LaTeXParser.Extensible_arrowsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#dots.
+    def visitDots(self, ctx:LaTeXParser.DotsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#angles.
+    def visitAngles(self, ctx:LaTeXParser.AnglesContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#math_symbols.
+    def visitMath_symbols(self, ctx:LaTeXParser.Math_symbolsContext):
+        return self.visitChildren(ctx)
+
+
 
 del LaTeXParser

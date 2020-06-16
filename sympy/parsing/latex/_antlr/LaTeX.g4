@@ -139,7 +139,7 @@ FLOAT:   ([0-9]*[.][0-9]+)
         |([0-9]*[.]*[0-9]+[eEdD][+-]?[0-9]+)
         |([0-9]*[.])
         ;
-BAR: '|    ';
+
 
 number:
     INT     #   integer
@@ -191,9 +191,6 @@ relation_operators:
     |   NGTR
     |   GTE
     |   NGEQ;
-
-PROPTO:
-    '\\propto';
 
 TILDE: '~'
     |   '\\tilde';
@@ -381,7 +378,8 @@ END_EQUATION: '\\end' EQUATION;
 BEGIN_EQNARRAY: '\\begin' EQNARRAY;
 END_EQNARRAY: '\\end' EQNARRAY;
 
-GREEK:  |    '\\alpha'
+GREEK:  
+    '\\alpha'
     |    '\\Alpha'
     |    '\\beta'
     |    '\\Beta'
@@ -436,7 +434,6 @@ GREEK:  |    '\\alpha'
     |    '\\varLambda'
     |    '\\varliminf'
     |    '\\varlimsup'
-    |    '\\varnothing'
     |    '\\varOmega'
     |    '\\varphi'
     |    '\\varPhi'
@@ -467,8 +464,8 @@ IGNORE:
     |   '\\/'
     |   '\\;'
     |   '\\!'
-    |   '\\"
-    |   '\\(
+    |   '\\"'
+    |   '\\('
     |   '\\,'
     |   '\\-'
     |   '\\.'
@@ -477,8 +474,7 @@ IGNORE:
     ) -> skip;
 
 
-
-    binary_operators
+binary_operators:
      '\\Cap'
 |    '\\Cup'
 |    '\\barwedge'
@@ -505,14 +501,14 @@ IGNORE:
 ;
 
 
-variable_sized_math_operators
+variable_sized_math_operators:
 	'\\iint'          
 |	'\\iiint'
 |	'\\iiiint'
 |	'\\idotsint'
 ;
 
-binary_relations
+binary_relations:
 | '\\approxeq'
 | '\\backepsilon'
 | '\\backsim'
@@ -549,7 +545,7 @@ binary_relations
 | '\\Vvdash'
 ;
 
-negated_binary_relations
+negated_binary_relations:
 '\\ncong'
 | '\\nmid'
 | '\\nparallel'
@@ -569,7 +565,7 @@ negated_binary_relations
 | '\\succnsim'
 ;
 
-subset_superset
+subset_superset:
      '\\Subset'
 |    '\\Supset'
 |    '\\nsubseteq'
@@ -590,7 +586,7 @@ subset_superset
 ;
 
 
-triangle_relations
+triangle_relations:
      '\\blacktriangleleft'
 |    '\\blacktriangleright'
 |    '\\ntriangleleft'
@@ -605,7 +601,7 @@ triangle_relations
 ;
 
 
-arrows
+arrows:
      '\\Lleftarrow'
 |    '\\Lsh'
 |    '\\Rsh'
@@ -632,7 +628,7 @@ arrows
 ;
 
 
-negated_arrows
+negated_arrows:
      '\\nLeftarrow'
 |    '\\nLeftrightarrow'
 |    '\\nRightarrow'
@@ -642,7 +638,7 @@ negated_arrows
 ;
 
 
-harpoons
+harpoons:
      '\\downharpoonleft'
 |    '\\downharpoonright'
 |    '\\leftrightharpoons'
@@ -653,23 +649,23 @@ harpoons
 
 
 
-greek_letters
+greek_letters:
      '\\digamma'
 |    '\\varkappa'
-|    '\z'
+|    '\\z'
 ;
 
 
-hebrew_letters
+hebrew_letters:
      '\\beth'
 |    '\\daleth'
 |    '\\gimel'
-|    '\i'
-|    '\k'
+|    '\\i'
+|    '\\k'
 ;
 
 
-letter_like_symbols
+letter_like_symbols:
      '\\Bbbk'
 |    '\\Finv'
 |    '\\Game'
@@ -679,15 +675,15 @@ letter_like_symbols
 |    '\\hbar'
 |    '\\hslash'
 |    '\\nexists'
-|    '\a'
-|    '\k'
-|    '\r'
-|    '\s'
+|    '\\a'
+|    '\\k'
+|    '\\r'
+|    '\\s'
 ;
 
 
 
-delimiters
+delimiters:
      '\\llcorner'
 |    '\\lrcorner'
 |    '\\ulcorner'
@@ -695,19 +691,19 @@ delimiters
 ;
 
 
-variable-sized_delimiters
+variable_sized_delimiters:
      '\\lVert'
 |    '\\lvert'
 |    '\\rVert'
 |    '\\rvert'
 ;                                  
                                                                              
-math-mode Accents
+math_mode_accents:
      '\\ddddot{a}'
 |    '\\dddot{a}'
 ;
 
-extensible_accents
+extensible_accents:
      '\\overleftrightarrow{abc}'
 |    '\\underleftarrow{abc}'
 |    '\\underleftrightarrow{abc}'
@@ -715,13 +711,13 @@ extensible_accents
 ;
 
 
-extensible_arrows
+extensible_arrows:
      '\\xleftarrow{abc}'
 |    '\\xrightarrow{abc}'
 ;
 
 
-dots
+dots:
      '\\because*'
 |    '\\dotsb'
 |    '\\dotsc'
@@ -732,7 +728,7 @@ dots
 ;
 
 
-angles
+angles:
      '\\angle'
 |    '\\measuredangle'
 |    '\\sphericalangle'
@@ -741,7 +737,7 @@ angles
 
 
 
-math_symbols
+math_symbols:
      '\\backprime'
 |    '\\bigstar'
 |    '\\blacklozenge'
@@ -758,4 +754,3 @@ math_symbols
 |    '\\varnothing'
 |    '\\vartriangle'
 ;
-

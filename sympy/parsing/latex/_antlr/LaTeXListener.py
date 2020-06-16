@@ -278,5 +278,185 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LaTeXParser#binary_operators.
+    def enterBinary_operators(self, ctx:LaTeXParser.Binary_operatorsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#binary_operators.
+    def exitBinary_operators(self, ctx:LaTeXParser.Binary_operatorsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#variable_sized_math_operators.
+    def enterVariable_sized_math_operators(self, ctx:LaTeXParser.Variable_sized_math_operatorsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#variable_sized_math_operators.
+    def exitVariable_sized_math_operators(self, ctx:LaTeXParser.Variable_sized_math_operatorsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#binary_relations.
+    def enterBinary_relations(self, ctx:LaTeXParser.Binary_relationsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#binary_relations.
+    def exitBinary_relations(self, ctx:LaTeXParser.Binary_relationsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#negated_binary_relations.
+    def enterNegated_binary_relations(self, ctx:LaTeXParser.Negated_binary_relationsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#negated_binary_relations.
+    def exitNegated_binary_relations(self, ctx:LaTeXParser.Negated_binary_relationsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#subset_superset.
+    def enterSubset_superset(self, ctx:LaTeXParser.Subset_supersetContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#subset_superset.
+    def exitSubset_superset(self, ctx:LaTeXParser.Subset_supersetContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#triangle_relations.
+    def enterTriangle_relations(self, ctx:LaTeXParser.Triangle_relationsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#triangle_relations.
+    def exitTriangle_relations(self, ctx:LaTeXParser.Triangle_relationsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#arrows.
+    def enterArrows(self, ctx:LaTeXParser.ArrowsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#arrows.
+    def exitArrows(self, ctx:LaTeXParser.ArrowsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#negated_arrows.
+    def enterNegated_arrows(self, ctx:LaTeXParser.Negated_arrowsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#negated_arrows.
+    def exitNegated_arrows(self, ctx:LaTeXParser.Negated_arrowsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#harpoons.
+    def enterHarpoons(self, ctx:LaTeXParser.HarpoonsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#harpoons.
+    def exitHarpoons(self, ctx:LaTeXParser.HarpoonsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#greek_letters.
+    def enterGreek_letters(self, ctx:LaTeXParser.Greek_lettersContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#greek_letters.
+    def exitGreek_letters(self, ctx:LaTeXParser.Greek_lettersContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#hebrew_letters.
+    def enterHebrew_letters(self, ctx:LaTeXParser.Hebrew_lettersContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#hebrew_letters.
+    def exitHebrew_letters(self, ctx:LaTeXParser.Hebrew_lettersContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#letter_like_symbols.
+    def enterLetter_like_symbols(self, ctx:LaTeXParser.Letter_like_symbolsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#letter_like_symbols.
+    def exitLetter_like_symbols(self, ctx:LaTeXParser.Letter_like_symbolsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#delimiters.
+    def enterDelimiters(self, ctx:LaTeXParser.DelimitersContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#delimiters.
+    def exitDelimiters(self, ctx:LaTeXParser.DelimitersContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#variable_sized_delimiters.
+    def enterVariable_sized_delimiters(self, ctx:LaTeXParser.Variable_sized_delimitersContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#variable_sized_delimiters.
+    def exitVariable_sized_delimiters(self, ctx:LaTeXParser.Variable_sized_delimitersContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#math_mode_accents.
+    def enterMath_mode_accents(self, ctx:LaTeXParser.Math_mode_accentsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#math_mode_accents.
+    def exitMath_mode_accents(self, ctx:LaTeXParser.Math_mode_accentsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#extensible_accents.
+    def enterExtensible_accents(self, ctx:LaTeXParser.Extensible_accentsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#extensible_accents.
+    def exitExtensible_accents(self, ctx:LaTeXParser.Extensible_accentsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#extensible_arrows.
+    def enterExtensible_arrows(self, ctx:LaTeXParser.Extensible_arrowsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#extensible_arrows.
+    def exitExtensible_arrows(self, ctx:LaTeXParser.Extensible_arrowsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#dots.
+    def enterDots(self, ctx:LaTeXParser.DotsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#dots.
+    def exitDots(self, ctx:LaTeXParser.DotsContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#angles.
+    def enterAngles(self, ctx:LaTeXParser.AnglesContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#angles.
+    def exitAngles(self, ctx:LaTeXParser.AnglesContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#math_symbols.
+    def enterMath_symbols(self, ctx:LaTeXParser.Math_symbolsContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#math_symbols.
+    def exitMath_symbols(self, ctx:LaTeXParser.Math_symbolsContext):
+        pass
+
+
 
 del LaTeXParser

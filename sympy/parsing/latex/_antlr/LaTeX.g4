@@ -9,10 +9,12 @@ expr:
     |	number  #   number_
     |   symbols #   symbols_
     |   frac    #   frac_
-    |   common_functions    # common_functions_  
+    |   letter_like_symbols  # letter_like_symbols_
+    |   common_functions    # common_functions_ 
+    |   maybe_common    # maybe_common_
     |   expr UNDERSCORE expr    # underscore_
     |   expr relation_operators expr    #   relation_operators_   
-    |   TRIG_FUNCTIONS  # trig_functions_
+    |   TRIG_FUNCTIONS L_PAREN expr R_PAREN # trig_functions_
     |	L_PAREN expr R_PAREN    # l_paren_
     |   L_BRACE expr R_BRACE    # sss   
     |   L_BRACKET expr R_BRACKET    # sssss 
@@ -429,7 +431,6 @@ GREEK:
     |    '\\varepsilon'
     |    '\\vargamma'
     |    '\\varGamma'
-    |    '\\varinjlim'
     |    '\\varkappa'
     |    '\\varLambda'
     |    '\\varliminf'
@@ -439,7 +440,6 @@ GREEK:
     |    '\\varPhi'
     |    '\\varpi'
     |    '\\varPi'
-    |    '\\varprojlim'
     |    '\\varPsi'
     |    '\\varrho'
     |    '\\varsigma'

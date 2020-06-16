@@ -84,6 +84,11 @@ class LaTeXVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LaTeXParser#maybe_common_.
+    def visitMaybe_common_(self, ctx:LaTeXParser.Maybe_common_Context):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LaTeXParser#sssss.
     def visitSssss(self, ctx:LaTeXParser.SssssContext):
         return self.visitChildren(ctx)
@@ -96,6 +101,11 @@ class LaTeXVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LaTeXParser#mul_div.
     def visitMul_div(self, ctx:LaTeXParser.Mul_divContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LaTeXParser#letter_like_symbols_.
+    def visitLetter_like_symbols_(self, ctx:LaTeXParser.Letter_like_symbols_Context):
         return self.visitChildren(ctx)
 
 

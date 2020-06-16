@@ -143,6 +143,15 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LaTeXParser#maybe_common_.
+    def enterMaybe_common_(self, ctx:LaTeXParser.Maybe_common_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#maybe_common_.
+    def exitMaybe_common_(self, ctx:LaTeXParser.Maybe_common_Context):
+        pass
+
+
     # Enter a parse tree produced by LaTeXParser#sssss.
     def enterSssss(self, ctx:LaTeXParser.SssssContext):
         pass
@@ -167,6 +176,15 @@ class LaTeXListener(ParseTreeListener):
 
     # Exit a parse tree produced by LaTeXParser#mul_div.
     def exitMul_div(self, ctx:LaTeXParser.Mul_divContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#letter_like_symbols_.
+    def enterLetter_like_symbols_(self, ctx:LaTeXParser.Letter_like_symbols_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#letter_like_symbols_.
+    def exitLetter_like_symbols_(self, ctx:LaTeXParser.Letter_like_symbols_Context):
         pass
 
 

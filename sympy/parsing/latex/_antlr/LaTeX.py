@@ -50,7 +50,7 @@ class Calc(LaTeXVisitor):
             print(left * right)
 
   
-file_name = 'test1.expr'
+file_name = argv[1] 
 input_stream = FileStream(file_name)
 print('input_stream:')
 print(input_stream)
@@ -61,6 +61,9 @@ token_stream.fill()
 print('tokens:')
 for tk in token_stream.tokens:
     print(tk)
+    if '\\n' in str(tk):
+        print('\n\n')
+
 print()
 parser = LaTeXParser(token_stream)
 tree = parser.prog()

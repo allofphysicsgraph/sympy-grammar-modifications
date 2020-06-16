@@ -1,0 +1,1 @@
+\langle \psi| \hat{A} |\psi \rangle = \int_{-\infty}^{\infty} \psi^* A \psi dx

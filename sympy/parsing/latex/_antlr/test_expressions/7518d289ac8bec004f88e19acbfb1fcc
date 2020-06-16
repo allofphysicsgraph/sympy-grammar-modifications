@@ -1,0 +1,1 @@
+cleanup.sh generate_files_from_expressions.sh install.sh LaTeX.g4 LaTeX.interp LaTeXLexer.interp LaTeXLexer.py LaTeXLexer.tokens LaTeXListener.py LaTeXParser.py LaTeX.py LaTeX.tokens LaTeXVisitor.py Makefile output __pycache__ rename.py requirements.txt run.sh run_test_input.sh run_tests.sh test_cases test_expressions test_input

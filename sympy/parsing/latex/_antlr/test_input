@@ -1,14 +1,865 @@
-\\frac{1}{9.5 - \\frac{1}{7-p} - q}
-\\frac{1}{7-p}
-\\frac{1}{2}
-\\frac{1}{9.5 -  q}
-\\frac{1}{7-p}
-\\frac{1}{2}
-\\frac{1}{V_p}
-\\frac{p}{(7-p)^2}
-\\frac{1}{7-p}
-\\frac{1}{2}
-\\frac{1}{V_p}
-\\frac{1}{2}
-\\frac{3}{2}
-\\frac{s}{t}
+y
+(b/(2 a))^2
+x
+2
+a
+x
+h
+x
+a
+a_{\\alpha} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle
+t
+f
+\\frac{-\\hbar^2}{2m}
+(\\sin(x))^2
+t
+x
+c/a
+e
+2(\\sin(x))^2
+i
+x
+(\\sin(x))^2
+T
+\\cos(2 x)
+\\psi(x)
+\\frac{n \\pi}{W}x
+a^2\\frac{2}{W}
+\\frac{2n\\pi}{W}
+v du
+\\psi
+1/2
+y
+ 1 = \\int_0^W a \\sin\\left(\\frac{n \\pi}{W} x\\right) \\psi(x)^* dx
+\\lambda = \\frac{v}{f}
+\\frac{1}{a^2} = \\frac{1}{2}W - \\frac{1}{2}\\left. \\frac{W}{2n\\pi}\\sin\\left(\\frac{2n\\pi}{W} x\\right) \\right|_0^W
+k = \\frac{2 \\pi}{v T}
+\\int \\cos(a x) dx = \\frac{1}{a}\\sin(a x)
+\\langle \\psi| \\hat{A}^+ |\\psi \\rangle = \\langle a \\rangle^*
+x = \\langle\\psi_{\\alpha}| a_{\\beta} |\\psi_{\\beta} \\rangle
+k W = n \\pi
+0 = a \\sin(k W)
+p = h/\\lambda
+E = h f
+p = m v
+p^2 = m^2 v^2
+\\frac{-\\hbar^2}{2m} \\nabla^2 = {\\cal H}
+\\frac{1}{a^2} = \\int_0^W \\frac{1}{2} dx - \\frac{1}{2} \\int_0^W \\cos\\left(2\\frac{n \\pi}{W}x\\right) dx
+\\frac{1}{a^2} = \\frac{1}{2}W - \\frac{1}{2} \\int_0^W \\cos\\left(2\\frac{n \\pi}{W}x\\right) dx
+a_{\\beta} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = a_{\\alpha} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle
+\\cos(2 x) = 1 - 2 (\\sin(x))^2
+0 = b
+\\lambda = v T
+\\vec{ \\nabla} \\times \\frac{\\partial \\vec{H}}{\\partial t} = \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2}
+\\vec{ \\nabla} \\times \\vec{H} = \\epsilon_0 \\frac{\\partial }{\\partial t}\\vec{E}
+x = \\langle \\psi_{\\alpha}| a_{\\alpha} |\\psi_{\\beta}\\rangle
+\\vec{ \\nabla} \\times \\vec{ \\nabla} \\times \\vec{E} =  - \\nabla^2 \\vec{E}
+\\vec{p}_{before} = \\vec{p}_{after}
+\\nabla^2 \\psi \\left( \\vec{r}t) \\right) = \\frac{i}{\\hbar} \\vec{p} \\cdot \\left( \\vec{ \\nabla} \\psi( \\vec{r}t) \\right)
+0 = a \\sin(n \\pi)
+\\nabla^2 E( \\vec{r})\\exp(i \\omega t) = - \\omega^2 \\mu_0 \\epsilon_0 E( \\vec{r})\\exp(i \\omega t)
+k = \\frac{n \\pi}{W}
+\\int |\\psi(x)|^2 dx = 1
+\\nabla^2 E( \\vec{r})\\exp(i \\omega t) = \\mu_0 \\epsilon_0 \\frac{\\partial^2}{\\partial t^2} E( \\vec{r})\\exp(i \\omega t)
+\\sin(x) = \\frac{1}{2i}\\left(\\exp(i x)-\\exp(-i x) \\right)
+f = 1/T
+-\\exp(-i x) = -\\cos(x)+i \\sin(x)
+T f = 1
+{\\cal H} \\psi \\left( \\vec{r}t) \\right) = i \\hbar \\frac{\\partial}{\\partial t} \\psi( \\vec{r}t)
+x = a_{\\beta} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle
+\\exp(-i x) = \\cos(-x)+i \\sin(-x)
+( a_{\\beta} - a_{\\alpha} ) \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = 0
+\\left(\\langle\\psi| \\hat{A} |\\psi \\rangle \\right)^+ = \\left(\\langle a \\rangle\\right)^+
+\\nabla^2 \\psi \\left( \\vec{r}t) \\right) = \\frac{-p^2}{\\hbar} \\psi( \\vec{r}t)
+\\langle x^2\\rangle -2\\langle x \\rangle\\langle x \\rangle+\\langle x \\rangle^2 = \\langle x^2 \\rangle-\\langle x \\rangle^2
+\\langle x^2\\rangle -\\langle x \\rangle^2 = \\langle x^2 \\rangle-\\langle x \\rangle^2
+\\vec{ \\nabla} \\times \\frac{\\partial}{\\partial t}\\vec{H} = \\epsilon_0 \\frac{\\partial^2 }{\\partial t^2}\\vec{E}
+\\nabla^2 \\psi \\left( \\vec{r}t) \\right) = \\frac{i}{\\hbar} \\vec{p} \\cdot \\left( \\frac{i}{\\hbar} \\vec{p} \\psi( \\vec{r}t) \\right)
+\\langle a \\rangle^* = \\langle a \\rangle
+\\psi(x) = a \\sin(\\frac{n \\pi}{W} x)
+\\frac{k}{2\\pi} = \\lambda
+p = \\frac{h k}{2\\pi}
+k = \\frac{2 \\pi}{\\lambda}
+T = 1 / f
+\\omega = 2 \\pi f
+\\omega = \\frac{2\\pi}{T}
+\\frac{\\omega}{2 \\pi} = f
+(\\cos(x))^2 = 1-(\\sin(x))^2
+\\nabla^2 E( \\vec{r}) = - \\frac{\\omega^2}{c^2} E( \\vec{r})
+\\langle \\left(x-\\langle x \\rangle\\right)^2 \\rangle = \\langle x^2 \\rangle-\\langle x \\rangle^2
+\\frac{1}{2}\\left(\\exp(i x)+\\exp(-i x) \\right) = \\cos(x)
+a_{\\beta} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle - a_{\\alpha} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = 0
+\\exp(i x)-\\exp(-i x) = 2 i \\sin(x)
+x = a_{\\alpha} \\langle \\psi_{\\alpha}| \\psi_{\\beta}\\rangle
+\\vec{ \\nabla} \\times \\vec{ \\nabla} \\times \\vec{E} = -\\mu_0 \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2}
+\\frac{\\partial}{\\partial t} \\psi( \\vec{r}t) = \\frac{-i}{\\hbar}E \\psi( \\vec{r}t)
+\\vec{ \\nabla} \\psi( \\vec{r}t) = \\psi_0 \\vec{ \\nabla}\\exp\\left(\\frac{i}{\\hbar}\\left( \\vec{p}\\cdot\\vec{r} - E t \\right) \\right)
+\\psi( \\vec{r}t) = \\psi_0 \\exp\\left(i\\left( \\vec{k}\\cdot\\vec{r} - \\omega t \\right) \\right)
+\\psi( \\vec{r}t) = \\psi_0 \\exp\\left(i\\left(\\frac{ \\vec{p}\\cdot\\vec{r}}{\\hbar} - \\omega t \\right) \\right)
+\\psi( \\vec{r}t) = \\psi_0 \\exp\\left(i\\left(\\frac{ \\vec{p}\\cdot\\vec{r}}{\\hbar} - \\frac{E t}{\\hbar}  \\right) \\right)
+\\psi( \\vec{r}t) = \\psi_0 \\exp\\left(\\frac{i}{\\hbar}\\left( \\vec{p}\\cdot\\vec{r} - E t \\right) \\right)
+\\frac{\\partial}{\\partial t} \\psi( \\vec{r}t) = \\psi_0 \\frac{\\partial}{\\partial t}\\exp\\left(i\\left(\\frac{ \\vec{p}\\cdot\\vec{r}}{\\hbar} - \\frac{E t}{\\hbar}  \\right) \\right)
+\\frac{\\partial}{\\partial t} \\psi( \\vec{r}t) = \\frac{-i}{\\hbar}E \\psi_0 \\exp\\left(i\\left(\\frac{ \\vec{p}\\cdot\\vec{r}}{\\hbar} - \\frac{E t}{\\hbar}  \\right) \\right)
+\\vec{p}_{after} = \\vec{p}_{1}
+E = \\frac{h \\omega}{2 \\pi}
+E = \\frac{1}{2}m v^2
+E = \\frac{1}{2m}m^2 v^2
+E = \\frac{p^2}{2m}
+i \\hbar \\frac{\\partial}{\\partial t} \\psi( \\vec{r}t) = \\frac{p^2}{2 m} \\psi( \\vec{r}t)
+\\frac{\\partial}{\\partial t} \\psi( \\vec{r}t) = \\frac{-i}{\\hbar}\\frac{p^2}{2 m} \\psi( \\vec{r}t)
+\\vec{ \\nabla}\\cdot \\left( \\vec{ \\nabla} \\psi( \\vec{r}t) \\right) = \\frac{i}{\\hbar} \\vec{ \\nabla}\\cdot\\left( \\vec{p} \\psi( \\vec{r}t) \\right)
+\\epsilon_0 \\mu_0 = \\frac{1}{c^2}
+\\cos(x) = \\frac{1}{2}\\left(\\exp(i x)+\\exp(-i x) \\right)
+\\exp(2 i x) = (\\cos(x))^2+2i\\cos(x)\\sin(x)-(\\sin(x))^2
+\\exp(2 i x) = (\\cos(x)+ i \\sin(x))(\\cos(x)+ i \\sin(x))
+\\exp(i x)+\\exp(-i x) = 2 \\cos(x)
+\\cos(2 x)+(\\sin(x))^2 = 1 - (\\sin(x))^2
+\\exp(2 i x) = \\cos(2 x)+i \\sin(2 x)
+\\frac{1}{2 i}\\left(\\exp(i x)-\\exp(-i x) \\right) = \\sin(x)
+1 = \\int \\psi(x)\\psi(x)^* dx
+\\frac{1}{a^2} = \\frac{W}{2}
+\\exp(i x)\\exp(i x) = (\\cos(x)+ i \\sin(x))(\\cos(x)+ i \\sin(x))
+i x = \\log(y)
+\\log(y) = i x
+b = 2
+\\exp(-i x) = \\cos(x)+i \\sin(-x)
+\\exp(i x) = \\cos(x)+i \\sin(x)
+\\exp(-i x) = \\cos(x)-i \\sin(x)
+\\vec{ \\nabla} \\psi( \\vec{r}t) = \\frac{i}{\\hbar} \\vec{p} \\psi_0 \\exp\\left(\\frac{i}{\\hbar}\\left( \\vec{p}\\cdot\\vec{r} - E t \\right) \\right)
+\\langle \\psi| \\hat{A} |\\psi \\rangle = \\langle a \\rangle^*
+\\langle x^2\\rangle -2\\langle x^2 \\rangle+\\langle x \\rangle^2 = \\langle x^2 \\rangle-\\langle x \\rangle^2
+\\cos(2 x)+i \\sin(2 x) = (\\cos(x)+i \\sin(x))(\\cos(x)+i \\sin(x))
+\\exp(-i x) = \\cos(-x)+i \\sin(-x)
+a+2 = c
+\\nabla^2 E( \\vec{r})\\exp(i \\omega t) = i \\omega \\mu_0 \\epsilon_0 \\frac{\\partial}{\\partial t} E( \\vec{r})\\exp(i \\omega t)
+\\vec{p}_{1}-\\vec{p}_{2} = \\vec{p}_{electron}
+\\frac{d^2}{dx^2} \\psi(x) = -k^2 \\psi(x)
+(\\sin(x))^2 + (\\cos(x))^2 = 1
+\\int a dx = a x
+\\frac{-\\hbar^2}{2m} \\nabla^2 \\psi \\left( \\vec{r}t) \\right) = \\frac{p^2}{2m} \\psi( \\vec{r}t)
+k = \\frac{\\omega}{v}
+x^2 + 2 x (b/(2 a)) + (b/(2 a))^2 = (x + (b/(2 a)))^2
+x^2 + (b/a)x + (b/(2 a))^2 = -c/a + (b/(2 a))^2
+x^2 + (b/a)x = -c/a
+x^2 + (b/a)x+(c/a) = 0
+x^2 + x(b/a) + (b/(2 a))^2 = (x+(b/(2 a)))^2
+x = -\\sqrt{(b/(2 a))^2 - (c/a)}-(b/(2 a))
+x+(b/(2 a)) = -\\sqrt{(b/(2 a))^2 - (c/a)}
+\\vec{ \\nabla} \\psi( \\vec{r}t) = \\frac{i}{\\hbar} \\vec{p} \\psi( \\vec{r}t)
+\\vec{p}_{electron}\\cdot\\vec{p}_{electron} = ( \\vec{p}_{1}\\cdot\\vec{p}_{1})+( \\vec{p}_{2}\\cdot\\vec{p}_{2})-2( \\vec{p}_{1}\\cdot\\vec{p}_{2})
+\\vec{ \\nabla} \\cdot \\vec{E} = 0
+\\int \\cos\\left(\\frac{2n\\pi}{W} x\\right) dx = \\frac{W}{2n\\pi}\\sin\\left(\\frac{2n\\pi}{W} x\\right)
+\\cos(2 x) + 2 (\\sin(x))^2 = 1
+\\left(\\sin\\left(\\frac{n \\pi}{W}x\\right) \\right)^2 = \\frac{1-\\cos\\left(2\\frac{n \\pi}{W}x\\right)}{2}
+\\vec{ \\nabla} \\times \\vec{ \\nabla} \\times \\vec{E} = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\epsilon^{ijk} \\hat{x}_i \\nabla_j ( \\vec{ \\nabla} \\times \\vec{E} )_k = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\epsilon^{ijk} \\epsilon_{njk} \\hat{x}_i \\nabla_j \\nabla^m E^n = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\epsilon^{ijk} \\epsilon_{njk} = \\delta^{l}_{\\ \\ j} \\delta^{m}_{\\ \\ k} - \\delta^{l}_{\\ \\ k} \\delta^{m}_{\\ \\ h}
+\\left( \\delta^{l}_{\\ \\ j} \\delta^{m}_{\\ \\ k} - \\delta^{l}_{\\ \\ k} \\delta^{m}_{\\ \\ h} \\right) \\hat{x}_i \\nabla_j \\nabla^m E^n = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\left( \\delta^{l}_{\\ \\ j} \\delta^{m}_{\\ \\ k} \\hat{x}_i \\nabla_j \\nabla^m E^n\\right)-\\left( \\delta^{l}_{\\ \\ k} \\delta^{m}_{\\ \\ h} \\hat{x}_i \\nabla_j \\nabla^m E^n \\right)  = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\hat{x}_m \\nabla_n \\nabla^m E^n - \\hat{x}_n \\nabla_m \\nabla^m E^n = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E} = \\vec{ \\nabla}( \\vec{ \\nabla} \\cdot \\vec{E} - \\nabla^2 \\vec{E})
+\\vec{p}_{electron} = \\vec{p}_{1}-\\vec{p}_{2}
+\\vec{p}_{1} = \\vec{p}_{2}+\\vec{p}_{electron}
+\\vec{p}_{before} = \\vec{p}_{1}
+\\vec{p}_{after} = \\vec{p}_{2}+\\vec{p}_{electron}
+\\langle x^2 - 2 x \\langle x \\rangle + \\langle x \\rangle^2 \\rangle = \\langle x^2 \\rangle-\\langle x \\rangle^2
+-a k^2\\sin(k x) + -b k^2\\cos(k x) = -a k^2 \\sin(kx) + -b k^2 \\cos(k x)
+a \\frac{d^2}{dx^2}\\sin(kx) + b \\frac{d^2}{dx^2}\\cos(k x) = -a k^2 \\sin(kx) + -b k^2 \\cos(kx)
+\\frac{2}{W} = a^2
+d(u v) = u dv + v du
+d(u v) - v du = u dv
+u dv = d(u v) - v du
+\\int u dv = u v - \\int v du
+\\nabla^2 \\vec{E} = \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2}
+1 = \\int |\\psi(x)|^2 dx
+\\vec{E} = E( \\vec{r}t)
+\\int \\frac{1}{2} dx = \\frac{1}{2} x
+\\frac{d^2}{dx^2} \\left(a \\sin(k x) + b \\cos(k x) \\right) = -k^2 \\left(a \\sin(kx) + b \\cos(kx) \\right)
+1 = \\int_0^W a^2 \\frac{1-\\cos\\left(2\\frac{n \\pi}{W}x\\right)}{2} dx
+0 = a \\sin(0) + b\\cos(0)
+\\psi(x) = a \\sin(kx) + b \\cos(kx)
+x^2 + 2 x h + h^2 = (x + h)^2
+\\psi(x)^* = a \\sin(\\frac{n \\pi}{W} x)
+1 = \\int_0^W a^2 \\left(\\sin\\left(\\frac{n \\pi}{W} x\\right) \\right)^2 dx
+\\psi(x) = a \\sin(k x)
+ax^2 + bx + c = 0
+\\vec{ \\nabla} \\times \\vec{ \\nabla} \\times \\vec{E} = -\\mu_0\\vec{ \\nabla} \\times \\frac{\\partial \\vec{H}}{\\partial t}
+\\hat{A}^+ = \\hat{A}
+(x+(b/(2 a)))^2 = -(c/a) + (b/(2 a))^2
+\\psi(x) = -\\sqrt{\\frac{2}{W}} \\sin\\left(\\frac{n \\pi}{W} x\\right)
+\\psi(x) = \\sqrt{\\frac{2}{W}} \\sin\\left(\\frac{n \\pi}{W} x\\right)
+\\nabla^2 E( \\vec{r}t) = \\mu_0 \\epsilon_0 \\frac{\\partial^2}{\\partial t^2} E( \\vec{r}t)
+\\frac{d}{dx} y = -\\sin(x) + i\\cos(x)
+\\frac{dy}{y} = i dx
+(\\cos(x))^2 = \\cos(2 x) + (\\sin(x))^2
+\\exp(i x) = y
+\\cos(2 x) = (\\cos(x))^2 - (\\sin(x))^2
+\\cos(2 x) + (\\sin(x))^2 = (\\cos(x))^2
+\\log(y) = i dx
+b = c
+\\frac{d}{dx} y = (i\\sin(x) + \\cos(x)) i
+\\cos(2 x) + i\\sin(2 x) = (\\cos(x))^2 + 2 i \\cos(x) \\sin(x) - (\\sin(x))^2
+\\nabla^2 E( \\vec{r})\\exp(i \\omega t) = - \\frac{\\omega^2}{c^2} E( \\vec{r})\\exp(i \\omega t)
+\\sqrt{\\frac{2}{W}} = a
+-\\sqrt{\\frac{2}{W}} = a
+y = \\cos(x)+i \\sin(x)
+\\psi(x=W) = 0
+E( \\vec{r}t) = E( \\vec{r})\\exp(i \\omega t)
+x =  \\sqrt{(b/(2 a))^2 - (c/a)}-(b/(2 a))
+x+(b/(2 a)) =  \\sqrt{(b/(2 a))^2 - (c/a)}
+\\psi(x=0) = 0
+x = \\langle\\psi_{\\alpha}| \\hat{A} |\\psi_{\\beta}\\rangle
+dy = y i dx
+\\frac{d}{dx} y = y i
+\\frac{1}{a^2} = \\int_0^W \\frac{1-\\cos\\left(2\\frac{n \\pi}{W}x\\right)}{2} dx
+2 (\\sin(x))^2 = 1 - \\cos(2 x)
+\\rho = 0
+\\frac{-\\hbar^2}{2m} \\nabla^2 \\psi \\left( \\vec{r}t) \\right) = i \\hbar \\frac{\\partial}{\\partial t} \\psi( \\vec{r}t)
+(\\sin(x))^2 = \\frac{1 - \\cos(2 x)}{2}
+\\vec{ \\nabla} \\times \\vec{E} = -\\mu_0\\frac{\\partial \\vec{H}}{\\partial t}
+\\frac{ \\vec{p}}{\\hbar} = \\vec{k}
+\\frac{p}{\\hbar} = k
+\\beta = 1/(k_{Boltzmann}T)
+\\langle x | k \\rangle = \\frac{\\exp(i k x)}{\\sqrt{2\\pi}}
+f(x) \\delta(x-a) = f(a)
+\\int_{-\\infty}^{\\infty} \\delta(x) dx = 1
+c = 1/\\sqrt{\\epsilon_0 \\mu_0}
+\\vec{E} = -\\vec{ \\nabla} \\Psi
+\\vec{F} = \\frac{\\partial}{\\partial t}\\vec{p}
+\\vec{F} = -\\vec{ \\nabla} V
+\\hbar = h/(2 \\pi)
+\\frac{E}{\\hbar} = \\omega
+p = \\hbar k
+\\lambda = h/p
+\\omega = c k
+E = \\omega \\hbar
+\\vec{L} = \\vec{r}\\times\\vec{p}
+\\vec{S} = \\frac{1}{\\mu_0} \\vec{E}\\times \\vec{B}
+x = \\frac{-b-\\sqrt{b^2-4ac}}{2 a}
+x = \\frac{-b+\\sqrt{b^2-4ac}}{2 a}
+\\eta_1 \\sin\\theta_1 = \\eta_2 \\sin\\theta_2
+{\\cal H} = \\frac{p^2}{2m}+V
+{\\cal H} |\\psi \\rangle = E |\\psi \\rangle
+\\left( \\Delta A \\right)^2  = \\langle A^2 \\rangle - \\langle A \\rangle^2
+\\langle \\psi| \\hat{A} |\\psi \\rangle = \\int_{-\\infty}^{\\infty} \\psi^* A \\psi dx
+\\langle \\psi| \\hat{A} |\\psi \\rangle = \\langle a \\rangle
+\\hat{p} = -i \\hbar \\frac{\\partial }{\\partial x}
+[\\hat{x}\\hat{p}] = i \\hbar
+\\vec{ \\nabla} \\times \\vec{B} = \\mu_0 \\vec{J} + \\mu_0 \\epsilon_0 \\frac{\\partial E}{\\partial t}
+\\vec{ \\nabla} \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}
+\\vec{ \\nabla} \\cdot \\vec{B} = 0
+\\vec{ \\nabla} \\cdot \\vec{E} = \\rho/\\epsilon_0
+V = I R + Q/C + L \\frac{\\partial I}{\\partial t}
+C = V A/d
+Q = C V
+V = I R
+\\left[\\begin{array}{cc}\\cos\\theta & \\sin\\theta\\\\-\\sin\\theta & \\cos\\theta\\end{array}\\right]\\left[\\begin{array}{c}A_x \\\\ A_y \\end{array}\\right] = \\left[\\begin{array}{c}A_{x'} \\\\ A_{y'} \\end{array}\\right]
+1 atmosphere = 101.325 Pascal
+1 atmosphere = 14.7 pounds/(inch^2)
+mass_{electron} = 511000 electronVolts/(q^2)
+Tesla = 10000*Gauss
+Pascal = Newton / (meter^2)
+Tesla = Newton / (Ampere*meter)
+Farad = Coulumb / Volt
+Volt = Joule / Coulumb
+Coulomb = Ampere / second
+Watt = Joule / second
+Joule = Newton*meter
+Newton = kilogram*meter/(second^2)
+x
+2 x
+\\sin(2 x) = \\frac{1}{2i}\\left(\\exp(i 2 x)-\\exp(-i 2 x) \\right)
+\\sin(x) \\cos(x) = \\frac{1}{2i}\\left(\\exp(i x)-\\exp(-i x) \\right) \\frac{1}{2}\\left(\\exp(i x)+\\exp(-i x) \\right)
+2
+2 \\sin(x) \\cos(x) = \\frac{1}{2i}\\left(\\exp(i x)-\\exp(-i x) \\right) \\left(\\exp(i x)+\\exp(-i x) \\right)
+\\frac{1}{2 i} \\left( \\exp(i 2 x) - 1 + 1 - \\exp(-i 2 x) \\right)
+2 \\sin(x) \\cos(x) = \\frac{1}{2 i} \\left( \\exp(i 2 x) - 1 + 1 - \\exp(-i 2 x) \\right)
+2 \\sin(x) \\cos(x) = \\frac{1}{2 i} \\left( \\exp(i 2 x) - \\exp(-i 2 x) \\right)
+\\sin(2 x) = 2 \\sin(x) \\cos(x)
+x
+\\pi
+\\exp(i \\pi) = \\cos(\\pi)+i \\sin(\\pi)
+\\exp(i \\pi) = -1 + i 0
+\\exp(i \\pi) = -1
+1
+\\exp(i \\pi) + 1 = 0
+E = KE + PE
+E KE PE
+E_2 KE_2 PE_2
+E_2 = KE_2 + PE_2
+E KE PE
+E_1 KE_1 PE_1
+E_1 = KE_1 + PE_1
+E_2 - E_1 = (KE_2 - KE_1) + (PE_2 - PE_1)
+KE = \\frac{1}{2} m v^2
+KE_2 v_2
+KE v
+KE_2 = \\frac{1}{2} m v_2^2
+KE_1 v_1
+KE v
+KE_1 = \\frac{1}{2} m v_1^2
+KE_2 - KE_1 = \\frac{1}{2} m \\left(v_2^2 - v_1^2\\right)
+t
+\\frac{KE_2 - KE_1}{t} = \\frac{1}{2} m \\frac{\\left( v_2^2 - v_1^2 \\right)}{t}
+x^2 - y^2 = (x+y)(x-y)
+v_2 v_1
+x y
+v_2^2 - v_1^2 = (v_2 + v_1)(v_2 - v_1)
+\\frac{KE_2 - KE_1}{t} = m \\frac{v_2 + v_1}{2} \\frac{ v_2 - v_1 }{t}
+v = \\frac{v_1 + v_2}{2}
+a = \\frac{v_2 - v_1}{t}
+\\frac{KE_2 - KE_1}{t} = m v \\frac{ v_2 - v_1 }{t}
+\\frac{KE_2 - KE_1}{t} = m v a
+F = m a
+\\frac{KE_2 - KE_1}{t} = v F
+PE = -F x
+PE_2 x_2
+PE x
+PE_2 = -F x_2
+PE_1 x_1
+PE x
+PE_1 = -F x_1
+PE_2 - PE_1 = -F ( x_2 - x_1 )
+t
+\\frac{PE_2 - PE_1}{t} = -F \\left( \\frac{x_2 - x_1}{t} \\right)
+v = \\frac{x_2 - x_1}{t}
+\\frac{PE_2 - PE_1}{t} = -F v
+t
+\\frac{E_2 - E_1}{t} = \\frac{(KE_2 - KE_1)}{t} + \\frac{(PE_2 - PE_1)}{t}
+\\frac{E_2 - E_1}{t} = \\frac{(KE_2 - KE_1)}{t} - F v
+\\frac{E_2 - E_1}{t} = v F - F v
+\\frac{E_2 - E_1}{t} = 0
+t
+E_2 - E_1 = 0
+E_1
+E_2 = E_1
+\\theta_{Brewster} + \\theta_{refracted} = 90^{\\circ}
+\\theta_{Brewster}
+\\theta_{refracted} = 90^{\\circ} - \\theta_{Brewster}
+n_1 \\sin( \\theta_1 ) = n_2 \\sin( \\theta_2 )
+\\theta_{Brewster} \\theta_{refraction}
+\\theta_1 \\theta_2
+n_1 \\sin( \\theta_{Brewster} ) = n_2 \\sin( \\theta_{refraction} )
+n_1 \\sin( \\theta_{Brewster} ) = n_2 \\sin( 90^{\\circ} - \\theta_{Brewster} )
+\\sin( 90^{\\circ} - x ) = \\cos( x )
+\\theta_{Brewster}
+x
+\\sin( 90^{\\circ} - \\theta_{Brewster} ) = \\cos( \\theta_{Brewster} )
+n_1 \\sin( \\theta_{Brewster} ) = n_2 \\cos( \\theta_{Brewster} )
+n_1
+ \\sin( \\theta_{Brewster} ) = \\frac{n_2}{n_1} \\cos( \\theta_{Brewster} )
+\\cos( \\theta_{Brewster} )
+\\frac{\\sin( \\theta_{Brewster} )}{\\cos( \\theta_{Brewster} )} = \\frac{n_2}{n_1}
+\\tan( x ) = \\frac{ \\sin( x )}{\\cos( x )}
+\\theta_{Brewster}
+x
+\\tan( \\theta_{Brewster} ) = \\frac{ \\sin( \\theta_{Brewster} )}{\\cos( \\theta_{Brewster} )}
+\\tan( \\theta_{Brewster} ) = \\frac{ n_2 }{ n_1 }
+\\arctan{ x }
+x
+\\theta_{Brewster} = \\arctan{ \\left( \\frac{ n_1 }{ n_2 } \\right) }
+f
+T
+v = \\frac{d}{t}
+C
+d
+v = \\frac{C}{t}
+C = 2 \\pi r
+C r
+C_{\\rm Earth\\ orbit} r_{\\rm Earth\\ orbit}
+C_{\\rm Earth\\ orbit} = 2 \\pi r_{\\rm Earth\\ orbit}
+C v t
+C_{\\rm Earth\\ orbit} v_{\\rm Earth\\ orbit} t_{\\rm Earth\\ orbit}
+v_{\\rm Earth\\ orbit} = \\frac{C_{\\rm Earth\\ orbit}}{t_{\\rm Earth\\ orbit}}
+v_{\\rm Earth\\ orbit} = \\frac{2 \\pi r_{\\rm Earth\\ orbit}}{t_{\\rm Earth\\ orbit}}
+t_{\\rm Earth\\ orbit} = 1 {\\rm year}
+\\frac{365 {\\rm days}}{1 {\\rm year}} \\frac{24 {\\rm hours}}{1 {\\rm day}} \\frac{60 {\\rm minutes}}{1 {\\rm hour}} \\frac{60 {\\rm seconds}}{1 {\\rm minute}}
+t_{\\rm Earth\\ orbit} = 3.16 10^7 {\\rm seconds}
+v_{\\rm Earth\\ orbit} = \\frac{2 \\pi r_{\\rm Earth\\ orbit}}{3.16\\ 10^7 {\\rm seconds}}
+r_{\\rm Earth\\ orbit} = 1.496\\ 10^8 {\\rm km}
+v_{\\rm Earth\\ orbit} = \\frac{2 \\pi \\left( 1.496\\ 10^8 {\\rm km} \\right)}{3.16\\ 10^7 {\\rm seconds}}
+v_{\\rm Earth\\ orbit} = 29.8 \\frac{{\\rm km}}{{\\rm sec}}
+x' = \\gamma (x - v t)
+x = \\gamma (x' + v t')
+x = \\gamma ( \\gamma (x - v t) + v t' )
+x = \\gamma ( \\gamma x - \\gamma v t + v t' )
+x = \\gamma^2 x - \\gamma^2 v t + \\gamma v t'
+\\gamma^2 x
+x - \\gamma^2 x =  - \\gamma^2 v t + \\gamma v t'
+x
+x (1 - \\gamma^2 ) = - \\gamma^2 v t + \\gamma v t'
+\\gamma^2 v t
+x (1 - \\gamma^2 ) + \\gamma^2 v t = \\gamma v t'
+\\gamma v
+\\frac{x (1 - \\gamma^2 )}{\\gamma v} + \\frac{\\gamma^2 v t}{\\gamma v} = \\gamma v t'
+\\frac{\\gamma x (1 - \\gamma^2 )}{\\gamma^2 v} + \\gamma t = t'
+\\frac{x (1 - \\gamma^2 )}{\\gamma v} + \\frac{\\gamma^2 v t}{\\gamma v} = t'
+t' = \\frac{\\gamma x (1 - \\gamma^2 )}{\\gamma^2 v} + \\gamma t
+x^2 + y^2 + z^2 = c^2 t^2
+x'^2 + y'^2 + z'^2 = c^2 t'^2
+y' = y
+z' = z
+\\gamma^2 (x - v t)^2 + y^2 + z^2 = c^2 \\gamma^2 \\left( t + \\frac{ 1 - \\gamma^2 }{ \\gamma^2 } \\frac{x}{v} \\right)^2
+C \\to C_{\\rm Earth\\ orbit}
+r \\to r_{\\rm Earth\\ orbit}
+v \\to v_{\\rm Earth\\ orbit}
+t \\to t_{\\rm Earth\\ orbit}
+\\theta_1 \\to \\theta_{Brewster}
+\\theta_2 \\to \\theta_{\\rm refracted}
+E \\to E_1
+E \\to E_2
+KE \\to KE_1
+PE \\to PE_1
+KE \\to KE_2
+PE \\to PE_2
+v \\to v_1
+v \\to v_1
+v \\to v_2
+x \\to x_1
+x \\to x_2
+x \\to v_2
+y \\to v_1
+\\gamma^2 x^2 - \\gamma^2 2 x v t + \\gamma^2 v^2 t^2 + y^2 + z^2 = c^2 \\gamma^2 \\left(\\frac{1-\\gamma^2}{\\gamma^2}\\right)\\frac{x^2}{\\gamma^2} + c^2 \\gamma^2 2 t \\left(\\frac{1-\\gamma^2}{\\gamma^2}\\right)\\frac{x}{\\gamma} + c^2 \\gamma^2 t^2
+\\left( \\gamma^2 - c^2 \\gamma^2 \\left( \\frac{1-\\gamma^2}{\\gamma^2} \\right)^2 \\frac{1}{v^2} \\right) x^2 + y^2 + z^2 + \\left( -\\gamma^2 2 x v t - c^2 \\gamma^2 2 t \\left( \\frac{1-\\gamma^2}{\\gamma^2} \\right) \\frac{x}{v} \\right) = t^2 \\left( c^2 \\gamma^2 - \\gamma^2 v^2 \\right)
+\\gamma^2 - c^2 \\gamma^2 \\frac{(1-\\gamma^2)^2}{v^2 \\gamma^4} = 1
+-\\gamma^2 v^2 + c^2 \\gamma^2 = c^2
+-\\gamma^2 2 x v t - c^2 \\gamma^2 2 t \\left( \\frac{1-\\gamma^2}{\\gamma^2} \\right) \\frac{x}{v} = 0
+\\gamma^2
+- c^2 \\gamma^2 \\frac{(1-\\gamma^2)^2}{v^2 \\gamma^4} = 1 - \\gamma^2
+1 - \\gamma^2
+- c^2 \\frac{(1-\\gamma^2)}{v^2 \\gamma^2} = 1
+v^2 \\gamma^2
+-c^2 + c^2 \\gamma^2 = v^2 \\gamma^2
+c^2
+c^2 \\gamma^2 = v^2 \\gamma^2 + c^2
+v^2 \\gamma^2
+c^2 \\gamma^2 - v^2 \\gamma^2 = c^2
+\\gamma^2
+\\gamma^2 (c^2 - v^2) = c^2
+c^2 - \\gamma^2
+\\gamma^2 = \\frac{c^2}{c^2 - \\gamma^2}
+1/2
+\\gamma = \\frac{1}{\\sqrt{1-\\frac{v^2}{c^2}}}
+\\gamma = \\frac{-1}{\\sqrt{1-\\frac{v^2}{c^2}}}
+a = \\frac{v - v_0}{t}
+t
+a t = v - v_0
+v_0
+a t + v_0 = v
+v = v_0 + a t
+v_{\\rm ave} = \\frac{d}{t}
+v_{\\rm ave} = \\frac{v + v_0}{2}
+\\frac{d}{t} = \\frac{v + v_0}{2}
+t
+d = \\left(\\frac{v + v_0}{2}\\right)t
+d = \\frac{(v_0 + a t) + v_0}{2} t
+d = \\frac{2 v_0 + a t}{2} t
+d = v_0 t + \\frac{1}{2} a t^2
+2
+v^2 = v_0^2 + 2 a t v_0 + a^2 t^2
+v^2 = v_0^2 + 2 a \\left( v_0 t +\\frac{1}{2} a t^2 \\right)
+v^2 = v_0^2 + 2 a d
+v_0
+v - v_0 = a t
+a
+t = \\frac{v - v_0}{a}
+d = \\frac{1}{2} (v + v_0) \\left( \\frac{v - v_0}{a} \\right)
+d = \\frac{1}{2 a} (v^2 - v_0^2)
+2 a
+2 a d = v^2 - v_0^2
+v_0^2
+2 a d + v_0^2 = v^2
+a t
+v - a t = v_0
+d = (v - a t) t + \\frac{1}{2} a t^2
+d = v t - a t^2 + \\frac{1}{2} a t^2
+d = v t - \\frac{1}{2} a t^2
+Z = |Z| \\exp( i \\theta )
+Z^* = |Z| \\exp( -i \\theta )
+Z Z^* = |Z| |Z| \\exp( -i \\theta ) \\exp( i \\theta )
+Z Z^* = |Z|^2
+I = | A + B |^2
+Z
+A + B
+(A + B)(A + B)^* = |A + B|^2
+I = (A + B)(A + B)^*
+I = (A + B)(A^* + B^*)
+I = A A^* + B B^* + A B^* + B A^*
+Z
+A
+A A^* = |A|^2
+B
+Z
+B B^* = |B|^2
+I = |A|^2 + B B^* + A B^* + B A^*
+I = |A|^2 + |B|^2 + A B^* + B A^*
+Z \\to B
+\\theta \\to \\phi
+B = |B| \\exp(i \\phi)
+A
+Z
+A = |A| \\exp(i \\theta)
+A^* = |A| \\exp(-i \\theta)
+B^* = |B| \\exp(-i \\phi)
+I = |A|^2 + |B|^2 + |A| |B| \\exp(-i \\theta) \\exp(i \\phi) + |A| |B| \\exp(i \\theta) \\exp(-i \\phi)
+I = |A|^2 + |B|^2 + |A| |B| \\exp(i (\\theta - \\phi)) + |A| |B| \\exp(-i (\\theta - \\phi))
+x
+\\theta - \\phi
+\\cos(x) = \\frac{1}{2} \\left( \\exp(i (\\theta - \\phi)) + \\exp(-i (\\theta - \\phi)) \\right)
+2
+2 \\cos(x) = \\left( \\exp(i (\\theta - \\phi)) + \\exp(-i (\\theta - \\phi)) \\right)
+I = |A|^2 + |B|^2 + |A| |B| 2 \\cos( \\theta - \\phi )
+\\theta = \\phi
+I = |A|^2 + |B|^2 + |A| |B| 2 \\cos( 0 )
+|A| = |B|
+I = |A|^2 + |A|^2 + |A| |A| 2
+I_{\\rm coherent} = |A|^2 + |B|^2 + |A| |B| 2 \\cos( 0 )
+I_{\\rm coherent} = |A|^2 + |A|^2 + |A| |A| 2
+I_{\\rm coherent} = 4 |A|^2
+\\langle \\cos(\\theta - \\phi) \\rangle = 0
+I_{\\rm incoherent} = |A|^2 + |B|^2
+I_{\\rm incoherent} = |A|^2 + |A|^2
+I_{\\rm incoherent} = 2|A|^2
+\\frac{I_{\\rm coherent}}{I_{\\rm incoherent}} = 2
+f
+g
+a = b
+c = d
+\\vec{a} = \\frac{d\\vec{v}}{dt}
+\\vec{a} = a_x \\hat{x} + a_y \\hat{y}
+a_x \\hat{x} + a_y \\hat{y} = \\frac{d\\vec{v}}{dt}
+\\vec{v} = v_x \\hat{x} + v_y \\hat{y}
+a_x \\hat{x} + a_y \\hat{y} = \\frac{d}{dt} \\left(v_x \\hat{x} + v_y \\hat{y} \\right)
+a_x = \\frac{d}{dt} v_x
+a_y = \\frac{d}{dt} v_y
+a_x = 0
+a_y = -g
+2
+2
+0 = \\frac{d}{dt} v_x
+-g = \\frac{d}{dt} v_y
+dt
+-g dt = d v_y
+-g \\int dt = \\int d v_y
+-g t = v_y - v_{0 y}
+v_{0 y}
+-g t + v_{0 y} = v_y
+v_y = \\frac{dy}{dt}
+-g t + v_{0 y} = \\frac{dy}{dt}
+dt
+-g t dt + v_{0 y} dt = dy
+-g \\int t dt + v_{0 y} \\int dt = \\int dy
+- \\frac{1}{2} g t^2 + v_{0 y} t = y - y_0
+y_0
+- \\frac{1}{2} g t^2 + v_{0 y} t + y_0 = y
+dt
+0 dt = d v_x
+\\int 0 dt = \\int d v_x
+0 = v_x - v_{0 x}
+v_{0 x}
+v_{0 x} = v_x
+v_x = \\frac{dx}{dt}
+v_{0 x} = \\frac{dx}{dt}
+dt
+v_{0 x} dt = dx
+v_{0 x} \\int dt = \\int dx
+v_{0 x} t = x - x_0
+x_0
+v_{0 x} t + x_0 = x
+x = v_{0 x} t + x_0
+2
+\\vec{v}_0 = v_{0 x} \\hat{x} + v_{0 y} \\hat{y}
+\\theta
+\\cos(\\theta) = \\frac{v_{0 x}}{v_0}
+\\sin(\\theta) = \\frac{v_{0 y}}{v_0}
+v_0
+v_0 \\cos(\\theta) = v_{0 x}
+x = v_0 t \\cos(\\theta) + x_0
+v_0
+v_0 \\sin(\\theta) = v_{0 y}
+y = - \\frac{1}{2} g t^2 + v_{0 y} t + y_0
+y = - \\frac{1}{2} g t^2 + v_0 t \\sin(\\theta) + y_0
+v_{0 x}
+t = \\frac{x - x_0}{v_{0 x}}
+y = - \\frac{1}{2} g \\left( \\frac{x - x_0}{v_{0 x}} \\right)^2 + v_{0 y} \\frac{x - x_0}{v_{0 x}} + y_0
+y \\to y_f
+t \\to t_f
+y_f = - \\frac{1}{2} g t_f^2 + v_0 t_f \\sin(\\theta) + y_0
+t = t_f
+y_f = 0
+0 = - \\frac{1}{2} g t_f^2 + v_0 t_f \\sin(\\theta) + y_0
+y_0 = 0
+0 = - \\frac{1}{2} g t_f^2 + v_0 t_f \\sin(\\theta)
+t_f
+0 = - \\frac{1}{2} g t_f + v_0 \\sin(\\theta)
+\\frac{1}{2} g t_f
+\\frac{1}{2} g t_f = v_0 \\sin(\\theta)
+2/g
+t_f = \\frac{2 v_0 \\sin(\\theta)}{g}
+x \\to x_f
+t \\to t_f
+x_f = v_0 t_f \\cos(\\theta) + x_0
+t = t_f
+x_f = x_0 + d
+x_0 + d = v_0 t_f \\cos(\\theta) + x_0
+x_0
+d = v_0 t_f \\cos(\\theta)
+d = v_0 \\frac{2 v_0 \\sin(\\theta)}{g} \\cos(\\theta)
+\\theta
+x
+\\sin(2 \\theta) = 2 \\sin(\\theta) \\cos(\\theta)
+d = \\frac{v_0^2}{g} \\sin(2 \\theta)
+\\theta
+\\theta = \\frac{\\pi}{4}
+d = \\frac{v_0^2}{g} \\sin\\left(2 \\frac{\\pi}{4}\\right)
+d = \\frac{v_0^2}{g}
+dW = F dx
+\\int dW = F \\int_0^x dx
+W = F x
+F = G \\frac{m_1 m_2}{x^2}
+dW = G \\frac{m_1 m_2}{x^2} dx
+ \\int dW = G m_1 m_2 \\int_{ r_{\\rm Earth} }^{\\infty} \\frac{1}{x^2} dx
+ W = G m_1 m_2 \\left( \\frac{1}{x} \\bigg\\rvert_{ r_{\\rm Earth} }^{\\infty} \\right)
+W = m a x
+d \\to x
+v \\to v_2
+x = \\frac{v_2^2 - v_1^2}{2 a}
+W = m a \\frac{v_2^2 - v_1^2}{2 a}
+W = \\frac{1}{2} m v_2^2 - \\frac{1}{2} m v_1^2
+W = KE_2 - KE_1
+m_1 \\to m_{\\rm Earth}
+m_2 \\to m
+W = G m_{\\rm Earth} m \\left( \\frac{1}{x^2} \\bigg\\rvert_{ r_{\\rm Earth} }^{\\infty} \\right)
+W = G m_{\\rm Earth} m \\left( 0 - \\frac{-1}{ r_{\\rm Earth}} \\right)
+W = G \\frac{m_{\\rm Earth} m }{ r_{\\rm Earth}}
+KE_2 + PE_2 = KE_1 + PE_1
+PE_2 = 0
+KE_2 = 0
+0 = KE_1 + PE_1
+KE_1 \\to KE_{\\rm escape}
+PE_1 \\to PE_{\\rm Earth surface}
+0 = KE_{\\rm escape} + PE_{\\rm Earth surface}
+PE_{\\rm Earth\\ surface} = -W
+PE_{\\rm Earth\\ surface} = -G \\frac{m_{\\rm Earth} m}{r_{\\rm Earth}}
+KE \\to KE_{\\rm escape}
+v \\to v_{\\rm escape}
+KE_{
+KE_{\\rm escape} = \\frac{1}{2} m v_{\\rm escape}^2
+0 = -G \\frac{m_{\\rm Earth} m}{r_{\\rm Earth}} + \\frac{1}{2} m v_{\\rm escape}^2
+0 = KE_{\\rm escape} + PE_{\\rm Earth\\ surface}
+G \\frac{m_{\\rm Earth} m}{r_{\\rm Earth}}
+G \\frac{m_{\\rm Earth} m}{r_{\\rm Earth}} = \\frac{1}{2} m v_{\\rm escape}^2
+G \\frac{m_{\\rm Earth}}{r_{\\rm Earth}} = \\frac{1}{2} v_{\\rm escape}^2
+2
+2 G \\frac{m_{\\rm Earth}}{r_{\\rm Earth}} = v_{\\rm escape}^2
+v_{\\rm escape}^2 = 2 G \\frac{m_{\\rm Earth}}{r_{\\rm Earth}}
+v_{\\rm escape} = \\sqrt{2 G \\frac{m_{\\rm Earth}}{r_{\\rm Earth}}}
+v_{\\rm escape} = -\\sqrt{2 G \\frac{m_{\\rm Earth}}{r_{\\rm Earth}}}
+Take cross product of $#1$ and Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Take inner product of $#1$ with Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Add $#1$ to both sides of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Add zero to LHS of Eq.~\\ref{eq:#2} where $0=#1$; yields Eq.~\\ref{eq:#3}.
+Add zero to RHS of Eq.~\\ref{eq:#2} where $0=#1$; yields Eq.~\\ref{eq:#3}.
+Apply divergence to both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Apply gradient to both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Apply operator to bra in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Apply operator to ket in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Assume $#1$ dimensions; decompose vector to be Eq.~\\ref{eq:#2}.
+Take cross product of Eq.~\\ref{eq:#2} and $#1$; yields Eq.~\\ref{eq:#3}
+Take inner product of Eq.~\\ref{eq:#2} with $#1$; yields Eq.~\\ref{eq:#3}
+A boundary condition for Eq.~\\ref{eq:#1} is Eq.~\\ref{eq:#2}
+Thus we see that LHS of Eq.~\\ref{eq:#1} is equal to RHS.
+Combine like terms in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Conjugate both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Conjugate $#1$ in Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Conjugate transpose of both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Eq.~\\ref{eq:#1} is an assumption.
+Eq.~\\ref{eq:#1} is one of the final equations.
+Judicious choice as a guessed solution to Eq.~\\ref{eq:#1} is
+Eq.~\\ref{eq:#1} is an identity.
+Eq.~\\ref{eq:#1} is an initial equation.
+Differentiate Eq.~\\ref{eq:#2} with respect to $#1$; yields Eq.~\\ref{eq:#3}.
+Distribute conjugate to factors in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Distribute conjugate transpose to factors in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Divide both sides of Eq.~\\ref{eq:#2} by $#1$; yields Eq.~\\ref{eq:#3}.
+Evaluate definite integral Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Expand the LHS of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Expand the RHS of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Expand integrand of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Expand $#1$ in Eq.~\\ref{eq:#2} with conjugate; yields Eq.~\\ref{eq:#3}.
+Factor $#1$ from Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Factor $#1$ from the LHS of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Factor $#1$ from the RHS of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+$#1$ is even with respect to $#2$ so replace $#1$ with $#3$ in Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
+$#1$ is odd with respect to $#2$ so replace $#1$ with $#3$ in Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
+Indefinite integral of both sides of Eq.~\\ref{eq:#2} over $#1$; yields Eq.~\\ref{eq:#3}.
+Indefinite integral of LHS of Eq.~\\ref{eq:#2} over $#1$; yields Eq.~\\ref{eq:#3}.
+Indefinite integral of both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Indefinite integral of RHS of Eq.~\\ref{eq:#2} over $#1$; yields Eq.~\\ref{eq:#3}.
+Integrate Eq.~\\ref{eq:#4} over $#1$ from lower limit $#2$ to upper limit $#3$; yields Eq.~\\ref{eq:#5}.
+Make Eq.~\\ref{eq:#2} the power of $#1$; yields Eq.~\\ref{eq:#3}.
+Multiply LHS of Eq.~\\ref{eq:#2} by 1 which in this case is $#1$; yields Eq.~\\ref{eq:#3}
+Multiply RHS of Eq.~\\ref{eq:#2} by 1 which in this case is $#1$; yields Eq.~\\ref{eq:#3}
+Multiply both sides of Eq.~\\ref{eq:#2} by $#1$; yields Eq.~\\ref{eq:#3}.
+Normalization condition is Eq.~\\ref{eq:#1}.
+Partially differentiate Eq.~\\ref{eq:#2} with respect to $#1$; yields Eq.~\\ref{eq:#3}.
+Raise both sides of Eq.~\\ref{eq:#2} to $#1$; yields Eq.~\\ref{eq:#3}.
+Replace curl in Eq.~\\ref{eq:#1} with Levi-Cevita contravariant; yields Eq.~\\ref{eq:#2}.
+Replace scalar variables in Eq.~\\ref{eq:#1} with equivalent vector variables; yields Eq.~\\ref{eq:#2}.
+Replace summation notation in Eq.~\\ref{eq:#1} with vector notation; yields Eq.~\\ref{eq:#2}.
+Select imaginary parts of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Select real parts of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Simplify Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Solve Eq.~\\ref{eq:#2} for $#1$; yields Eq.~\\ref{eq:#3}.
+Change variable $#1$ to $#2$ in Eq.~\\ref{eq:#3}; yields Eq.~\\ref{eq:#4}.
+Subtract $#1$ from both sides of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Sum exponents on LHS and RHS of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Sum exponents on LHS of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Sum exponents on RHS of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Swap LHS of Eq.~\\ref{eq:#1} with RHS; yields Eq.~\\ref{eq:#2}.
+Apply curl to both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2}.
+Multiply Eq.~\\ref{eq:#1} by Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Substitute LHS of Eq.~\\ref{eq:#1} into Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Substitute RHS of Eq.~\\ref{eq:#1} into Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+LHS of Eq.~\\ref{eq:#1} is equal to LHS of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+RHS of Eq.~\\ref{eq:#1} is equal to RHS of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Subtract Eq.~\\ref{eq:#1} from Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#2}.
+Add Eq.~\\ref{eq:#1} to Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#2}.
+Eq.~\\ref{eq:#1} is valid when Eq.~\\ref{eq:#2} occurs; yields Eq.~\\ref{eq:#3}.
+Thus we see that Eq.~\\ref{eq:#1} is equivalent to Eq.~\\ref{eq:#2}.
+Apply function $#1$ with argument $#2$ to Eq.~\\ref{eq:#3}; yields Eq.~\\ref{eq:#4}
+Eq.~\\ref{eq:#1} is equivalent to Eq.~\\ref{eq:#2} under the condition in Eq.~\\ref{eq:#3}.
+replace variable according to Eq.~\\ref{eq:#1}.
+Substitute LHS of Eq.~\\ref{eq:#1} and LHS of Eq.~\\ref{eq:#2} into Eq.~\\ref{eq:#3}; yields Eq.~\\ref{eq:#4}.
+Substitute LHS of Eq.~\\ref{eq:#1} and LHS of Eq.~\\ref{eq:#2} and LHS of Eq.~\\ref{eq:#3} into Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
+Substitute LHS of Eq.~\\ref{eq:#1} and LHS of Eq.~\\ref{eq:#2} and LHS of Eq.~\\ref{eq:#3} and LHS of Eq.~\\ref{eq:#4} into Eq.~\\ref{eq:#5}; yields Eq.~\\ref{eq:#6}.
+Substitute LHS of Eq.~\\ref{eq:#1} and LHS of Eq.~\\ref{eq:#2} and LHS of Eq.~\\ref{eq:#3} and LHS of Eq.~\\ref{eq:#4} and LHS of Eq.~\\ref{eq:#5} into Eq.~\\ref{eq:#6}; yields Eq.~\\ref{eq:#7}.
+Substitute LHS of Eq.~\\ref{eq:#1} and LHS of Eq.~\\ref{eq:#2} and LHS of Eq.~\\ref{eq:#3} and LHS of Eq.~\\ref{eq:#4} and LHS of Eq.~\\ref{eq:#5} and LHS of Eq.~\\ref{eq:#6} into Eq.~\\ref{eq:#7}; yields Eq.~\\ref{eq:#8}.
+Change of variable $#1$ and $#2$ in Eq.~\\ref{eq:#3}; yields Eq.~\\ref{eq:#4}.
+Change of variable $#1$ and $#2$ and $#3$ in Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
+Change of variable $#1$ and $#2$ and $#3$ and $#4$ in Eq.~\\ref{eq:#5}; yields Eq.~\\ref{eq:#6}.
+Change of variable $#1$ and $#2$ and $#3$ and $#4$ and $#5$ in Eq.~\\ref{eq:#6}; yields Eq.~\\ref{eq:#7}.
+Change of variable $#1$ and $#2$ and $#3$ and $#4$ and $#5$ and $#6$ in Eq.~\\ref{eq:#7}; yields Eq.~\\ref{eq:#8}.
+Take the square root of both sides of Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2} and Eq.~\\ref{eq:#3}.
+Divide Eq.~\\ref{eq:#1} by Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
+Separate two vector components in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2} and Eq.~\\ref{eq:#3}
+Separate three vector components in Eq.~\\ref{eq:#1}; yields Eq.~\\ref{eq:#2} and Eq.~\\ref{eq:#3} and Eq.~\\ref{eq:#4}.
+Separate vector in Eq.~\\ref{eq:#2} into components related by angle $#1$; yields Eq.~\\ref{eq:#3} and Eq.~\\ref{eq:#4}.
+Boundary condition: Eq.~\\ref{eq:#2} when Eq.~\\ref{eq#1}.
+The maximum of Eq.~\\ref{eq:#2} with respect to $#1$ is Eq.~\\ref{eq:#3}
+Integrate Eq.~ref{eq:#1}; yields Eq.~ref{eq:#2}.
++
+ [
+\\cos
+ [
+\\cross
+ [
+\\int
+ [
+/
+ [
+\\dot
+ [
++
+ [
+=
+ [
+f
+ [
+\\int
+ [
+*
+ [
+\\nabla
+ [
+\\sin
+ [
+\\vec{ \\nabla}
+ [
+-
+ [
+\\sum
+ [
+\\omega
+n_1
+KE
+PE
+E
+p
+\\theta_{Brewster}
+k_{Boltzman}
+\\hbar
+v
+\\alpha
+y
+x
+t
+y_0
+j
+i
+x_0
+d
+\\exp
+e
+t_f
+\\vec{x}
+\\pi
+F
+f
+f
+u
+c
+g
+n
+c
+t_0
+i
+m
+k
+t_i
+N_A
+a
+a
+b
+dx
+T
+\\lambda
+d
+C
+r
+r_{\\rm Earth\\ orbit}
+x
+x'
+y'
+z'
+z
+y
+\\gamma
+v_0
+A
+B
+Z
+\\theta
+\\phi
+I
+I_{\\rm coherent}
+I_{\\rm incoherent}
+g
+v_{0 x}
+v_{0 y}
+\\vec{v}_0
+dt
+d v_y
+d v_x
+dy
+y_f
+x_f
+n
+W
+W
+dW
+m_{\\rm Earth}
+G
+r_{\\rm Earth}
+v_{\\rm escape}

@@ -1,1 +1,0 @@
-\left( \delta^{l}_{\ \ j} \delta^{m}_{\ \ k} \hat{x}_i \nabla_j \nabla^m E^n\right)-\left( \delta^{l}_{\ \ k} \delta^{m}_{\ \ h} \hat{x}_i \nabla_j \nabla^m E^n \right) = \vec{ \nabla}( \vec{ \nabla} \cdot \vec{E} - \nabla^2 \vec{E})

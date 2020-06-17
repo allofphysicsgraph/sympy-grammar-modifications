@@ -1,1 +1,0 @@
-[1,2,3,1,2,3] cleanup.sh install.sh LaTeX.g4 LaTeX.interp LaTeXLexer.interp LaTeXLexer.py LaTeXLexer.tokens LaTeXListener.py LaTeXParser.py LaTeX.py latex_tests LaTeX.tokens LaTeXVisitor.py Makefile output __pycache__ rename.py requirements.txt run.sh run_test_input.sh test_e test_expressions test_file [4,5,6,7,8,9]

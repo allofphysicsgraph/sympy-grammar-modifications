@@ -1,1 +1,0 @@
-I = |A|^2 + |B|^2 + |A| |B| \exp(-i \theta) \exp(i \phi) + |A| |B| \exp(i \theta) \exp(-i \phi)

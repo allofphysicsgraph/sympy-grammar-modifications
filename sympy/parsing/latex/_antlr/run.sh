@@ -5,4 +5,4 @@ $antlr4 LaTeX.g4 -visitor -Dlanguage=Python3
 #javac LaTeX*.java
 #$grun LaTeX prog -gui
 source /home/user/venv/bin/activate
-python LaTeX.py
+/bin/bash run_tests.sh

@@ -209,9 +209,26 @@ BAR:
     '\\Bar'
     |    '\\bar';
 
-  
-symbols:
-  '\\bigodot'
+ 
+symbols: 
+	'Earth'
+    |   'before'
+    |   'after'
+    |   'orbit'
+    |   'km'
+    |   'atmosphere'
+    |   'after'
+    |   'seconds'
+    |   'hours'
+    |   'day'
+    |   'minutes'
+    |	'electron'
+    |	'Gauss'
+    |	'Newton'
+    |	'Ampere'
+    |	'meter'
+    |	'Brewster'    
+    |    '\\bigodot'
     |   '\\bigoplus'
     |   '\\bigotimes'
     |   '\\la'

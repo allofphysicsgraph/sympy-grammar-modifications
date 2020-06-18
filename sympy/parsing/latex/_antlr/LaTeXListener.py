@@ -17,51 +17,6 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by LaTeXParser#trig_functions_.
-    def enterTrig_functions_(self, ctx:LaTeXParser.Trig_functions_Context):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#trig_functions_.
-    def exitTrig_functions_(self, ctx:LaTeXParser.Trig_functions_Context):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#frac_.
-    def enterFrac_(self, ctx:LaTeXParser.Frac_Context):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#frac_.
-    def exitFrac_(self, ctx:LaTeXParser.Frac_Context):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#common_functions_.
-    def enterCommon_functions_(self, ctx:LaTeXParser.Common_functions_Context):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#common_functions_.
-    def exitCommon_functions_(self, ctx:LaTeXParser.Common_functions_Context):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#aaaa.
-    def enterAaaa(self, ctx:LaTeXParser.AaaaContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#aaaa.
-    def exitAaaa(self, ctx:LaTeXParser.AaaaContext):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#add_sub.
-    def enterAdd_sub(self, ctx:LaTeXParser.Add_subContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#add_sub.
-    def exitAdd_sub(self, ctx:LaTeXParser.Add_subContext):
-        pass
-
-
     # Enter a parse tree produced by LaTeXParser#begin_eq_.
     def enterBegin_eq_(self, ctx:LaTeXParser.Begin_eq_Context):
         pass
@@ -86,6 +41,132 @@ class LaTeXListener(ParseTreeListener):
 
     # Exit a parse tree produced by LaTeXParser#sss.
     def exitSss(self, ctx:LaTeXParser.SssContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#array.
+    def enterArray(self, ctx:LaTeXParser.ArrayContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#array.
+    def exitArray(self, ctx:LaTeXParser.ArrayContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#relation_operators_.
+    def enterRelation_operators_(self, ctx:LaTeXParser.Relation_operators_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#relation_operators_.
+    def exitRelation_operators_(self, ctx:LaTeXParser.Relation_operators_Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#vector.
+    def enterVector(self, ctx:LaTeXParser.VectorContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#vector.
+    def exitVector(self, ctx:LaTeXParser.VectorContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#mul_div.
+    def enterMul_div(self, ctx:LaTeXParser.Mul_divContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#mul_div.
+    def exitMul_div(self, ctx:LaTeXParser.Mul_divContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#exponent.
+    def enterExponent(self, ctx:LaTeXParser.ExponentContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#exponent.
+    def exitExponent(self, ctx:LaTeXParser.ExponentContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#trig_functions_.
+    def enterTrig_functions_(self, ctx:LaTeXParser.Trig_functions_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#trig_functions_.
+    def exitTrig_functions_(self, ctx:LaTeXParser.Trig_functions_Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#abs_2.
+    def enterAbs_2(self, ctx:LaTeXParser.Abs_2Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#abs_2.
+    def exitAbs_2(self, ctx:LaTeXParser.Abs_2Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#abs_1.
+    def enterAbs_1(self, ctx:LaTeXParser.Abs_1Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#abs_1.
+    def exitAbs_1(self, ctx:LaTeXParser.Abs_1Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#frac_.
+    def enterFrac_(self, ctx:LaTeXParser.Frac_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#frac_.
+    def exitFrac_(self, ctx:LaTeXParser.Frac_Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#abs_0.
+    def enterAbs_0(self, ctx:LaTeXParser.Abs_0Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#abs_0.
+    def exitAbs_0(self, ctx:LaTeXParser.Abs_0Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#common_functions_.
+    def enterCommon_functions_(self, ctx:LaTeXParser.Common_functions_Context):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#common_functions_.
+    def exitCommon_functions_(self, ctx:LaTeXParser.Common_functions_Context):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#l_r_angle.
+    def enterL_r_angle(self, ctx:LaTeXParser.L_r_angleContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#l_r_angle.
+    def exitL_r_angle(self, ctx:LaTeXParser.L_r_angleContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#aaaa.
+    def enterAaaa(self, ctx:LaTeXParser.AaaaContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#aaaa.
+    def exitAaaa(self, ctx:LaTeXParser.AaaaContext):
+        pass
+
+
+    # Enter a parse tree produced by LaTeXParser#add_sub.
+    def enterAdd_sub(self, ctx:LaTeXParser.Add_subContext):
+        pass
+
+    # Exit a parse tree produced by LaTeXParser#add_sub.
+    def exitAdd_sub(self, ctx:LaTeXParser.Add_subContext):
         pass
 
 
@@ -116,24 +197,6 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by LaTeXParser#array.
-    def enterArray(self, ctx:LaTeXParser.ArrayContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#array.
-    def exitArray(self, ctx:LaTeXParser.ArrayContext):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#relation_operators_.
-    def enterRelation_operators_(self, ctx:LaTeXParser.Relation_operators_Context):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#relation_operators_.
-    def exitRelation_operators_(self, ctx:LaTeXParser.Relation_operators_Context):
-        pass
-
-
     # Enter a parse tree produced by LaTeXParser#symbols_.
     def enterSymbols_(self, ctx:LaTeXParser.Symbols_Context):
         pass
@@ -161,24 +224,6 @@ class LaTeXListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by LaTeXParser#vector.
-    def enterVector(self, ctx:LaTeXParser.VectorContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#vector.
-    def exitVector(self, ctx:LaTeXParser.VectorContext):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#mul_div.
-    def enterMul_div(self, ctx:LaTeXParser.Mul_divContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#mul_div.
-    def exitMul_div(self, ctx:LaTeXParser.Mul_divContext):
-        pass
-
-
     # Enter a parse tree produced by LaTeXParser#letter_like_symbols_.
     def enterLetter_like_symbols_(self, ctx:LaTeXParser.Letter_like_symbols_Context):
         pass
@@ -194,15 +239,6 @@ class LaTeXListener(ParseTreeListener):
 
     # Exit a parse tree produced by LaTeXParser#begin_split_.
     def exitBegin_split_(self, ctx:LaTeXParser.Begin_split_Context):
-        pass
-
-
-    # Enter a parse tree produced by LaTeXParser#exponent.
-    def enterExponent(self, ctx:LaTeXParser.ExponentContext):
-        pass
-
-    # Exit a parse tree produced by LaTeXParser#exponent.
-    def exitExponent(self, ctx:LaTeXParser.ExponentContext):
         pass
 
 

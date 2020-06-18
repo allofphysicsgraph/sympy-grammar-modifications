@@ -47,8 +47,10 @@ class Calc(LaTeXVisitor):
         right = self.visit(ctx.expr(1))
         print(type(left))
         if ctx.op.text == '*':
-            print(left * right)
-
+            try:
+                print(left * right)
+            except Exception as e:
+                print(e)
   
 file_name = argv[1] 
 input_stream = FileStream(file_name)

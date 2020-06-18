@@ -4,8 +4,6 @@
 -
 /
 =
-$#1$ is even with respect to $#2$, so replace $#1$ with $#3$ in Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
-$#1$ is odd with respect to $#2$, so replace $#1$ with $#3$ in Eq.~\\ref{eq:#4}; yields Eq.~\\ref{eq:#5}.
 0 = a \\sin(0) + b\\cos(0)
 0 = a \\sin(k W)
 0 = a \\sin(n \\pi)
@@ -62,7 +60,6 @@ A + B
 ( a_{\\beta} - a_{\\alpha} ) \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = 0
 a_{\\beta} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = a_{\\alpha} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle
 a_{\\beta} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle - a_{\\alpha} \\langle \\psi_{\\alpha} | \\psi_{\\beta} \\rangle = 0
-A boundary condition for Eq.~\\ref{eq:#1} is Eq.~\\ref{eq:#2}
 a \\frac{d^2}{dx^2}\\sin(kx) + b \\frac{d^2}{dx^2}\\cos(k x) = -a k^2 \\sin(kx) + -b k^2 \\cos(kx)
 a = \\frac{v_2 - v_1}{t}
 a = \\frac{v - v_0}{t}
@@ -378,20 +375,14 @@ k W = n \\pi
 \\left( \\gamma^2 - c^2 \\gamma^2 \\left( \\frac{1-\\gamma^2}{\\gamma^2} \\right)^2 \\frac{1}{v^2} \\right) x^2 + y^2 + z^2 + \\left( -\\gamma^2 2 x v t - c^2 \\gamma^2 2 t \\left( \\frac{1-\\gamma^2}{\\gamma^2} \\right) \\frac{x}{v} \\right) = t^2 \\left( c^2 \\gamma^2 - \\gamma^2 v^2 \\right)
 \\left(\\langle\\psi| \\hat{A} |\\psi \\rangle \\right)^+ = \\left(\\langle a \\rangle\\right)^+
 \\left(\\sin\\left(\\frac{n \\pi}{W}x\\right) \\right)^2 = \\frac{1-\\cos\\left(2\\frac{n \\pi}{W}x\\right)}{2}
-LHS of Eq.~\\ref{eq:#1} is equal to LHS of Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
 \\log(y) = i dx
 \\log(y) = i x
 m
 m_1 \\to m_{\\rm Earth}
 m_2 \\to m
-Make Eq.~\\ref{eq:#2} the power of $#1$; yields Eq.~\\ref{eq:#3}.
 mass_{electron} = 511000 electronVolts/(q^2)
 m/m
 m_{\\rm Earth}
-Multiply both sides of Eq.~\\ref{eq:#2} by $#1$; yields Eq.~\\ref{eq:#3}.
-Multiply Eq.~\\ref{eq:#1} by Eq.~\\ref{eq:#2}; yields Eq.~\\ref{eq:#3}.
-Multiply LHS of Eq.~\\ref{eq:#2} by 1, which in this case is $#1$; yields Eq.~\\ref{eq:#3}
-Multiply RHS of Eq.~\\ref{eq:#2} by 1, which in this case is $#1$; yields Eq.~\\ref{eq:#3}
 n
 n_1
 n_1 \\sin( \\theta_1 ) = n_2 \\sin( \\theta_2 )
@@ -411,14 +402,12 @@ N_A
 \\nabla^2 \\psi \\left( \\vec{r},t) \\right) = \\frac{-p^2}{\\hbar} \\psi( \\vec{r},t)
 \\nabla^2 \\vec{E} = \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2}
 Newton = kilogram*meter/(second^2)
-Normalization condition is Eq.~\\ref{eq:#1}.
 \\omega
 \\omega = 2 \\pi f
 \\omega = c k
 \\omega = \\frac{2\\pi}{T}
 p
 p^2 = m^2 v^2
-Partially differentiate Eq.~\\ref{eq:#2} with respect to $#1$; yields Eq.~\\ref{eq:#3}.
 Pascal = Newton / (meter^2)
 PE
 PE_1 = -F x_1
@@ -493,7 +482,6 @@ t_f = \\frac{2 v_0 \\sin(\\theta)}{g}
 t' = \\frac{\\gamma x (1 - \\gamma^2 )}{\\gamma^2 v} + \\gamma t
 t = \\frac{v - v_0}{a}
 t = \\frac{x - x_0}{v_{0, x}}
-The maximum of Eq.~\\ref{eq:#2} with respect to $#1$ is Eq.~\\ref{eq:#3}
 \\theta
 \\theta_1, \\theta_2
 \\theta_1 \\to \\theta_{Brewster}
@@ -507,8 +495,6 @@ The maximum of Eq.~\\ref{eq:#2} with respect to $#1$ is Eq.~\\ref{eq:#3}
 \\theta = \\phi
 \\theta_{refracted} = 90^{\\circ} - \\theta_{Brewster}
 \\theta \\to \\phi
-Thus we see that Eq.~\\ref{eq:#1} is equivalent to Eq.~\\ref{eq:#2}.
-Thus we see that LHS of Eq.~\\ref{eq:#1} is equal to RHS.
 t_i
 t_{\\rm Earth\\ orbit} = 1 {\\rm year}
 t_{\\rm Earth\\ orbit} = 3.16 10^7 {\\rm seconds}

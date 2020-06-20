@@ -7,13 +7,14 @@ help:
 
 
 mike:
+	git submodule update --init
 	/bin/bash scripts/amsmath.sh
 	/bin/bash scripts/data_json.sh
 	/bin/bash scripts/antlr_4_7_1_download.sh 
 	pip3 download antlr4-python3-runtime==4.7.1 -d python_packages
 	pip3 download mpmath -d python_packages
 	mv Dockerfile Dockerfile_bkf
-	mv Dockerfile_mike Dockerfile
+	mv Dockerfile_dev Dockerfile
 
 docker:
 	sudo service docker start

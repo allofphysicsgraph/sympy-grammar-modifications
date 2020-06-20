@@ -12,15 +12,6 @@
   `sympy/parsing/latex/_antlr/*.py`.
 */
 
-
-/*
-References:
-    https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
-
- */
-
-
-
 grammar LaTeX;
 
 options {
@@ -29,18 +20,54 @@ options {
 
 WS: [ \t\r\n]+ -> skip;
 
+IGNORE:
+    ('\\vrule'
+    |    '\\quad'
+    |    '\\hfil'
+    |    '\\quad'
+    |    '\\vcenter'
+    |    '\\vbox'
+    |    '\\vskip'
+    |    '\\vspace'
+    |	'\\left'
+	|	'\\right'
+    |	'\\thinspace'
+	|	'\\medspace'
+	|	'\\thickspace'
+	|	'\\negmedspace'
+	|	'\\negthickspace'
+	|	'\\negthinspace'
+	|   '\\*'
+    |   '\\,'
+    |   '\\-'
+    |   '\\.'
+    |   '\\/'
+    |   '\\;'
+    |   '\\!'
+    |   '\\"'
+    |   '\\('
+    |   '\\,'
+    |   '\\-'
+    |   '\\.'
+    |   '\\:'
+    |   '\\='
+    ) -> skip;
+
+
+
 ADD: '+';
 SUB: '-';
-MUL: '*';
+MUL: '*'|'\\ ';
 DIV: '/';
 
 L_PAREN: '(';
 R_PAREN: ')';
 L_BRACE: '{';
 R_BRACE: '}';
+L_BRACE_LITERAL: '\\{';
+R_BRACE_LITERAL: '\\}';
 L_BRACKET: '[';
 R_BRACKET: ']';
-
 
 BAR: '|';
 
@@ -50,6 +77,10 @@ FUNC_INT:  '\\int';
 FUNC_SUM:  '\\sum';
 FUNC_PROD: '\\prod';
 
+
+
+
+FUNC_EXP:  '\\exp';
 FUNC_LOG:  '\\log';
 FUNC_LN:   '\\ln';
 FUNC_SIN:  '\\sin';
@@ -58,7 +89,6 @@ FUNC_TAN:  '\\tan';
 FUNC_CSC:  '\\csc';
 FUNC_SEC:  '\\sec';
 FUNC_COT:  '\\cot';
-
 
 FUNC_ARCSIN: '\\arcsin';
 FUNC_ARCCOS: '\\arccos';
@@ -107,11 +137,112 @@ GTE: '\\geq';
 
 BANG: '!';
 
-SYMBOL: '\\' [a-zA-Z]+
-	|'\\' ([a-zA-Z]+ | [ :;])
-	|  [a-zA-Z]+'\\'[,:;];
+SYMBOL: 
+	  	 '\\varepsilon'
+	 | 	 '\\varUpsilon'
+	 | 	 '\\alpha'
+	 | 	 '\\varLambda'
+	 | 	 '\\varDelta'
+	 | 	 '\\vargamma'
+	 | 	 '\\varGamma'
+	 | 	 '\\varkappa'
+	 | 	 '\\varOmega'
+	 | 	 '\\varsigma'
+	 | 	 '\\varSigma'
+	 | 	 '\\vartheta'
+	 | 	 '\\varTheta'
+	 | 	 '\\digamma'
+	 | 	 '\\Digamma'
+	 | 	 '\\epsilon'
+	 | 	 '\\Epsilon'
+	 | 	 '\\omicron'
+	 | 	 '\\Omicron'
+	 | 	 '\\upsilon'
+	 | 	 '\\Upsilon'
+	 | 	 '\\lambda'
+	 | 	 '\\Lambda'
+	 | 	 '\\varphi'
+	 | 	 '\\varPhi'
+	 | 	 '\\varPsi'
+	 | 	 '\\varrho'
+	 | 	 '\\Alpha'
+	 | 	 '\\delta'
+	 | 	 '\\Delta'
+	 | 	 '\\gamma'
+	 | 	 '\\Gamma'
+	 | 	 '\\kappa'
+	 | 	 '\\Kappa'
+	 | 	 '\\omega'
+	 | 	 '\\Omega'
+	 | 	 '\\sigma'
+	 | 	 '\\Sigma'
+	 | 	 '\\theta'
+	 | 	 '\\Theta'
+	 | 	 '\\varpi'
+	 | 	 '\\varPi'
+	 | 	 '\\varXi'
+	 | 	 '\\Zeta'
+	 | 	 '\\beta'
+	 | 	 '\\Beta'
+	 | 	 '\\iota'
+	 | 	 '\\Iota'
+	 | 	 '\\zeta'
+	 | 	 '\\chi'
+	 | 	 '\\Chi'
+	 | 	 '\\eta'
+	 | 	 '\\Eta'
+	 | 	 '\\phi'
+	 | 	 '\\Phi'
+	 | 	 '\\psi'
+	 | 	 '\\Psi'
+	 | 	 '\\rho'
+	 | 	 '\\Rho'
+	 | 	 '\\tau'
+	 | 	 '\\Tau'
+	 | 	 '\\mu'
+	 | 	 '\\Mu'
+	 | 	 '\\nu'
+	 | 	 '\\Nu'
+	 | 	 '\\pi'
+	 | 	 '\\Pi'
+	 | 	 '\\xi'
+	 | 	 '\\Xi'
+	  	 'ave'
+	 | 	 'Earth'
+	 | 	 'Joule'
+	 | 	 'orbit'
+	 | 	 'after'
+	 | 	 'hours'
+	 | 	 'Gauss'
+	 | 	 'meter'
+	 | 	 'inch'
+	 | 	 'days'
+	 | 	 'year'
+	 | 	 'hour'
+	 | 	 'Volt'
+	 | 	 'Watt'
+	 | 	 'sec'
+	 | 	 'day'
+	 | 	 'CKG'
+	 | 	 'det'
+	 |  'atmosphere'
+	 |	 'incoherent' 
+	 | 	 'refracted'
+	 | 	 'electron'
+	 | 	 'Brewster'
+	 | 	 'Coulumb'
+	 | 	 'minutes'
+	 | 	 'seconds'
+	| 	 'surface'
+	| 	 'escape'
+	| 	 'second'
+	| 	 'pounds'
+	| 	 'before'
+	| 	'Newton'
+	| 	'Ampere'
+	|	'\''
+	|'\\' [a-zA-Z]+;
 
- 
 math: relation;
 
 relation:
@@ -158,7 +289,7 @@ eval_at_sub:
 
 eval_at_sup:
     CARET L_BRACE
-    (expr | equality) 
+    (expr | equality)
     R_BRACE;
 
 exp:
@@ -187,7 +318,8 @@ comp_nofunc:
 group:
     L_PAREN expr R_PAREN
     | L_BRACKET expr R_BRACKET
-    | L_BRACE expr R_BRACE;
+    | L_BRACE expr R_BRACE
+    | L_BRACE_LITERAL expr R_BRACE_LITERAL;
 
 abs_group: BAR expr BAR;
 
@@ -211,7 +343,7 @@ binom:
     R_BRACE;
 
 func_normal:
-    FUNC_LOG | FUNC_LN
+    FUNC_EXP | FUNC_LOG | FUNC_LN
     | FUNC_SIN | FUNC_COS | FUNC_TAN
     | FUNC_CSC | FUNC_SEC | FUNC_COT
     | FUNC_ARCSIN | FUNC_ARCCOS | FUNC_ARCTAN
@@ -224,10 +356,10 @@ func:
     (subexpr? supexpr? | supexpr? subexpr?)
     (L_PAREN func_arg R_PAREN | func_arg_noparens)
 
-    | (LETTER | SYMBOL ) subexpr? // e.g. f(x)
+    | (LETTER | SYMBOL) subexpr? // e.g. f(x)
     L_PAREN args R_PAREN
 
-    | FUNC_INT 
+    | FUNC_INT
     (subexpr supexpr | supexpr subexpr)?
     (additive? DIFFERENTIAL | frac | additive)
 

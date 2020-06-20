@@ -121,13 +121,23 @@ CARET: '^';
 COLON: ':';
 
 fragment WS_CHAR: [ \t\r\n];
-DIFFERENTIAL: 'd' WS_CHAR*? ([a-zA-Z] | '\\' [a-zA-Z]+);
+DIFFERENTIAL: 'd' SYMBOL;
 
-LETTER: [a-zA-Z];
-fragment DIGIT: [0-9];
-NUMBER:
-    DIGIT+ (',' DIGIT DIGIT DIGIT)*
-    | DIGIT* (',' DIGIT DIGIT DIGIT)* '.' DIGIT+;
+//LETTER: [a-zA-Z];
+//fragment DIGIT: [0-9];
+
+INT     : [0-9]+ ;
+//Real number as defined in CFITSIO Lexical Parser
+FLOAT:   ([0-9]*[.][0-9]+)
+        |([0-9]*[.]*[0-9]+[eEdD][+-]?[0-9]+)
+        |([0-9]*[.])
+        ;
+
+number:
+    INT     #   integer
+    | FLOAT #   float
+    ;
+
 
 EQUAL: '=';
 LT: '<';
@@ -138,9 +148,8 @@ GTE: '\\geq';
 BANG: '!';
 
 SYMBOL: 
-	  	 '\\varepsilon'
+	'\\varepsilon'
 	 | 	 '\\varUpsilon'
-	 | 	 '\\alpha'
 	 | 	 '\\varLambda'
 	 | 	 '\\varDelta'
 	 | 	 '\\vargamma'
@@ -151,6 +160,8 @@ SYMBOL:
 	 | 	 '\\varSigma'
 	 | 	 '\\vartheta'
 	 | 	 '\\varTheta'
+	 | 	 'atmosphere'
+	 | 	 'incoherent'
 	 | 	 '\\digamma'
 	 | 	 '\\Digamma'
 	 | 	 '\\epsilon'
@@ -159,12 +170,16 @@ SYMBOL:
 	 | 	 '\\Omicron'
 	 | 	 '\\upsilon'
 	 | 	 '\\Upsilon'
+	 | 	 'refracted'
 	 | 	 '\\lambda'
 	 | 	 '\\Lambda'
 	 | 	 '\\varphi'
 	 | 	 '\\varPhi'
 	 | 	 '\\varPsi'
 	 | 	 '\\varrho'
+	 | 	 'electron'
+	 | 	 'Brewster'
+	 | 	 '\\alpha'
 	 | 	 '\\Alpha'
 	 | 	 '\\delta'
 	 | 	 '\\Delta'
@@ -181,12 +196,22 @@ SYMBOL:
 	 | 	 '\\varpi'
 	 | 	 '\\varPi'
 	 | 	 '\\varXi'
+	 | 	 'Coulumb'
+	 | 	 'minutes'
+	 | 	 'seconds'
+	 | 	 'surface'
 	 | 	 '\\Zeta'
 	 | 	 '\\beta'
 	 | 	 '\\Beta'
 	 | 	 '\\iota'
 	 | 	 '\\Iota'
 	 | 	 '\\zeta'
+	 | 	 'escape'
+	 | 	 'second'
+	 | 	 'pounds'
+	 | 	 'before'
+	 | 	 'Newton'
+	 | 	 'Ampere'
 	 | 	 '\\chi'
 	 | 	 '\\Chi'
 	 | 	 '\\eta'
@@ -199,6 +224,13 @@ SYMBOL:
 	 | 	 '\\Rho'
 	 | 	 '\\tau'
 	 | 	 '\\Tau'
+	 | 	 'Earth'
+	 | 	 'Joule'
+	 | 	 'orbit'
+	 | 	 'after'
+	 | 	 'hours'
+	 | 	 'Gauss'
+	 | 	 'meter'
 	 | 	 '\\mu'
 	 | 	 '\\Mu'
 	 | 	 '\\nu'
@@ -207,41 +239,18 @@ SYMBOL:
 	 | 	 '\\Pi'
 	 | 	 '\\xi'
 	 | 	 '\\Xi'
-	  	 'ave'
-	 | 	 'Earth'
-	 | 	 'Joule'
-	 | 	 'orbit'
-	 | 	 'after'
-	 | 	 'hours'
-	 | 	 'Gauss'
-	 | 	 'meter'
 	 | 	 'inch'
 	 | 	 'days'
 	 | 	 'year'
 	 | 	 'hour'
 	 | 	 'Volt'
 	 | 	 'Watt'
+	 | 	 'ave'
 	 | 	 'sec'
 	 | 	 'day'
 	 | 	 'CKG'
 	 | 	 'det'
-	 |  'atmosphere'
-	 |	 'incoherent' 
-	 | 	 'refracted'
-	 | 	 'electron'
-	 | 	 'Brewster'
-	 | 	 'Coulumb'
-	 | 	 'minutes'
-	 | 	 'seconds'
-	| 	 'surface'
-	| 	 'escape'
-	| 	 'second'
-	| 	 'pounds'
-	| 	 'before'
-	| 	'Newton'
-	| 	'Ampere'
-	|	'\''
-	|'\\' [a-zA-Z]+;
+	 | 	 '\'';
 
 math: relation;
 
@@ -323,10 +332,10 @@ group:
 
 abs_group: BAR expr BAR;
 
-atom: (LETTER | SYMBOL) subexpr? | NUMBER | DIFFERENTIAL | mathit;
+atom: SYMBOL subexpr? | number| DIFFERENTIAL ;
 
-mathit: CMD_MATHIT L_BRACE mathit_text R_BRACE;
-mathit_text: LETTER*;
+//mathit: CMD_MATHIT L_BRACE mathit_text R_BRACE;
+//mathit_text: LETTER*;
 
 frac:
     CMD_FRAC L_BRACE
@@ -356,7 +365,7 @@ func:
     (subexpr? supexpr? | supexpr? subexpr?)
     (L_PAREN func_arg R_PAREN | func_arg_noparens)
 
-    | (LETTER | SYMBOL) subexpr? // e.g. f(x)
+    | SYMBOL subexpr? // e.g. f(x)
     L_PAREN args R_PAREN
 
     | FUNC_INT
@@ -376,7 +385,7 @@ args: (expr ',' args) | expr;
 
 limit_sub:
     UNDERSCORE L_BRACE
-    (LETTER | SYMBOL)
+    SYMBOL
     LIM_APPROACH_SYM
     expr (CARET L_BRACE (ADD | SUB) R_BRACE)?
     R_BRACE;

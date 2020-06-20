@@ -1,1 +1,2 @@
 *.swp
+sympy/parsing/latex/_antlr/.antlr/

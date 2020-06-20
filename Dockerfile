@@ -33,14 +33,13 @@ RUN echo "alias python=python3" > /root/.bashrc
 #RUN python3 setup.py install
 
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
-    
-WORKDIR /usr/local/lib
 
-# msg says this is is needed to build the ANTLR grammar
-RUN curl -O https://www.antlr.org/download/antlr-4.7.1-complete.jar
+# the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
+# https://ctan.org/pkg/amsmath?lang=en
+RUN find /opt -type f 
+
 
 WORKDIR /opt/
-
 # download the sympy source to /opt/
 RUN git clone https://github.com/sympy/sympy.git
 
@@ -53,20 +52,14 @@ COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
 COPY _parse_latex_antlr.py /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
-# the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
-# https://ctan.org/pkg/amsmath?lang=en
-RUN /bin/bash asmath.sh
-RUN /bin/bash data_json.sh
-
-WORKDIR /opt/sympy/sympy/parsing/latex
-
-ENV CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
-RUN java -jar /usr/local/lib/antlr-4.7.1-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
-RUN python3 rename.py
-
 WORKDIR /opt/sympy
 RUN python3 setup.py install
 
+
+
 WORKDIR /opt/
 COPY generate_latex_files.py /opt/
-
+RUN mkdir /opt/amsmath
+COPY amsmath /opt/amsmath
+COPY antlr-4.7.1-complete.jar /usr/local/lib/
+COPY data.json /opt/

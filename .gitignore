@@ -1,2 +1,6 @@
 *.swp
 sympy/parsing/latex/_antlr/.antlr/
+*.jar
+*.zip
+amsmath
+data.json

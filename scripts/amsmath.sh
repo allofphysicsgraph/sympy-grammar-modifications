@@ -1,4 +1,4 @@
-if [[ ! -f amsath.zip ]];
+if [[ ! -f ../amsmath.zip ]];
 then
 	wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
 fi

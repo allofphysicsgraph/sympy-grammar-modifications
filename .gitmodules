@@ -1,0 +1,3 @@
+[submodule "sympy_module"]
+	path = sympy_module
+	url = https://github.com/sympy/sympy

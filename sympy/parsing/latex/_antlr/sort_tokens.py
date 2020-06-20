@@ -9,8 +9,12 @@ if resp:
     resp = resp[0]
     resp = re.split('\s+\|\s+|\n',resp)
     sorted_lst = sorted(resp,key=lambda x: -len(x))
-    for token in sorted_lst:
+    print('{}:\n\t'.format(argv[1]))
+    for ix,token in enumerate(sorted_lst):
         if ':' not in token:
-            print('\t','|','\t',token.strip())
+            if ix != 0:
+                print('\t','|','\t',token.strip())
+            else:
+                print('\t','\t',token.strip())
 
 

@@ -281,18 +281,10 @@ def convert_comp(comp):
 
 
 def convert_atom(atom):
-    if atom.LETTER():
-        subscriptName = ''
-        if atom.subexpr():
-            subscript = None
-            if atom.subexpr().expr():  # subscript is expr
-                subscript = convert_expr(atom.subexpr().expr())
-            else:  # subscript is atom
-                subscript = convert_atom(atom.subexpr().atom())
-            subscriptName = '_{' + StrPrinter().doprint(subscript) + '}'
-        return sympy.Symbol(atom.LETTER().getText() + subscriptName)
-    elif atom.SYMBOL():
-        s = atom.SYMBOL().getText()[1:]
+    if atom.SYMBOL():
+        s = atom.SYMBOL().getText()
+        print(s)
+        s = s.replace('\\','')
         if s == "infty":
             return sympy.oo
         else:
@@ -305,8 +297,8 @@ def convert_atom(atom):
                 subscriptName = StrPrinter().doprint(subscript)
                 s += '_{' + subscriptName + '}'
             return sympy.Symbol(s)
-    elif atom.NUMBER():
-        s = atom.NUMBER().getText().replace(",", "")
+    elif atom.number():
+        s = atom.number().getText().replace(",", "")
         return sympy.Number(s)
     elif atom.DIFFERENTIAL():
         var = get_differential_var(atom.DIFFERENTIAL())
@@ -337,17 +329,19 @@ def convert_frac(frac):
         diff_op = True
     elif (lower_itv_len == 2 and frac.lower.start.type == LaTeXLexer.SYMBOL
           and frac.lower.start.text == '\\partial'
-          and (frac.lower.stop.type == LaTeXLexer.LETTER
-               or frac.lower.stop.type == LaTeXLexer.SYMBOL)):
+          and (frac.lower.stop.type == LaTeXLexer.SYMBOL)):
         partial_op = True
         wrt = frac.lower.stop.text
         if frac.lower.stop.type == LaTeXLexer.SYMBOL:
-            wrt = wrt[1:]
+            print(wrt)
+            wrt = wrt.replace('\\','')
+            print(wrt)
+            #wrt = wrt[1:]
 
     if diff_op or partial_op:
         wrt = sympy.Symbol(wrt)
         if (diff_op and frac.upper.start == frac.upper.stop
-                and frac.upper.start.type == LaTeXLexer.LETTER
+                and frac.upper.start.type == LaTeXLexer.SYMBOL
                 and frac.upper.start.text == 'd'):
             return [wrt]
         elif (partial_op and frac.upper.start == frac.upper.stop
@@ -423,11 +417,9 @@ def convert_func(func):
             expr = sympy.Pow(expr, func_pow, evaluate=False)
 
         return expr
-    elif func.LETTER() or func.SYMBOL():
-        if func.LETTER():
-            fname = func.LETTER().getText()
-        elif func.SYMBOL():
-            fname = func.SYMBOL().getText()[1:]
+    elif func.SYMBOL():
+        if func.SYMBOL():
+            fname = func.SYMBOL().getText()
         fname = str(fname)  # can't be unicode
         if func.subexpr():
             subscript = None
@@ -525,10 +517,10 @@ def handle_sum_or_prod(func, name):
 
 def handle_limit(func):
     sub = func.limit_sub()
-    if sub.LETTER():
-        var = sympy.Symbol(sub.LETTER().getText())
-    elif sub.SYMBOL():
-        var = sympy.Symbol(sub.SYMBOL().getText()[1:])
+    #if sub.LETTER():
+    #    var = sympy.Symbol(sub.LETTER().getText())
+    if sub.SYMBOL():
+        var = sympy.Symbol(sub.SYMBOL().getText())
     else:
         var = sympy.Symbol('x')
     if sub.SUB():

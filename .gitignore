@@ -4,3 +4,4 @@ sympy/parsing/latex/_antlr/.antlr/
 *.zip
 amsmath
 data.json
+python_packages

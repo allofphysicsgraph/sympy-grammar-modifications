@@ -52,14 +52,17 @@ COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
 COPY _parse_latex_antlr.py /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
-WORKDIR /opt/sympy
-RUN python3 setup.py install
 
-
-
-WORKDIR /opt/
 COPY generate_latex_files.py /opt/
 RUN mkdir /opt/amsmath
 COPY amsmath /opt/amsmath
 COPY antlr-4.7.1-complete.jar /usr/local/lib/
 COPY data.json /opt/
+
+WORKDIR /opt/sympy/sympy/parsing/latex
+ENV CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
+RUN java -jar /usr/local/lib/antlr-4.7.1-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
+RUN python3 rename.py
+
+WORKDIR /opt/sympy
+RUN python3 setup.py install

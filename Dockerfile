@@ -37,7 +37,6 @@ RUN ln -s /usr/bin/python3.6 /usr/bin/python
 WORKDIR /usr/local/lib
 
 # msg says this is is needed to build the ANTLR grammar
-#RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
 RUN curl -O https://www.antlr.org/download/antlr-4.7.1-complete.jar
 
 WORKDIR /opt/
@@ -48,19 +47,18 @@ RUN git clone https://github.com/sympy/sympy.git
 # BHP -- this probably isn't necessary since ANTLR is built from source?
 WORKDIR /opt/
 RUN pip3 install antlr4-python3-runtime==4.7.1 mpmath
-#debugger
-RUN pip3 install pudb
 # layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
 COPY _parse_latex_antlr.py /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
+# the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
+# https://ctan.org/pkg/amsmath?lang=en
+RUN /bin/bash asmath.sh
+RUN /bin/bash data_json.sh
 
 WORKDIR /opt/sympy/sympy/parsing/latex
-#RUN /bin/bash antlr_build.sh
-#ENV CLASSPATH=".:/usr/local/lib/antlr-4.8-complete.jar:$CLASSPATH"
-#RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
 
 ENV CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
 RUN java -jar /usr/local/lib/antlr-4.7.1-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
@@ -70,16 +68,5 @@ WORKDIR /opt/sympy
 RUN python3 setup.py install
 
 WORKDIR /opt/
-# msg uses ipython for the REPL inside the container
-RUN pip3 install ipython
-
-RUN wget https://raw.githubusercontent.com/allofphysicsgraph/proofofconcept/gh-pages/v7_pickle_web_interface/flask/data.json
-
-# the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
-# https://ctan.org/pkg/amsmath?lang=en
-RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
-#RUN mv amsmath.zip /opt/
-RUN unzip /opt/amsmath.zip
-
 COPY generate_latex_files.py /opt/
 

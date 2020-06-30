@@ -276,6 +276,9 @@ SYMBOL:
 	 | 	 'day'
 	 | 	 'CKG'
 	 | 	 'det'
+	 | 	 '\\a'
+	 | 	 '\\r'
+	 | 	 '\\p'
 	 | 	 'km'
 	 | 	 '\''
 	 | 	 'kg'
@@ -284,6 +287,14 @@ SYMBOL:
 	 | 	 'PV'
 	 | 	 'VP'
 	 | 	 '>>'
+	 | 	 'dp'
+	 | 	 'ik'
+	 | 	 'dE'
+	 | 	 'vn'
+	 | 	 'dx'
+	 | 	 'dr'
+	 | 	 'dt'
+	 | 	 'dy'
 	 | 	 'Z'
 	 | 	 'F'
 	 | 	 'n'
@@ -322,8 +333,10 @@ SYMBOL:
 	 | 	 'S'
 	 | 	 'h'
 	 | 	 'b'
-	;
-	 
+	 | 	 'l'
+	 | 	 'M'
+	; 
+
 math: relation;
 
 relation:

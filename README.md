@@ -1,4 +1,7 @@
 # sympy-grammar-modifications
+
+[![Join the chat at https://gitter.im/allofphysicsgraph/latex-parsing](https://badges.gitter.im/allofphysicsgraph/latex-parsing.svg)](https://gitter.im/allofphysicsgraph/latex-parsing?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 build Sympy from source, then make modifications to ANTLR
 
 The objective of this repo is to provide a set of working Latex examples that trigger parsing errors in Sympy.

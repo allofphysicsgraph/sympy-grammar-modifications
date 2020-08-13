@@ -147,42 +147,6 @@ GTE: '\\geq';
 
 BANG: '!';
 
-binary_relations:
- '\\approxeq'
-| '\\backepsilon'
-| '\\backsim'
-| '\\backsimeq'
-| '\\because'
-| '\\between'
-| '\\bumpeq'
-| '\\Bumpeq'
-| '\\circeq'
-| '\\curlyeqprec'
-| '\\curlyeqsucc'
-| '\\doteqdot'
-| '\\eqcirc'
-| '\\fallingdotseq'
-| '\\multimap'
-| '\\pitchfork'
-| '\\precapprox'
-| '\\preccurlyeq'
-| '\\precsim'
-| '\\risingdotseq'
-| '\\shortmid'
-| '\\shortparallel'
-| '\\smallfrown'
-| '\\smallsmile'
-| '\\succapprox'
-| '\\succcurlyeq'
-| '\\succsim'
-| '\\therefore'
-| '\\thickapprox'
-| '\\thicksim'
-| '\\varpropto'
-| '\\vDash'
-| '\\Vdash'
-| '\\Vvdash'
-;
 
 
 binary_operators:

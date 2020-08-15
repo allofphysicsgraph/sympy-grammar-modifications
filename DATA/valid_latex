@@ -1,0 +1,254 @@
+
+0 \le b_j(t) \le  B_j^{max}
+1-SU(2)-SU(3)-\ldots-SU(k)
+1- \varepsilon \leq V_j(t) \leq 1+\varepsilon
+2dim(Y_1)+r=dim(G)
+a_{1}x_{n1}+b_{1} = a_{2}x_{n2}+b_{2}
+A_L(\omega,\omega') =\frac{1}{D}\sum_s {w_s^2 R_s(\omega)\delta(\omega-\omega' -\omega_s)}
+[\alpha,\psi]=\lambda \psi,~~~\lambda\geq 0
+{A_r}=diag(0, 1, \omega,...\omega^{k-2})
+A(t)=\lim\limits_{n\to\infty}A_n^{(2)}\,A_n^{(1)}, t\in K\Subset\mathbb{C}
+\{\begin{array}{l}I)  (n,n)\mbox{and}(n+1,n),\;(n,n),\;(n,n-1),\;(n-1,n-1),\\\\II)  (n+1,n)\mbox{and}(n+1,n+1),\;(n+1,n),\;(n,n),\;(n,n-1).\end{array}
+\{\begin{array}{l}n\to\infty,\\\\t\in K\Subset\mathbb{C},\end{array}
+\{ \begin{array}{l} r_i^{k + 1}  = \frac{1}{{|I_i| }}\sum\limits_{j \in I_i } {W_{ji} (1   - b_j^k )}  \\ b_j^{k + 1}  = (f(r^{k + 1} ))_j  \\ \end{array} 
+\{ \begin{array}{l} r_i^{k+1}  = \frac{1}{{|I_i |}}\sum\limits_{j \in I_i } {(W_{ji} (1 -   \max \{ 0,b_j^k  \times sign(W_{ji} )\} ))}  \\ b_j^{k + 1}  = \frac{1}{{2|O_j |}}\sum\limits_{i \in O_j } {(W_{ji}   - r_i^{k + 1} )}  \\ \end{array} 
+\begin{cases} &\frac{dJ}{J} = -  \frac{T}{\varepsilon_w}\frac{w}{L} \frac{1}{1+(\frac{\pi w}{L})^2} \frac{dL}{L}  \\&\frac{dD}{D} =-3  \frac{T}{\varepsilon_w}\frac{w}{L} \frac{1}{1+(\frac{\pi w}{L})^2} \frac{dL}{L} \,. \end{cases}
+\begin{cases} &J(L+dL) = J(L) [1-\langle \phi_a^2 \rangle ]   \\&D(L+dL) = D(L) [1-3\langle \phi_a^2\rangle]  \,.\end{cases}
+\begin{cases}\langle|\partial _x \vec{S}|^2\rangle\!&=[1-\langle \phi_a^2 \rangle ]  (\partial _x\vec{n})^2 + \sum_{a} \langle( \partial_x \phi_a )^2 \rangle \\\langle(S^z)^2 \rangle \!&= [1-3\langle \phi_a^2\rangle] ( n^z)^2 + \langle \phi_a^2\rangle\,.\end{cases}
+\begin{cases} &(n^z)^2 \simeq 1 \\&|\partial _x \vec{n}|^2\simeq 0 \,,\end{cases}
+\begin{split}  &E_s = \frac{1}{2}(\varepsilon_a + \varepsilon_b) \mp \delta E / 2,\\  &\delta E= \sqrt{(\varepsilon_a - \varepsilon_b)^2 + 4 t^2}.  \end{split}
+\begin{split}  J^{0}_{s}(\omega)&= \frac{1}{k_s}\sum_k |M_{ck} w_s|^2  \delta(\omega-\epsilon_k+E_0-E_s)\\  & = w_s^2\, \tilde\mu(\omega-E_s), \end{split}
+\begin{split} \mathcal{H}&=-JN + \frac{J}{2} \int[1-\frac{\phi_1^2 + \phi_2^2}{2} ]|\partial _x \vec{n}|^2 dx \\&+ \sum_{a}  \frac{J}{2} \int ( \partial_x \phi_a )^2 dx\\&-D \int[( n^z)^2(1-3 \frac{\phi_1^2 + \phi_2^2}{2} ) +  \frac{\phi_1^2 + \phi_2^2}{2}  ] dx\\&=-JN + \frac{J}{2} \int|\partial _x \vec{n}|^2 dx -D\int ( n^z)^2 dx \\&+ \sum_{a}  \frac{J}{2} \int ( \partial_x \phi_a )^2 dx \\&+\sum_a \int [ \frac{3D}{2} (n^z)^2-\frac{D}{2}-\frac{J}{2} |\partial _x \vec{n}|^2]\phi_a^2 dx\,.\end{split}
+\begin{split} \mu(\omega)& = \sum_{sk}{|M(s,k)|^2}\delta(\omega-\epsilon_k+E_0-E_s)\\ &= \sum_{s} J_{s}^{0}(\omega) R_{s}(\omega). \end{split}
+\begin{split} |\partial _x \vec{S}|^2&=(1-\phi^2) (\partial _x\vec{n})^2 + \sum_{a} ( \partial_x \phi_a )^2+ \sum_{ab} c_a c_b\phi_a\phi_b \\&+2 \sqrt{1-\phi^2}\sum_{a} \partial_x \phi_a c_a-2\partial _x\sqrt{1-\phi^2}\sum_a c_a \phi_a\\&+( \partial _x\sqrt{1-\phi^2})^2  \,.\end{split}
+\begin{split} (S^z)^2 & = ( n^z \sqrt{1-\phi^2} + \sum_a \phi_a e^z_a  )^2 \\&=( n^z)^2 (1-\phi^2) + \sum_{ab} \phi_a \phi_b e^z_a e^z_b + \mathcal{O}(\phi_a )\,,   \end{split}
+(\beta_{MAX},\gamma_{MAX})=\max_{\beta,\gamma} \sqrt{\|\tilde{h}_{22}(\beta,\gamma)\|^2+\|\tilde{h}_{2,-2}(\beta,\gamma)\|^2}
+\bf{\overline{K}}\cdot\textbf{I}_t= \textbf{V}_{\rho}
+b_i  = \frac{1}{{2|O_i |}}\sum\limits_{j \in O_i } {(W_{ij}  - r_j  )}
+b_j  = (f(r))_j
+b_j(t+1) = b_j(t) + \beta_j(t) \Delta{t}
+\chi_{\rm eff}=\chi_{sz}+\frac{(m_1-m_2)}{m}\chi_{az}-\frac{76\eta}{113}\chi_{sz}
+c\ = \ \varphi^{1/A}
+D_1=[0,L],  \mbox{and}  D_2 = (-\infty, 0) \cup (L, \infty)
+D_1=[-L,L],   \mbox{and}  D_2 = (-\infty, -L) \cup (L, \infty)
+D:=(\begin{array}{cc}\phantom{-}2 &- 1 \\-1 &\phantom{-} 2 \\\end{array})
+\delta=\int\int [\,|W(x,p)|-W(x,p)\,]\,dx\,dp
+\Delta_\tau = 1.1 \, \varepsilon_w
+\Delta_\tau = 2\Delta_\xi+ \Delta_A\
+\Delta\theta={\pi\over n-1}
+\Delta\theta={\pi\over n+1+j/(k-1)}
+\delta {V} = {\rm{ }}\mathop {\max }\limits_j | {\frac{{{V_j(t)} - {V_0}}}{{{V_0}}}} |
+d(\hat{z}_1,\hat{z}_{n_1+1}) \geq \sqrt{\sum_{j=n_1+1}^{n_1+n_2}d_{1,j}^2 +\sum_{j=1}^{n_1}d_{n_1+1,j}^2}\gg 0
+dim(Y)={1\over 2}(k^2-\sum n_i^2)
+D_k(x_p,x_q) =\min_{\mathcal{P}\in\mathbb{P}_k}\max_{e\in\mathcal{P}}\{d(e)\}
+D_{\mathcal{P}}(x_p,x_q) =\max_{x_{u_i}x_{u_{i+1}}\in\mathcal{P} \atop 1\leqi\leq k-1}\{d(x_{u_i},x_{u_{i+1}})\}
+{d \over dt} <\Psi^*| \Psi>= {i\hbar \over 2m}  [\Psi^* {d\Psi \over dx}- \Psi {d\Psi^* \over dx} ]_{x_1} ^{x_2}
+{d\over dx} [u(x)v^\prime(x)-v(x) u^\prime(x)] = {dW \over dx}==-\gamma [f(|u|)-f(|v|)] u(x) v(x)
+dP^{(\beta)}_0({\tilde S}_0)=p^{(\beta)}_0(R_0)\, dR_0\,\frac{d\theta_0}{2\pi}
+dP^{(\beta)}_{\langle {\tilde S}\rangle}({\tilde S}) = p^{(\beta)}_{\langle {\tilde S}\rangle}({\tilde S})\, dR\, \frac{d\theta}{2\pi}
+{d\psi\over dz}=-({q_n\over z^n}+{q_{n-1}\over z^{n-1}}...+{q_1\over z}+B(z))\psi
+dX = dx + d\xi
+d\xi \propto dt^{1/D}
+d'(x'_i,x'_j)\leqslant\min\{d'(x'_i,x'_k),d'(x'_j,x'_k)\}
+d(x_{k_m},x_{k_{m+1}}) < d(x_{k_i},x_{k_{i+1}}),~m=1,2,\cdots,i-1,i+1,\cdots,s
+D(x_p, x_q) \leq \max\{d(x_p,x_u),d(x_u,x_q)\}
+E_{1} = a_{1}x_{1}+b_{1}
+E_{2} = a_{2}x_{2}+b_{2}
+E = a_{2}(-k_{0}x_{1}+x_{2}+b_{sum})
+E = [E_{1}(Ag^{2}+Bg+Cg^{1/2}+D)]K+M
+E = E_{1}+E_{2}
+\epsilon=15\nu \langle (\frac{\partial u}{\partial x})^2 \rangle=20 \nu \frac{k^2}{\lambda_f^2}
+\epsilon=\epsilon_r\epsilon_0
+\epsilon(t)=-\int \dot{\gamma}_{MAX}(t')\cdot \cos\beta_{MAX}(t') dt'
+\eta = \frac{a_{1}x_{1}-a_{2}x_{2}+(b_{1}-b_{2})}{a_{1}x_{1}+a_{2}x_{2}+(b_{1}+b_{2})}
+\eta = \frac{E_{1}-E_{2}}{E_{1}+E_{2}}
+|{\exp Q^i(z)\over \exp Q^j(z)}|arrow |\exp({q^i_n-q^j_n\over(n-1) z^{n-1}})|,~~~~zarrow 0
+E(z)=\{\begin{array}{ll} 0\,, & z=0^{(0)},\\\infty\,, & z=0^{(1)}.\end{array}
+E(z)=\{\begin{array}{ll} 1+\dfrac{1}{z}\,, &z\!\to\!\infty^{(0)},\\[6pt] \dfrac1c(1-\dfrac{1}{z})\,, & z\!\to\!\infty^{(1)}.\end{array}
+f\bigg(\frac{r}{L}\bigg)=\frac{2}{\Gamma(q)}\bigg(\frac{r}{2L}\alpha\bigg)^q K_q\bigg(\frac{r}{L}\alpha\bigg)
+f(g) = Ag^{2}+Bg+Cg^{1/2}+D
+\frac{1}{\Lambda} = \frac{1}{w}\frac{4 \varepsilon_w }{T}\exp(-\frac{\varepsilon_w}{T})
+\frac 1 m (\Phi-E)=2\mathcal D ^2\frac{\Delta\sqrt P}{\sqrt P}
+\frac{1}{n}\ln|\frac{M_{n,n}(x)}{(2n)!}|=\frac{1}{n}\int\limits_0^n\ln|L_1(\frac{x}{\tilde{n}})|\,d\tilde{n}+o(1)
+<\frac{d_{\pm}f}{dt}>=(\frac{\partial}{\partial t}+v_\pm \nabla \pm \mathcal D \Delta)f
+\frac{E}{E_{1}} = f(g)
+\frac{E}{E_{1}} = \frac{2}{1+\eta}
+\frac{E}{E_{1}} = g
+\frac{\hat d}{dt}=<\frac{(d_+ +d_- )-i(d_+ - d_- )}{2dt}>
+\frac{\hat d}{dt}=\frac {\partial}{\partial t}+\mathcal V \nabla-i\mathcal D \Delta
+\frac{\hat d}{dt}\mathcal V \equiv (\frac{\partial}{\partial t}+\mathcal V \nabla-i\mathcal D \Delta) \mathcal V = -\frac 1{m}\nabla\Phi
+\frac{M_{n_1,n_2}(x)}{(n_1+n_2)!}\;
+\frac{\partial^2 \phi}{\partial x^2}+\frac{\partial^2 \phi}{\partial y^2}=-\pi \cos(\pi x)-\pi \cos(\pi y)
+\frac{\partial P}{\partial t}=-\nabla(P\cdot V)
+-\frac{\partial S}{\partial t}=\frac{(\nabla S)^2}{2m}+\Phi-\frac{\hbar^2}{2m}\frac{\Delta A}A
+\frac{\xi(T)}{w(0)} = f(\frac{\varepsilon_{dw}}{T}  )
+full: 2(n+1);~~~~~simple: j
+|f(x) - f(y)| \le \lambda ||x - y||_\infty  e
+\gamma_{\rm EIT} =\frac{\Omega_{\rm c}^2}{\sqrt{\gamma_{12}\gamma_{2}}}\frac{1}{\sqrt{\rm OD}}~
+g = \frac{2}{1+\eta}
+g(r)=f(r)+\frac{1}{2}\frac{\partial f(r)}{\partial r}r
+h_{22}^{QA}(t)=e^{-2i\epsilon(t)}\sum_{m'=-2}^{2}e^{-im'\gamma_{MAX}(t)} d^2_{m'2}(-\beta_{MAX}(t))h_{2m'}(t)
+\hat{\bf n} \cdot (\hat{\bf x} \frac{\partial \phi}{\partial x}+\hat{\bf y} \frac{\partial \phi}{\partial y} )=0 \mbox{~~~~~~~~~$(x,y) \in \Gamma$.}
+\hat{E} = (\begin{array}{cccc}        E_1 & \cdots & \cdots & \cdots \\        \cdots & E_2 & \cdots & \cdots \\        \cdots & \cdots &\cdots&\cdots\\        \cdots & \cdots & \cdots & E_k        \end{array})\begin{array}{cl}    \} & n_1~rows \\    \} & n_2~rows \\    ~&~ \\    \} & n_k~rows    \end{array}
+h=h_+ - ih_\times
+h_{lm}^{IMR}(t) = \mathbf{R}(-\epsilon,-\beta,-\gamma) \, h_{lm}^{IM}(\eta, \chi_{\rm eff}; t)\times h_{\ell m}^R (\vec{\lambda}_R; t)
+h_{lm}^{IM}(t) = \mathbf{R}(-\epsilon,-\beta,-\gamma) \, h_{lm}^{IM}(\eta, \chi_{\rm eff}; t)
+h_{lm}=\int h(\theta,\varphi) {}^{-2}Y^*_{lm}(\theta,\varphi) d\Omega
+h_{lm}(t)=f(M,r,\mu,\omega_{orb},\iota,\alpha,\Phi,\vec{\chi}_s,\vec{\chi}_a)
+H=- \sum_{i=1}^N [ J \vec{S}_{i} \cdot \vec{S}_{i+1} + D (S_{i}^z)^2 + \vec{H} \cdot \vec{S}_i]
+H_u = \begin{pmatrix} h^A_u \\ h^B_u \end{pmatrix}, \;\;\; H_d = \begin{pmatrix} h^A_d \\ h^B_d \end{pmatrix}
+h(z):=\frac{1}{z}+\cdots\;, z\!\to\!\infty^{(0)}\;
+h(z)=\ln E(z)
+h(z):=\ln\frac1c-\frac{1}{z}+\,\cdots\;, z\!\to\!\infty^{(1)}\;
+H(z)=\ln\phi(z)\,, \phi \in \mathcal{M}(\mathcal{R})
+i\hbar\frac{\partial\psi}{\partial t}=-\frac{\hbar^2}{2m}\Delta\psi+\Phi\psi
+{\int_0^{N^{UL}} {\cal L}_{\rm max} (N) dN\over\int_0^{\infty} {\cal L}_{\rm max} (N) dN}= 0.90\nonumber
+I(\vec{\mu}) = \sum_{i=1}^r\sum_{j=1}^r d_{i,j} I(\mu_i,\mu_j)
+J^{s}_{k}(\omega) = |\langle \Psi_{sk}^{f}|\Delta| \Psi^{0}\rangle |^2 \delta(\omega - \varepsilon_k + E_0 - E_s)
+\kappa_i=\arccos ( \frac{\vec{S}_i\cdot \vec{L}}{\|\vec{S}_i\|\|\vec{L}\|})
+K-((k-1)(2n+2)-K)=2n[{k(k-1)\over 2}-{(k-3)(k-2)\over 2}]-(2n+2)(k-2)-2(2n-1)(k-2)-2(2n-1)
+k = \log _\lambda \varepsilon
+\lambda^{m+1}(A) =0 \; \mbox{ implies } \; \P_{\mathbf{G}_{m}}(A) = 0 ~
+\langle d\xi^2_{\pm}\rangle=\pm 2\mathcal{D} (dt)^{2/D}
+\langle (\frac{\partial u}{\partial x})^2 \rangle =\frac{2u'^2}{\lambda_f^2}= \frac{4k^2}{3\lambda_f^2}
+\langle h_1|h_2\rangle := 4 \, {\rm Re} [ \int_{f_{\rm         min}}^{f_{\rm max}}      \frac{ \tilde h_1(f)      \tilde h_2^\ast (f)}{S_n(f)} \, df ] \, 
+\langle\mathcal D\rangle^2\Delta\psi+i\langle\mathcal D\rangle\frac{\partial\psi}{\partial t}=(\frac{\Phi}{2m}-\langle\mathcal D\rangle[\Delta\ln\psi]_0 \delta\mathcal D (t))\psi
+\langle \phi_a\phi_b \rangle = \delta_{ab} \langle \phi_a^2 \rangle
+\langle S_{i+r}^z S_{i}^z\rangle = \langle (S_{i}^z)^2\rangle e^{-\frac{r}{\xi}}
+\langle\sum_{ab} \phi_a \phi_b e^z_a e^z_b\rangle = \langle \phi_a^2\rangle\sum_{a} (e^z_a)^2= \langle \phi_a^2\rangle [1-( n^z)^2 ]\,;
+\langle x^2 \rangle = \frac{\sigma^2}{\tau_c} t
+\langle x^2 \rangle  = \frac{\sigma^2}{\tau_c} t =2D_st
+\langle x^2 \rangle  = \sigma^2 ( \frac{t}{\tau_c} + \frac{e^{-\frac{2t}{\tau_c}} -1}{2} ) \, 
+\lvert q^g_j(t) \rvert \le \sqrt{s^2_j(t) - (p^g_j(t))^2} \equiv (q^g_j(t))^{max}
+M=1+\sum_{i<j}c_{ij}E_{ij}
+\mathcal D^2\Delta\psi+i\mathcal D\frac{\partial}{\partial t}\psi-\frac{\Phi}{2m}\psi=0
+\mathcal D\Delta\psi+i\frac{\partial\psi}{\partial t}=(\frac{\Phi}{2m\langle\mathcal D\rangle}+\delta\mathcal D(\nabla\ln\psi)^2 )\psi
+\mathcal D=\hbar/2m
+\mathcal D(t,\tau)=\mathcal D '(t)\tau^{(2/D)-1}
+\mathcal{H}=-JN + \int [ \frac{J}{2}|\partial _x \vec{S}|^2-D (S^z(x))^2] dx
+\mathcal{H} = \mathcal{H}_{0} + T + V + \Delta
+\mathcal{H}_{\phi} = \frac{N}{\Lambda}\sum_{a}  \frac{1}{2\pi}\int ( \frac{J}{2} q^2 + D  ) |\tilde{\phi}_a(q)|^2  dq \, 
+\mathcal{H}_{\phi} = \frac{N}{\Lambda}\sum_{a}  \int_{-\Lambda/2}^{\Lambda/2}  [ \frac{J}{2} ( \partial_x \phi_a )^2 + D \phi_a^2 ] dx \, 
+\mathcal{L} =  \mathop{\min} \sum\limits_{t = 1}^{T} \sum\limits_{j = 0}^{n-1} {r_j}\frac{{P_j^{2}(t) + Q_j^{2}(t)}}{{V_0^{2}}}
+\mathcal{L} =  \mathop{\min} \sum\limits_{t = 1}^{T} \sum\limits_{j = 0}^{n-1} {r_j}\frac{{P_j^{2}(t) + Q_j^{2}(t)}}{{V_j^{2}(t)}}
+\mathcal{N}\,:=\,\{(c_1,c_2)\in \{(0,1)\times(0,1)\}\,: \frac{c_2(1-\sqrt{2})}{2 c_2-1-\sqrt{2}}\,<\,c_1\,<\, \frac{c_2(1+\sqrt{2})}{2 c_2-1+\sqrt{2}}\,\}
+\mathcal V =-2i\mathcal D \nabla(\ln\psi)
+\mathop{\min}\limits_{P,Q,V,\beta,q^g} \mathcal{L}
+\mathscr{M}=\max_{\Delta t,\Delta\phi} \frac{\langle h_1|h_2\rangle}{\sqrt{\langle h_1|h_1\rangle \langle h_2 | h_2\rangle}}
+M=M_1*M_2\ldots*M_{2(n-1)}
+\mu=\frac{m_1 \cdot m_2}{m_1+m_2}
+\mu_i=\sum_{k=0}^{+\infty} \frac{(\beta_i)_kc^k}{k!} \delta_{k},\beta_i>0, i=1,\ldots,r
+\mu_i=\sum_{k=0}^{+\infty} \frac{(\beta)_kc_i^k}{k!}\delta_{k}, 0<c_i<1, i=1,\ldots,r
+\mu(\omega)=\int d\omega'\, A_L(\omega,\omega')\, \tilde\mu(\omega-\omega')\equiv A_L * \tilde \mu
+\mu(\omega) = \sum_{sk} J_{k}^{s}(\omega)  \propto\sum_s\frac{1}{k_s} | M(s,k_s)|^2 
+\mu=\sum_{k=0}^{N}\rho(x)\delta_{x_k}, \rho(x_k)>0,\ x_k\in\mathbb{R}, N\in\mathbb{N}\cup \{+\infty\}
+N={1\over2}2(n+1)(k^2-k)-(k^2-1)=(k-1)(nk-1)
+\nabla\cdot\epsilon_r(\mathbf{r})\nabla\phi(\mathbf{r})=-\frac{\rho(\mathbf{r})}{\epsilon_0}
+\nabla\cdot\textbf{D}=\rho(x,y)
+\nabla\phi(x,y)=-\frac{\textbf{D}}{\epsilon}
+\nabla\times\textbf{E}=0
+N \ := \ d\cdot \varphi^{L/A}
+n=\frac{4L^2x}{(2L+b+b^2)\,(2L-b+b^2)\,(2L-1+b^2)}\;
+N=(k-1)(2n+2)
+N_{nodes}=2\sum_{i=n}^{i=2}dim(Y_i)-dim(G)
+N_{S_0}=j(k-1)
+N_{Stokes}=2\sum_{i=n}^{i=2}dim(Y_i)
+N_{Stokes}=k(k-1)(n+1)+j(k-1)
+N_{Stokes}=(n+1)k(k-1)+kj
+\overline{\bf G}_l \cdot \textbf{I}_l= \textbf{V}_d
+\overline{\bf K}^T \cdot \textbf{I}_\phi= \textbf{V}_\phi
+-{\partial^2 \Psi \over \partial x^2}+V(x)\Psi+\gamma f(|\Psi|) \Psi=-i{\partial \Psi \over \partial t}
+\partial_i X_w = \begin{cases} X_{s_iw} & \text{if $s_iw < w$,} \\ 0 &  \text{otherwise.} \end{cases}
+\partial _x \vec{e}_a = -c_a \vec{n}+ f_{ab}\vec{e}_b
+(\partial_z+{\cal A}_z) \psi=0
+p^{(\beta)}_0(R_0) = \frac 2{ (1-R_0)^2 }P^{(\beta)}_0(\frac{1+R_0}{1-R_0});  W_{\beta}(x)= \int_x^{\infty}dx\, P^{(\beta)}_0(x)
+p^{(\beta)}_{\langle {\tilde S}\rangle} (\tilde S)=\frac{1}{2 \pi}(\frac{1-|\langle \tilde S\rangle|^2}{| \tilde S-\langle \tilde S \rangle |^2})^2 p_0(R_0(R))
+P = \frac{L}{2}\eta
+\Phi={1\over t^{(n+1)k+j+1}}diag(1,\omega,\omega^2,...\omega^{k-1})+
+\Phi={1\over z^{1+{1\over k-n_f}}}diag(0,..0,1,\omega,...\omega^{k-n_f-1})+{1\over z}diag(m_1,....m_{n_f}, M,M, \ldots, M)
+\Phi={1\over z^{n+j/(k-1)+2}}diag(0,1,\omega,\omega^2,...\omega^{k-2})
+\Phi={1\over z^{n+j/k+2}}diag(1,\omega,\omega^2,...\omega^{k-1})
+\Phi={1\over z^{n+j/k+2}}diag(1,\omega,\omega^2,...\omega^{k-1})+.
+\phi_a\phi_b  = \delta_{ab} \frac{ \phi_1^2 + \phi_2^2 }{2}
+\Phi={A_r\over z^r}+{A_{r-1}\over z^{r-1}}+\ldots+{A_1\over z}
+\Phi={A_r\over z^r}+\ldots
+\Phi(t)=\int_0^t (\omega_{orb}(t')-\dot{\alpha}(t')\cos\iota(t'))dt'
+\phi: V\subset R^larrow V'\subset R^s
+\phi: (V\subset R^l,D) arrow (V'\subset R^s,d')
+\phi(x,y)= [\cos(\pi x)+ \cos(\pi y)]/ \pi
+\phi(x,y)=\sum_{i=1}^{N_p}\nu_i P_i(x,y)
+\phi(z)=\{\begin{array}{ll}\,\, 0\,,&\mbox{as $z\to 0\,\,$ in}\mathcal{R}_{0},\\\infty^2,&\mbox{as $z\to 0\,\,$ in} \mathcal{R}_{1},\\\,\,0\,,&\mbox{as $z\to 0\,\,$ in} \mathcal{R}_{2}.\end{array}
+\phi(z)=\{\begin{array}{ll}\,0\,,&\mbox{as $z\to 0\,\,$ in} \mathcal{R}_{0},\\\infty,&\mbox{as $z\to 0\,\,$ in} \mathcal{R}_{1}.\end{array}
+\phi(z)=\{\begin{array}{ll}1+2z^{-1}+\cdots,&\mbox{as$z\to\infty\,\,$ in}\mathcal{R}_{0},\\ c_1^{-1}(1-z^{-1})+\cdots,&\mbox{as $z\to\infty\,\,$ in} \mathcal{R}_{1},\\ c_2^{-1}(1-z^{-1})+\cdots,&\mbox{as $z\to\infty\,\,$in} \mathcal{R}_{2}.\end{array}
+\phi(z)=\{\begin{array}{ll} 1+\dfrac{2}{z}+\cdots,&\mbox{as$z\to\infty\,\,$ in}\mathcal{R}_{0},\\\dfrac{1}{ c}(1-\dfrac{1}{z})+\cdots,&\mbox{as $z\to\infty\,\,$ in} \mathcal{R}_{1}\, \mbox{and}\,\, \mathcal{R}_{2}.\end{array}
+\phi(z)\,:z=\dfrac{2}{\phi-1}-\dfrac{1}{ c_{1}\phi-1}-\dfrac{1}{ c_{2}\phi-1}
+{P_{j + 1}(t)}={P_{j}(t)} - p_{j + 1}^{c}(t) + p_{j + 1}^{g}(t) - \beta_j(t)
+{P_{j + 1}(t)}={P_{j}(t)} - {r_j}\frac{{P_j^{2}(t) + Q_j^{2}(t)}}{{V_j^{2}(t)}} - p_{j + 1}^{c}(t) + p_{j + 1}^{g}(t) - \beta_j(t)
+p(k^H\xi,k\tau)=k^{-H}p(\xi,\tau)
+P( N_{m,f} | \xi^2, b_{m,f}) = \prod_{m \in \mathcal{M}} \, \prod_{f \in \{ee, \mu\mu, \nu\nu\}} {\rm Pois}(N_{m,f} | \xi^2 s_{m,f} + b_{m,f}) \cdot N(b_{m,f}^{\rm MC}| b_{m,f}, \Delta_{f})
+\Psi_{4,hyb}^{QA}(t) = a_- \Psi_{4,PN}^{QA}(t - t_{PN}) + a_+ \Psi_{4,NR}^{QA}(t-t_{NR})
+\psi=A\,\exp(\frac i{\hbar}S)
+\psi_i-\psi_j={a_{i,j}\over z^{l}}+..
+|\Psi_{sk}^{f} \rangle = [1+\frac{1}{E - \mathcal{H}_0 - T - V - i \eta}V]|\psi_s\rangle|\psi_k\rangle
+p(\theta)=\frac{1}{2\pi}\frac{1-|\langle S\rangle|^2}{| S-\langle S \rangle |^2}
+{Q_{j + 1}(t)} = {Q_{j}(t)} - q_{j + 1}^{c}(t) + q_{j + 1}^{g}(t)
+{Q_{j + 1}(t)} = {Q_{j}(t)} -x_j\frac{{P_j^{2}(t) + Q_j^{2}(t)}}{{V_j^{2}(t)}} - q_{j + 1}^{c}(t) + q_{j + 1}^{g}(t) - \eta_j(t)
+q_j^g(t) := \{ \begin{array}{lr}q_j^c(t),&{\rm{if}}| {q_j^c(t)} | \le (q_j^g(t))^{max} \\{{\rm sgn} (q_j^c(t))(q_j^g(t))^{max}} ,&{\rm{ otherwise}},\end{array} 
+r_{00} = \lim_{\omega \to \infty}\frac{\sum_k J^2_k(\omega)}{\sum_k J^1_k(\omega)} = \cot^{2}(\phi + \theta)
+R=2(\sum_{i=n}^{i=1}dim(Y_i)-dim(G))+r
+R_{AB}(N_{\rm part};b)  = {d \sigma_{AB}/dy \over T_{AB}(b) d\sigma_{pp}/dy }
+\rho_k=\frac{(\beta)_k}{k!}c^k,  (\beta>0\,,\,\,0<c<1) \mbox{on} x_k=k, k\in \mathbb{N}
+\rho(x,y)=\sum_{i=1}^{N_p} c_i P_i(x,y)
+r_i  = \frac{1}{{|I_i |}}\sum\limits_{j \in I_i } {(W_{ji} (1 - \max    \{ 0,b_j  \times sign(W_{ji} )\}  ))}
+R=(k-1)(nk-1)
+R={(k^2u_1 v_1+u_1^\prime v_1^\prime)^2\over (k^2 u_1 v_1 - u_1^\prime v_1^\prime)^2 + k^2(u_1v_1^\prime+u_1^\prime v_1)^2},  T={k^2(u_1v_1^\prime-u_1^\prime v_1)^2 \over (k^2 u_1 v_1 - u_1^\prime v_1^\prime)^2 + k^2(u_1v_1^\prime+u_1^\prime v_1)^2}
+r_{left}={k^2v+u^\prime+ik(v^\prime-u) \over k^2 v-u^\prime+ik(v^\prime+u)}  t_{left}={2ik(u v^\prime-u^\prime v) \over k^2 v-u^\prime+ik(v^\prime+u)}
+r_{left} \ne r_{right} \mbox{but}  R_{left}=R_{right}
+{\rm d} P^{(\beta )}_{\langle S\rangle}(S)=p^{(\beta )}_{\langle S\rangle}(S)\, {\rm d} \mu _{\beta }(S) 
+R_s(\omega) = \sum_k J^s_{k}(\omega)/ J^0_{s}(\omega)
+R+T=\frac{k^4u'^2+k^2v'^2+k^2u^2+2k^2W[2W-1]}{k^4u'^2+k^2v'^2+k^2u^2+2k^2W}
+R+T_{left} \ne 1  \mbox{and}  R+T_{right} \ne 1
+s_1 = \sigma_1,  s_2 = \langle \sigma_1,\sigma_2 \rangle, \ldots , s_r = \langle \sigma_1, \langle \sigma_2,\ldots,\sigma_r \rangle \rangle
+(\sigma_1\,+\sigma_2-2)^{2}\,=\,2(\sigma_1\,-\sigma_2)^2
+S_L^{(2)}(r) = C_2 \epsilon^{2/3} r^{2/3}
+S_p=( \begin{array}{ll}             r_p & t'_p \\              t_p & r'_p                  \end{array}     )
+S=r_p+t'_p\frac{1}{1-S_0 r'_p} S_0 t_p
+SU(h_1)-SU(h_2)-\ldots-SU(h_s)
+\sum \limits_{k=0}^{+\infty}M_n(k;\beta,c)(-k)_j\frac{(\beta)_k}{k!}c^k=0,  j=0,1,\ldots,n-1
+\sum_{r\ge 0} \langle S_{i+r}^z S_{i}^z\rangle = \langle (S_{i}^z)^2\rangle\sum_{r\ge 0} e^{-\frac{r}{\xi}}=\frac{\langle (S_{i}^z)^2\rangle}{1-e^{-1/\xi}}\, 
+Tail_1-SU(k)-SU(k)-\ldots-SU(k)-Tail_2
+\tau_K = \frac{1+a^2}{a}\frac{1}{\gamma \mu_0 H_K}
+\textbf{D}=\epsilon\textbf{E}
+\textbf{D}=\textbf{D}_{tree}-\sum_{i=1}^{N_l} l_i\textbf{L}_i
+\textbf{D}_{tree}= \sum_{i=1}^{N} a_i\textbf{f}_i(x,y)+\sum_{i=1}^{N_l} l_i\textbf{L}_i(x,y)
+\textbf{D}_{tree}=\sum_{i=1}^{N_t} t_i\textbf{T}_i(x,y)
+\theta_1(n+j/k+1)=\theta_0+\pi p
+\theta_2((n+1)k+j)=\theta_0+\pi q
+\theta(n+1+j/(k-1))=\theta_0+\pi p
+\theta(n-1)=\theta_0+\pi p
+\tilde S_0=\sqrt{R_0}e^{i\theta}
+\tilde S_0(\tilde S) = \frac{\tilde S-\langle \tilde S\rangle }{1-\langle \tilde S\rangle \tilde S}
+\tilde S=\sqrt{R}e^{i\theta}
+T_{left} \ne T_{right}
+t_{left}=t_{right} {and}  T_{left}= T_{right}
+u_1=u_2,~ v_1=-v_2,~ u^\prime_1=-u^\prime_2,~ v^\prime_1=v^\prime_2
+u_{lk}(r)= \begin{cases}\tilde  u_{lk}(r) & r < r_{mt}   \\   \sqrt{2/L}\, [h_l(kr)e^{i\delta_{lk}}+c.c.]  & r > r_{mt},\end{cases}
+\varepsilon\cdot\tau\approx \hbar/2
+\varepsilon_{w} = \begin{cases}\,2\sqrt{2DJ}  &\text{for}    D/J \le 2/3  \\\, 2 J   &\text{for}    D/J > 2/3 \end{cases}
+\vec{\chi}_i=\frac{\vec{S}_i}{m_i^2}
+\vec{L}_N=\mu(\vec{q} \times \dot{\vec{q}})
+\vec{\omega}_{orb}=\frac{\vec{q} \times \dot{\vec{q}}}{\|\vec{q}\|^2}
+\vec{\phi}(x)= \sum_a \phi_a \vec{e}_a\text{with  } a=1,2
+\vec{v_1}=-{\mathbf F} \vec{v_1}
+{V_{j + 1}(t)} = {V_{j}(t)} - \frac{r_j{P_j(t) + x_jQ_j(t)}}{{V_0}}
+V=\nabla S/m
+v_{\pm}=<\frac{d_{\pm}X}{dt}>
+V_{\rm U(4)} = (m^2_{H_u}+\mu^2) |H_u|^2 + (m^2_{H_d} + \mu^2) |H_d|^2 - b ( H_u H_d + {\rm h.c.}) + \lambda^2 |H_u H_d|^2
+V_{sc}({\bf r}) = \begin{cases} [-V_{3d}(r)+\frac{1}{R_0}]/\varepsilon_0 & r < R_{0} \\ 0  & r > R_{0}. \end{cases}
+W(0)=[u(0) v^\prime (0)- u^\prime (0) v(0)]=1
+W_1=[u_1v^\prime_1-u^\prime_1 v_1]  \mbox{and}  W_2=[u_2v^\prime_2-u^\prime_2v_2]
+\widetilde{T}(s,p)\,:=\,T(c_1(s,p), c_2(s,p))\,=0\
+w_s = 	\begin{cases} 		-\sin(\phi+\theta),\mbox{ } s = 1 \\ 		\mbox{ }\mbox{ }\cos(\phi+\theta),\mbox{ } s = 2. 	\end{cases}
+x_{2} = -\frac{a_{1}}{a_{2}}x_{1}+\frac{1}{a_{2}}E-\frac{b_{1}+b_{2}}{a_{2}}
+\xi^2\simeq 2D_s\tau
+xP_n(x) = P_{n+1}(x)+\sum_{j=0}^r a_{n,j}P_{n-j}(x)

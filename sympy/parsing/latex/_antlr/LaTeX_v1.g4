@@ -1,5 +1,146 @@
 grammar LaTeX;		
 
+basic_elements:
+	"AmsCases"
+	|"Cases"
+	|"CasesRow"
+	|"Codomain"
+	|"Compose"
+	|"Domain"
+	|"Ident"
+	|"Image"
+	|"Interval"
+	|"Inverse"
+	;
+
+relations:
+	"Approx"
+	|"Equal"
+	|"Equiv"
+	|"Gequal"
+	|"Gthan"
+	|"Lequal"
+	|"Lthan"
+	|"Nequal"
+	|"qual"
+	|"quiv"
+	;
+
+
+sequences_and_series:
+	"Limit"
+	|"Limitarg"
+	|"Prod"
+	|"Prodarg"
+	|"Prodll"
+	|"Produl"
+	|"Sum"
+	|"Sumarg"
+	|"Sumll"
+	|"Sumul"
+	|"Tendsto"
+	;
+
+calculus_vector_calculus:
+	"Curl"
+	|"Curls"
+	|"Curlt"
+	|"Diff"
+	|"Diffarg"
+	|"Diffbe"
+	|"Diffdeg"
+	|"Div"
+	|"Divs"
+	|"Divt"
+	|"Grad"
+	|"Grads"
+	|"Gradt"
+	|"Int"
+	|"Intarg"
+	|"Intbe"
+	|"Intll"
+	|"Intul"
+	|"Laplacian"
+	;
+
+arithmetic_algebra_logic:
+	"AND"
+	|"Cond"
+	|"Expr"
+	|"Factorial"
+	|"Frac"
+	|"Fracd"
+	|"Fracn"
+	|"Gcd"
+	|"Im"
+	|"Implies"
+	|"Land"
+	|"Lcm"
+	|"LCM"
+	|"Lor"
+	|"Maxc"
+	|"Maxl"
+	|"Minc"
+	|"Minl"
+	|"Minus"
+	|"Not"
+	|"OR"
+	|"Plus"
+	|"PMOD"
+	|"Quotient"
+	|"Re"
+	|"Rem"
+	|"REM"
+	|"Times"
+	|"Var"
+	|"Xor"
+	|"XOR"
+	;
+
+statistics:
+	"Mean"
+	|"Median"
+	|"Mode"
+	|"Moment"
+	|"Momenta"
+	|"MomentArg"
+	|"MomentDeg"
+	|"SDev"
+	|"Variance"
+	;
+
+linear_algebra:
+	"MATRIX"
+	|"Vector"
+	|"Matrix"
+	|"Transpose"
+	|"Det"
+	|"SelectorMatrix"
+	|"VectorProduct"
+	|"ScalarProduct"
+	|"OuterProduct"
+	;
+
+constants:
+	"Integers"
+	|"Naturals"
+	|"Rationals"
+	|"Reals"
+	|"Complexes"
+	|"Primes"
+	|"ExponentialE"
+	|"ImaginaryI"
+	|"NotANumber"
+	|"True"
+	|"False"
+	|"Emptyset"
+	|"Pi"
+	|"EulerGamma"
+	|"Infty"
+	|"HBar"
+	;
+
+
 SYMBOLS:
 	'}'
 	|    '#'

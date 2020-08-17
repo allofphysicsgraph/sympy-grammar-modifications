@@ -1,5 +1,33 @@
 grammar LaTeX;		
 
+SYMBOLS:
+	'}'
+	|    '#'
+	|    '>'
+	|    '\\'
+	|    '+'
+	|    '='
+	|    '^'
+	|    '|'
+	|    ';'
+	|    '~'
+	|    '('
+	|    '/'
+	|    '*'
+	|    '-'
+	|    '''
+	|    ']'
+	|    ' '
+	|    '!'
+	|    '_'
+	|    '.'
+	|    ')'
+	|    '['
+	|    '{'
+	|    '<'
+	;
+
+
 ELEMENTARY_FUNCTIONS:
 		'\\arccos'
 	|	'\\arccosh'
@@ -120,7 +148,7 @@ IGNORE:
 	|   '\\/'
 	|   '\\;'
 	|   '\\!'
-	|   '\\"'
+	|   '\\''
 	|   '\\('
 	|   '\\,'
 	|   '\\-'
@@ -166,39 +194,39 @@ variable_sized_math_operators:
 
 binary_relations:
 	 '\\approxeq'
-	| '\\backepsilon'
-	| '\\backsim'
-	| '\\backsimeq'
-	| '\\because'
-	| '\\between'
-	| '\\bumpeq'
-	| '\\Bumpeq'
-	| '\\circeq'
-	| '\\curlyeqprec'
-	| '\\curlyeqsucc'
-	| '\\doteqdot'
-	| '\\eqcirc'
-	| '\\fallingdotseq'
-	| '\\multimap'
-	| '\\pitchfork'
-	| '\\precapprox'
-	| '\\preccurlyeq'
-	| '\\precsim'
-	| '\\risingdotseq'
-	| '\\shortmid'
-	| '\\shortparallel'
-	| '\\smallfrown'
-	| '\\smallsmile'
-	| '\\succapprox'
-	| '\\succcurlyeq'
-	| '\\succsim'
-	| '\\therefore'
-	| '\\thickapprox'
-	| '\\thicksim'
-	| '\\varpropto'
-	| '\\vDash'
-	| '\\Vdash'
-	| '\\Vvdash'
+	|    '\\backepsilon'
+	|    '\\backsim'
+	|    '\\backsimeq'
+	|    '\\because'
+	|    '\\between'
+	|    '\\bumpeq'
+	|    '\\Bumpeq'
+	|    '\\circeq'
+	|    '\\curlyeqprec'
+	|    '\\curlyeqsucc'
+	|    '\\doteqdot'
+	|    '\\eqcirc'
+	|    '\\fallingdotseq'
+	|    '\\multimap'
+	|    '\\pitchfork'
+	|    '\\precapprox'
+	|    '\\preccurlyeq'
+	|    '\\precsim'
+	|    '\\risingdotseq'
+	|    '\\shortmid'
+	|    '\\shortparallel'
+	|    '\\smallfrown'
+	|    '\\smallsmile'
+	|    '\\succapprox'
+	|    '\\succcurlyeq'
+	|    '\\succsim'
+	|    '\\therefore'
+	|    '\\thickapprox'
+	|    '\\thicksim'
+	|    '\\varpropto'
+	|    '\\vDash'
+	|    '\\Vdash'
+	|    '\\Vvdash'
 	;
 
 negated_binary_relations:
@@ -255,7 +283,6 @@ triangle_relations:
 	|    '\\vartriangleleft'
 	|    '\\vartriangleright'
 	;
-
 
 arrows:
 	     '\\Lleftarrow'
@@ -345,9 +372,6 @@ angles:
 	|    '\\measuredangle'
 	|    '\\sphericalangle'
 	;
-
-
-
 
 math_symbols:
 	     '\\backprime'

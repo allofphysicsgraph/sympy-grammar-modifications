@@ -2,6 +2,8 @@
 
 Starting with zero domain knowledge, programmatically introduce new information into the grammar while trying to keep human interaction to a minimum and maintain a readable grammar.
 
+How: build a minimum dfa for the grammar. the tokens are grouped by categories, those categories can be use to construct a minimum dfa by using the data we feed to it. The result is a rule set for how the non terminals can be grouped together for the lexer and parser
+
 # outline
 
 The file  

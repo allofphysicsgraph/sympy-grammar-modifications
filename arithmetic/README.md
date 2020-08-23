@@ -1,3 +1,9 @@
+# objective
+
+Starting with zero domain knowledge, programmatically introduce new information into the grammar while trying to keep human interaction to a minimum and maintain a readable grammar.
+
+# outline
+
 The file  
 arithmetic_dataset.txt  
 contains a bunch of simple valid expressions

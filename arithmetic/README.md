@@ -8,9 +8,12 @@ Build a minimum dfa for the grammar. the tokens are grouped by categories, those
 
 # outline
 
-The file  
-arithmetic_dataset.txt  
-contains a bunch of simple valid expressions
+To generate the dataset  
+
+run make arithmetic_dataset  
+this will print a bunch of expressions to stdout  
+generate_rules.py  looks for a file called arithmetic_dataset.txt
+
 
 The script  
 generate_rules.py  

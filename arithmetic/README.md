@@ -12,6 +12,8 @@ The script
 generate_rules.py  
 reads the arithmetic_dataset.txt
 
+TRIE_OUTPUT is a DFA via a trie data structure on the grammar
+
 Somehow (?) a grammar file  
 Arithmetic.g4  
 is produced

@@ -1,6 +1,6 @@
 from sys import argv
 import re
-from sage.coding.source_coding.huffman import Huffman
+from huffman import Huffman
 from trie import Trie
 trie_ = Trie()
 #Huffman is used for efficient search and to resolve issues with splitting on special characters.
@@ -13,6 +13,28 @@ print(h.__dict__)
 {'_character_to_code': {'*': '110100', '+': '110101', '\n': '10000', '9': '10001', '7': '10100', '8': '10101', '5': '11011', '6': '11100', '3': '11101', '0': '0000', '4': '0001', '2': '1001', '/': '1011', '1': '1100', ' ': '1111', '-': '001', '(': '010', ')': '011'}, '_tree': ((((9, 10), 15), (16, 17)), ((((2, 3), 11), ((4, 5), 12)), ((13, ((0, 1), 6)), ((7, 8), 14)))), '_index': {0: '*', 1: '+', 2: '\n', 3: '9', 4: '7', 5: '8', 6: '5', 7: '6', 8: '3', 9: '0', 10: '4', 11: '2', 12: '/', 13: '1', 14: ' ', 15: '-', 16: '(', 17: ')'}}
 '''
 
+print("generating Antlr file")
+f = open('arithmetic.g4','w')
+g = open('mapping_symbols_to_words','w')
+for key in h._character_to_code:
+    print(key)
+    print('tag char?')
+    inp = input()
+    g.write(inp)
+    g.write(':')
+    g.write(key)
+    g.write('\n')
+
+g.close()
+
+
+
+
+
+
+
+print(h.__dict__)
+exit(0)
 with open(argv[1]) as f:
     data = f.read()
 categories = re.findall('[a-zA-Z_]+:.*?;',data,re.DOTALL)

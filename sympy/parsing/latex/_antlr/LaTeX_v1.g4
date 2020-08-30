@@ -631,9 +631,6 @@ UNKNOWN:
 	| '\\prod'
 	| '\\projlim'
 	| '\\propto'
-	| '\\psi'
-	| '\\Psi'
-	| '\\quad'
 	| '\\raise'
 	| '\\rangle'
 	| '\\rbrace'
@@ -644,9 +641,6 @@ UNKNOWN:
 	| '\\rfloor'
 	| '\\rgroup'
 	| '\\rhd'
-	| '\\rho'
-	| '\\right'
-	| '\\rightarrow'
 	| '\\Rightarrow'
 	| '\\rightarrowtail'
 	| '\\rightleftarrows'
@@ -674,7 +668,6 @@ UNKNOWN:
 	| '\\sqrt'
 	| '\\sqsubset'
 	| '\\sqsupset'
-	| '\\square'
 	| '\\star'
 	| '\\strut'
 	| '\\subset'
@@ -728,11 +721,6 @@ UNKNOWN:
 	| '\\varpropto'
 	| '\\varsubsetneq'
 	| '\\varsubsetneqq'
-	| '\\varsupsetneq'
-	| '\\varsupsetneqq'
-	| '\\vartriangle'
-	| '\\vartriangleleft'
-	| '\\vartriangleright'
 	| '\\vdash'
 	| '\\vdots'
 	| '\\vee'
@@ -740,4 +728,6 @@ UNKNOWN:
 	| '\\Vert'
 	| '\\wp'
 	| '\\wr';
+
+
 

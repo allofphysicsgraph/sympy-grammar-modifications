@@ -73,16 +73,16 @@ for expression in expressions[:]:
     # >4 is to show only expressions of len > 4
     if len(expression) > 4:
         if "\\" in tokenizer.tokenize(expression):
+            print(expression)
             lst = tokenizer.tokenize(expression)
+            print(lst)
             dct["".join(lst[lst.index("\\") :])] += 1
 
         else:
             # if there is a pattern not matched that should be split on, add the pattern here with manual_entries
             # I am not sure if you can add regex to the mwe tokenizer without changing it.
             manual_entries("\d+\.\d+|\d+", expression)
-            print(expression)
             lst = tokenizer.tokenize(expression)
-            print(lst, "\n")
             for x in lst:
                 if x in symbols:
                     symbols_use_count[x] += 1

@@ -68,7 +68,7 @@ symbol_phrases:
 	 | 	 'R_1'
 	 | 	 'R_2'
 	 | 	 't_f'
-	 | 	 ;
+	  	 ;
 
 
 SYMBOLS:
@@ -109,5 +109,5 @@ SYMBOLS:
 	 | 	 'x'
 	 | 	 'y'
 	 | 	 'Z'
-	 | 	 ;
+	  	 ;
 

@@ -76,7 +76,11 @@ relop:
 VARIABLE: 
     VALID_ID_START VALID_ID_CHAR*
     |    GREEK
-    |    '\\ell'
+   
+;
+
+TO_BE_LABELED:	
+        '\\ell'
     |    '\\to'
     |    '\\infty'
     |     '\\approx'
@@ -88,11 +92,9 @@ VARIABLE:
     |     '\\circ'
     |     '\\dagger'
     |     '\\degr'
-    |    '\\ge'
     |     '\\gev'
     |     '\\hbar'
     |     '\\ldots'
-    |     '\\leq'
     |     '\\lok{B}'
     |     '\\mathcal{A}'
     |     '\\mathcal{C}'
@@ -104,16 +106,13 @@ VARIABLE:
     |     '\\pm'
     |     '\\prime'
     |     '\\rangle'
-    |     '\\rho'
     |     '\\sim'
     |     '\\simeq'
     |     '\\sqrt'
     |     '\\square'
     |     '\\star'
     |     '\\times'
-   
 ;
-
 
 fragment VALID_ID_START:
      ('a' .. 'z') | ('A' .. 'Z') | '_'
@@ -183,7 +182,8 @@ GT
    ;
 
 GTE
-    :    '\\gte'
+    :    '\\geq'
+    |    '\\ge'
     ;
 
 LT
@@ -191,6 +191,11 @@ LT
    |    '\\leq'
    ;
 
+LTE:
+	:	'<='
+	|	'\\leq'
+	|	'\\le'
+	;
 
 EQ
    : '='
@@ -263,6 +268,7 @@ GREEK:
      |      '\\eta'
      |      '\\phi'
      |      '\\Phi'
+    |     '\\rho'
     ;
 
 WS

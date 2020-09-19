@@ -17,7 +17,7 @@ RUN apt-get update && \
 WORKDIR /opt/
 
 RUN git clone https://github.com/allofphysicsgraph/sympy-grammar-modifications
-WORKDIR /opt/sympy-grammar-modifications
+WORKDIR /opt/sympy-grammar-modifications/Examples
 RUN make rewrite
 
 

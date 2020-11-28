@@ -35,7 +35,6 @@ RUN echo "alias python=python3" > /root/.bashrc
 WORKDIR /usr/local/lib
 
 # msg says this is is needed to build the ANTLR grammar
-#RUN curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
 RUN curl -O https://www.antlr.org/download/antlr-4.7.1-complete.jar
 
 WORKDIR /opt/
@@ -56,10 +55,6 @@ COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
 
 WORKDIR /opt/sympy/sympy/parsing/latex
-#RUN /bin/bash antlr_build.sh
-#ENV CLASSPATH=".:/usr/local/lib/antlr-4.8-complete.jar:$CLASSPATH"
-#RUN java -jar /usr/local/lib/antlr-4.8-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
-
 ENV CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
 RUN java -jar /usr/local/lib/antlr-4.7.1-complete.jar LaTeX.g4 -no-visitor -no-listener -o _antlr
 RUN python3 rename.py
@@ -76,9 +71,9 @@ RUN wget https://raw.githubusercontent.com/allofphysicsgraph/proofofconcept/gh-p
 # the purpose of grabbing AMSmath is because bhp thinks the symbols to be parsed exist in the source
 # https://ctan.org/pkg/amsmath?lang=en
 RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
+
 #RUN mv amsmath.zip /opt/
 RUN unzip /opt/amsmath.zip
-
 COPY generate_latex_files.py /opt/
 
 

@@ -8,10 +8,11 @@ help:
 
 debian_standalone:
 	SHELL=/bin/bash
-	#git submodule update --init
-	#/bin/bash scripts/amsmath.sh
-	#/bin/bash scripts/data_json.sh
-	#/bin/bash scripts/antlr_4_7_1_download.sh 
+	#requires git, wget
+	git submodule update --init
+	/bin/bash scripts/amsmath.sh
+	/bin/bash scripts/data_json.sh
+	/bin/bash scripts/antlr_4_7_1_download.sh 
 	pip3 download antlr4-python3-runtime==4.7.1 -d python_packages
 	pip3 download mpmath -d python_packages
 	@/bin/bash scripts/antlr4_updatebashrc.sh

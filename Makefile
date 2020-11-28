@@ -9,6 +9,7 @@ help:
 debian_standalone:
 	SHELL=/bin/bash
 	#requires git, wget
+	#edits bashrc with export classpath,#alias for (grun and antlr4)
 	git submodule update --init
 	/bin/bash scripts/amsmath.sh
 	/bin/bash scripts/data_json.sh

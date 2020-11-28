@@ -50,7 +50,7 @@ RUN pip3 install pudb
 # layer the local ANTLR modifications on top of the sympy source in /opt/
 COPY sympy/parsing/latex/_antlr/LaTeX.g4 /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/latex/_antlr/rename.py /opt/sympy/sympy/parsing/latex
-COPY _parse_latex_antlr.py /opt/sympy/sympy/parsing/latex
+COPY scripts/_parse_latex_antlr.py /opt/sympy/sympy/parsing/latex
 COPY sympy/parsing/tests /opt/sympy/sympy/parsing/
 
 
@@ -74,6 +74,6 @@ RUN wget http://mirrors.ctan.org/macros/latex/required/amsmath.zip
 
 #RUN mv amsmath.zip /opt/
 RUN unzip /opt/amsmath.zip
-COPY generate_latex_files.py /opt/
+COPY scripts/generate_latex_files.py /opt/
 
 

@@ -1,0 +1,10 @@
+#export CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
+#alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+#alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+#antlr4 Python3.g4
+#javac *.java
+#grun Python3 funcdef -tree
+def test():
+        pass 
+(funcdef def test (parameters ( )) : (suite            (stmt (simple_stmt (small_stmt (pass_stmt pass)) \n)) \n))
+

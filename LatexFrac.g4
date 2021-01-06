@@ -44,6 +44,23 @@ RBRACE:
 	'}'
 	;
 
+elementryfunctions:
+	|'\\cos'
+	|'\\cosh'
+	|'\\cot'
+	|'\\coth'
+	|'\\csc'
+	|'\\arccos'
+	|'\\arcsin'
+	|'\\arctan'
+	|'\\ln'
+	|'\\log'
+	|'\\sin'
+	|'\\sinh'
+	|'\\tan'
+	|'\\tanh'
+	|'\\sec'
+	;
 
 INT: [1-9][0-9]* ;
 
@@ -55,6 +72,7 @@ ADD:
 
 TIMES: 
 	'*'
+	|'\\times'
 	;
 
 MINUS:
@@ -64,12 +82,13 @@ binop:
 	ADD
 	|TIMES
 	|MINUS
+
 	;
 CARET:
 	'^'
 	;
 GREEK:
-	|'\\Delta'
+	'\\Delta'
 	|'\\Gamma'
 	|'\\Lambda'
 	|'\\Omega'
@@ -121,6 +140,24 @@ symbol:
 	| LOWERCASE;
 
 
+SETNOTATION:
+	'\\N'
+	|'\\Z'
+	|'\\Q'
+	|'\\matgbb{A}'
+	|'\\R'
+	|'\\C'
+	|'\\in'
+	|'\\notin'
+	|'\\ni'
+	|'\\subset'
+	|'\\cup'
+	|'\\cap'
+	|'\\setminus'
+	;
+
+
+
 /**
 
 BANG: 
@@ -160,22 +197,18 @@ GT:
 LBRAC:
 	'['
 	;
+
 \acutea
 \aleph
-\alpha
 \amalg
 \angle
 \approx
-\arccos
-\arcsin
-\arctan
 \arg
 \ast
 \asymp
 \backslash
 \bara
 \BbbB
-\beta
 \bigcap
 \bigcirc
 \bigcup
@@ -197,16 +230,10 @@ LBRAC:
 \cap
 \cdot
 \checka
-\chi
 \circ
 \clubsuit
 \cong
 \coprod
-\cos
-\cosh
-\cot
-\coth
-\csc
 \cup
 \dagger
 \dashv
@@ -214,8 +241,6 @@ LBRAC:
 \ddota
 \ddots
 \deg
-\delta
-\Delta
 \det
 \diamond
 \Diamond
@@ -225,17 +250,19 @@ LBRAC:
 \dota
 \doteq
 \ell
+
+
 \emptyset
-\epsilon
+\setminus
+
+
+
 \equiv
-\eta
 \exists
 \exp
 \flat
 \forall
 \frown
-\gamma
-\Gamma
 \gcd
 \ge
 \geq
@@ -258,10 +285,7 @@ LBRAC:
 \iota
 \jmath
 \Join
-\kappa
 \ker
-\lambda
-\Lambda
 \land
 \langle
 \lbrace
@@ -280,9 +304,7 @@ LBRAC:
 \liminf
 \limsup
 \ll
-\ln
 \lnot
-\log
 \Longleftarrow
 \Longleftrightarrow
 \longmapsto
@@ -319,19 +341,18 @@ LBRAC:
 \parallel
 \partial
 \perp
-\phi
-\Phi
-\pi
 \Pi
-\pm
 \Pr
-\prec
-\preceq
+
+relation:
+	\prec
+	\preceq
+
+
+
 \prime
 \prod
 \propto
-\psi
-\Psi
 \rangle
 \rbrace
 \rbrack
@@ -339,21 +360,14 @@ LBRAC:
 \Re
 \rfloor
 \rhd
-\rho
 \Rightarrow
 \rightharpoondown
 \rightharpoonup
 \rightleftharpoons
 \searrow
-\sec
-\setminus
 \sharp
-\sigma
-\Sigma
 \sim
 \simeq
-\sin
-\sinh
 \smallint
 \smile
 \spadesuit
@@ -374,13 +388,7 @@ LBRAC:
 \supseteq
 \surd
 \swarrow
-\tan
-\tanh
-\tau
-\theta
-\Theta
 \tildea
-\times
 \to
 \top
 \triangle
@@ -391,14 +399,6 @@ LBRAC:
 \uparrow
 \Uparrow
 \uplus
-\upsilon
-\Upsilon
-\varepsilon
-\varphi
-\varpi
-\varrho
-\varsigma
-\vartheta
 \vdash
 \vdots
 \veca
@@ -408,8 +408,4 @@ LBRAC:
 \wedge
 \wp
 \wr
-\xi
-\Xi
-\zeta
-
 **/

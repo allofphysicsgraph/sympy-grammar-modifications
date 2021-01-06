@@ -44,8 +44,8 @@ RBRACE:
 	'}'
 	;
 
-elementryfunctions:
-	|'\\cos'
+elementaryfunctions:
+	'\\cos'
 	|'\\cosh'
 	|'\\cot'
 	|'\\coth'

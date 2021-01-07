@@ -178,7 +178,11 @@ SETNOTATION:
 	|'\\emptyset'
 	;
 
-
+IGNORE:
+    (   '\\vrule'|'\\quad' |	'\\hfil'|    '\\quad'|    '\\vcenter'|    '\\vbox'|    '\\vskip'|    '\\vspace'
+    |	'\\left' |'\\right'|	'\\*'|   '\\,'|   '\\-'|   '\\.'|   '\\/'|   '\\;'|   '\\!'|   '\\"'|   '\\('
+    |   '\\,'|   '\\-'|   '\\.'|   '\\:'|   '\\='
+    ) -> skip;
 
 /**
 
@@ -272,13 +276,6 @@ LBRAC:
 \dota
 \doteq
 \ell
-
-
-\emptyset
-\setminus
-
-
-
 \equiv
 \exists
 \exp
@@ -332,7 +329,6 @@ LBRAC:
 \longmapsto
 \Longrightarrow
 \lor
-\mapsto
 \max
 \mho
 \mid
@@ -349,12 +345,10 @@ LBRAC:
 \ni
 \not=
 \notin
-\nu
 \nwarrow
 \odot
 \oint
 \omega
-\Omega
 \ominus
 \oplus
 \oslash
@@ -363,15 +357,10 @@ LBRAC:
 \parallel
 \partial
 \perp
-\Pi
 \Pr
-
 relation:
 	\prec
 	\preceq
-
-
-
 \prime
 \prod
 \propto
@@ -400,7 +389,6 @@ relation:
 \sqsupset
 \sqsupseteq
 \star
-\subset
 \subseteq
 \succ
 \succeq
